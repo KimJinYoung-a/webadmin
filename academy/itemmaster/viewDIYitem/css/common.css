@@ -1,0 +1,442 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+/* default */
+html, body, blockquote, caption, dd, div, dl, dt, fieldset, form, frame, h1, h2, h3, h4, h5, h6, hr, iframe, input, legend, li, object, ol, p, pre, q, select, table, textarea, tr, td, ul {margin:0; padding:0;}
+ol, ul {list-style:none;}
+fieldset, img {border:0;}
+h1, h2, h3, h4, h5, h6 {font-style:normal; font-size:12px;}
+hr {display:none;}
+table {border-collapse:collapse; border:0; empty-cells:show;}
+textarea {resize:none;}
+
+body, h1, h2, h3 ,h4 {font-size:11px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif; line-height:16px; color:#777; word-spacing:-2px;}
+
+a {text-decoration:none; color:#777;}
+a:hover, a:focus, a:active {text-decoration:none; color:#777;}
+
+legend {visibility:hidden; width:0; height:0;}
+input, button {border:0;}
+em,address {font-style:normal;}
+
+::-webkit-input-placeholder {color:#bbb;}
+::-moz-placeholder {color:#bbb;}
+:-ms-input-placeholder {color:#bbb;}
+:-moz-placeholder {color:#bbb;}
+
+
+/* common */
+html {/*overflow-y:scroll;*/}
+body {/*overflow-y:auto;*/ background:#fff url(http://image.thefingers.co.kr/2016/common/bg_btm_line.png) 0 100% repeat-x;}
+
+.clearFix:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+
+#accessibility {position:absolute; left:0; top:0; text-align:center; width:100%; z-index:1000; background:#669900;}
+#accessibility a {color:#fff; white-space:nowrap; width:1px; height:1px; margin-bottom:-1px; font-size:16px; overflow:hidden; font-weight:bold; display:block;}
+#accessibility a:focus, #accessibility a:active {color:#fff; width:100%; padding-top:10px; height:35px;}
+
+/* sprite */
+.fingerBadge .new2,
+.fingerBadge .best {background-image:url(http://image.thefingers.co.kr/2016/common/sp_common_v1.png); background-repeat:no-repeat;}
+
+/* layout */
+#wrap {width:100%; background:url(http://image.thefingers.co.kr/2016/common/bg_header.png) 0 0 repeat-x;}
+.container {position:relative; width:960px; margin:0 auto;}
+
+.headerWrapV16 {width:960px; height:217px;}
+.headerWrapV16 .unbV16:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.headerWrapV16 .unbV16 > ul {float:right; margin-right:-14px;}
+.headerWrapV16 .unbV16 ul:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.headerWrapV16 .unbV16 li {position:relative; z-index:20; float:left;  color:#000;}
+.headerWrapV16 .unbV16 li:after {content:''; display:inline-block; position:absolute; left:0; top:50%; width:1px; height:10px; margin-top:-4px; background-color:#ddd;}
+.headerWrapV16 .unbV16 li:first-child:after {display:none;}
+.headerWrapV16 .unbV16 li a {display:inline-block; height:27px; padding:13px 15px 0; color:#000; font-size:11px; vertical-align:top;}
+.headerWrapV16 .unbV16 li.unbInfo {padding:13px 15px 0;}
+.headerWrapV16 .unbV16 li.unbInfo a {padding:0;}
+.headerWrapV16 .unbV16 li .subUnbV16 {display:none; position:absolute; left:0; top:40px; z-index:20; width:120px; padding:0 4px 16px; background:url(http://image.thefingers.co.kr/2016/common/bg_unb.png) 0 100% no-repeat;}
+.headerWrapV16 .unbV16 li .subUnbV16 ul {position:relative; z-index:15; margin-top:-6px; padding:16px 10px 0; background:url(http://image.thefingers.co.kr/2016/common/blt_unb_arrow.png) 0 0 no-repeat;}
+.headerWrapV16 .unbV16 li .subUnbV16 li {float:none; padding:0 4px;}
+.headerWrapV16 .unbV16 li .subUnbV16 li a {width:100%; height:auto; padding:10px 0;}
+.headerWrapV16 .unbV16 li .subUnbV16 li.midLine {margin-top:6px; padding-top:7px; border-top:1px solid #ddd;}
+.headerWrapV16 .unbV16 li .subUnbV16 li:after {display:none;}
+.headerWrapV16 .unbV16 li.subUnbOn .subUnbV16 {display:block;}
+.headerWrapV16 .headV16 {position:relative; z-index:40; width:960px; height:125px;}
+.headerWrapV16 .headV16:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.headerWrapV16 .headV16 h1 {position:absolute; left:50%; top:48px; margin-left:-100px;}
+
+.headerWrapV16 .headV16 .newsTickerV16 {position:relative; float:left; width:300px; height:17px; margin-top:56px;}
+
+.headerWrapV16 .headV16 .searchV16 {position:relative; float:right; width:196px; height:27px; margin-top:47px; padding:5px 0 0 20px; background:url(http://image.thefingers.co.kr/2016/common/bg_search.png) 0 0 no-repeat;}
+.headerWrapV16 .headV16 .searchV16 .schInputV16 {position:relative; z-index:30; width:154px; height:22px; color:#000; font-size:12px; line-height:21px; outline:none;}
+.headerWrapV16 .headV16 .searchV16 .schBtnV16 {position:absolute; right:0; top:0; z-index:30; width:17px; height:17px; padding:7px 10px 8px;}
+.headerWrapV16 .headV16 .searchV16 .relatedKeyword {position:absolute; left:0; top:14px; z-index:20; width:186px; padding:18px 15px 10px; background:url(http://image.thefingers.co.kr/2016/common/bg_search_list.png) 0 100% no-repeat;}
+.headerWrapV16 .headV16 .searchV16 .relatedKeyword ul {position:relative; padding:7px 5px 0; border-top:1px solid #ddd;}
+.headerWrapV16 .headV16 .searchV16 .relatedKeyword li {overflow:hidden; color:#999; padding:6px 0; font-size:12px; line-height:13px; text-overflow:ellipsis; white-space:nowrap; cursor:pointer;}
+.headerWrapV16 .headV16 .searchV16 .relatedKeyword li:hover {color:#666; font-weight:bold;}
+.headerWrapV16 .gnbV16 ul {width:100%;}
+.headerWrapV16 .gnbV16 ul:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.headerWrapV16 .gnbV16 li {position:relative; z-index:10; float:left; font-size:14px; font-weight:bold;}
+.headerWrapV16 .gnbV16 li a {display:inline-block; height:31px; padding:19px 15px 0;}
+.headerWrapV16 .gnbV16 li span {display:inline-block; position:relative; height:100%; cursor:pointer;}
+.headerWrapV16 .gnbV16 li .snbV16 {display:none; position:absolute; left:50%; top:50px; z-index:500; width:100px; margin-left:-54px; padding:8px 4px 12px; background:url(http://image.thefingers.co.kr/2016/common/bg_snb.png) 0 100% no-repeat;}
+.headerWrapV16 .gnbV16 li .snbV16 li {float:none; width:100px; padding:0; font-size:12px; line-height:13px; text-align:center;}
+.headerWrapV16 .gnbV16 li .snbV16 li a {width:100%; padding:14px 0; height:auto; color:#000;}
+.headerWrapV16 .gnbV16 li.menuOn .snbV16 {display:block;}
+.headerWrapV16 .gnbV16 li.menuOn a {color:#000;}
+.headerWrapV16 .gnbV16 li.menuOn span:after {content:''; display:inline-block; position:absolute; left:50%; bottom:-3px; z-index:101; width:100%; height:3px; margin-left:-50%; background-color:#b0d92b;}
+.headerWrapV16 .gnbV16 li.gnbSpecial a {padding-left:0; color:#f96653;}
+.headerWrapV16 .gnbV16 li.gnbLecture a {padding-right:0; color:#94c006;}
+.headerWrapV16 .gnbV16 li.current a {color:#000;}
+.headerWrapV16 .gnbV16 li.gnbSpecial span:after,
+.headerWrapV16 .gnbV16 li.gnbLecture span:after {display:none;}
+
+.footerV16 {position:relative; height:230px; margin-top:100px; font-size:12px; color:#999;}
+.footerV16 .bar {padding:0 8px;}
+.footerV16 .footNav {overflow:hidden; padding:35px 0 25px;}
+.footerV16 .footNav li {position:relative; float:left; padding:0 16px;}
+.footerV16 .footNav li:after {content:''; display:inline-block; position:absolute; left:0; top:50%; width:1px; height:10px; margin-top:-5px; background-color:#aaa;}
+.footerV16 .footNav li:first-child {padding-left:0;}
+.footerV16 .footNav li:first-child:after {display:none;}
+.footerV16 .footNav li a {color:#000;}
+.footerV16 .footInfo p {padding-top:6px;}
+.footerV16 .footInfo .btnArr {display:inline-block; height:16px; margin:-2px 0 0 10px; padding:0 6px; font-size:11px; line-height:16px; vertical-align:middle;}
+.footerV16 .footSns {position:absolute; right:0; top:30px;}
+.footerV16 .footSns a {display:block; float:left; width:26px; height:26px;margin-left:4px; background-image:url(http://image.thefingers.co.kr/2016/common/ico_sns.png); background-repeat:no-repeat; text-indent:-999em;}
+.footerV16 .footSns .btnFb {background-position:0 0;}
+.footerV16 .footSns .btnTw {background-position:-30px 0;}
+.footerV16 .footSns .btnInsta {background-position:-60px 0;}
+
+/* badge */
+.fingerBadge {}
+.fingerBadge .badge {display:inline-block; width:54px; height:20px; color:#fff; font-size:12px; line-height:20px; font-weight:bold; border-radius:2px; text-align:center; vertical-align:top; text-shadow:1px 1px 0 rgba(0,0,0,.2);}
+.fingerBadge .new {background-color:#50bcc9;}
+.fingerBadge .new2 {width:37px; height:37px; line-height:35px; border-radius:0; background-position:-170px 0;}
+.fingerBadge .best {width:37px; height:40px; line-height:35px; border-radius:0; background-position:-130px 0;}
+.fingerBadge .coupon {background:#a0ca15;}
+.fingerBadge .finishSoon {background:#ff8c37; letter-spacing:-1px;}
+.fingerBadge .finish {background:#888;}
+.fingerBadge .soldout {background:#888;}
+.fingerBadge .custom {background:#ff8c37;}
+.fingerBadge .limited {background:#f96653; letter-spacing:-0.035em;}
+
+/* button */
+.btn {display:inline-block; text-align:center; border-radius:3px; vertical-align:middle; text-decoration:none; outline:none; cursor:pointer;}
+.btn:hover {color:#fff;}
+.btnS1 {height:15px; padding:0 5px; font-size:11px; line-height:12px; border-radius:2px; letter-spacing:-1px;}
+.btnS2 {height:20px; padding:0 12px; font-size:11px; line-height:19px;}
+.btnS3 {height:22px; padding:0 12px; font-size:12px; line-height:22px;}
+.btnM1 {height:40px; font-size:15px; line-height:40px;}
+.btnGry {color:#fff; border:1px solid #ccc; background-color:#ccc;}
+.btnYgn {color:#fff; border:1px solid #b1da2b; background-color:#b1da2b;}
+.btnRed {color:#fff; border:1px solid #f96654; background-color:#f96654;}
+.btnWht {color:#666; border:1px solid #ccc; background-color:#fff;}
+.btnWht:hover {color:#666;}
+
+.btnFavor {padding:5px; text-align:left; background:#fff; cursor:pointer; outline:none;}
+.btnFavor span {display:block; width:17px; height:15px; background:url(http://image.thefingers.co.kr/2016/common/ico_heart.png) 0 0 no-repeat; text-indent:-999em;}
+.btnFavor.favorOn span {background-position:0 100%;}
+
+.btnArr span {padding-right:10px; background:url(http://image.thefingers.co.kr/2016/common/arrow_right.gif) 100% 50% no-repeat;}
+.btnArr2 span {padding-right:10px; background:url(http://image.thefingers.co.kr/2016/common/arrow_right2.gif) 100% 50% no-repeat;}
+
+.searchWrap {overflow:hidden; width:100%;}
+.prWrap {position:absolute; left:0; bottom:0;}
+
+#contentWrap {width:100%; padding-top:30px;}
+.innerContent {overflow:hidden;}
+
+.fullRange .contents {width:100%;}
+.fullRange .lnbWrap {display:none;}
+.sepRange .contents {width:760px; float:right;}
+.contents {background-color:#fff; background:none; position:relative;}
+
+.lnbWrap {width:180px; float:left;}
+.lnbWrap img {vertical-align:top; display:inline;}
+
+/* popup */
+/* 201609 ¸®´º¾ó */
+.popup {background:#fff url(http://image.thefingers.co.kr/2016/common/popup_head_bg.gif) repeat-x 0 0;}
+.popWrap {width:100%; height:100%; position:relative;}
+.popHeader {position:relative; height:25px; padding:28px 22px 10px 22px;}
+.popHeader h1 {font-size:24px; line-height:1.2; color:#fff; font-weight:500; letter-spacing:-1px;}
+.popHeader h1 strong {font-weight:600;}
+
+/* ver1
+.popup {background:url("http://image.thefingers.co.kr/academy2012/common/popup_head_bg.gif") left top repeat-x; background-color:#fff;}
+.popWrap {width:100%; height:100%; position:relative;}
+.popHeader {height:25px; position:relative; padding:30px 20px 10px 20px;}
+.popHeader img {vertical-align:top; display:inline;}
+.popHeader .desp {position:absolute; right:10px; top:10px;}
+*/
+.popContainer {padding:30px 20px; overflow:hidden;}
+.popFooter {background:#eee; overflow:hidden; width:100%;}
+.popFooter .closeBtn {padding:10px 20px;}
+
+/* ver1
+.printPopup {background:url("http://image.thefingers.co.kr/academy2012/common/print_popup_head_bg.gif") left top repeat-x; background-color:#fff;}
+.printPopup .popWrap {margin:0 auto;}
+.printPopup .popHeader {text-align:center; padding:0; height:189px;}
+.printPopup .popContainer {padding:30px 10px;}
+*/
+.printPopup {background:#fff url(http://image.thefingers.co.kr/2016/common/popup_head_bg.gif) repeat-x 0 0; background-color:#fff;}
+.printPopup .popWrap {margin:0 auto;}
+.printPopup .popContainer {padding:30px 10px;}
+
+.popup2 {background:none; background-color:#fff; /*overflow-y:auto;*/}
+.popup2 .popContainer {padding:20px; overflow:hidden;}
+
+.popContAdd {background:#f5f5f5; padding:20px;}
+.popContAdd img {margin:0 5px; vertical-align:top;}
+
+/* print style */
+@media print {
+	.popFooter, .btnWrap, .btnWrap img {display:none;}
+	.mapBtn, .mapBtn img {display:none;}
+}
+
+/* button */
+.btnWrap {overflow:hidden;}
+.btnWrap img {vertical-align:top; display:inline;}
+
+
+/* etc */
+.overHidden {overflow:hidden;}
+.positionR {position:relative;}
+.dpInline {display:inline;}
+.dpInBlk {display:inline-block;}
+.hidden {visibility:hidden; width:0; height:0; overflow:hidden; position:absolute; top:-1000%; line-height:0;}
+.valign {vertical-align:top; font-size:11px; line-height:5px;}
+.valign * {vertical-align:top;}
+.bgNone {background:none;}
+.bLine {border-bottom:1px solid #ddd;}
+
+.ftLt {float:left;}
+.ftRt {float:right;}
+.ftNone {float:none;}
+
+.lt {text-align:left;}
+.rt {text-align:right !important;}
+.ct {text-align:center !important;}
+
+.pad1520 {padding:15px 20px !important;}
+.pad15 {padding:15px;}
+
+.tMarM1 {margin-top:-1px;}
+.tMarM2 {margin-top:-2px;}
+.tMarM3 {margin-top:-3px;}
+.tMarM5 {margin-top:-5px;}
+.tMar01 {margin-top:1px;}
+.tMar02 {margin-top:2px;}
+.tMar03 {margin-top:3px;}
+.tMar04 {margin-top:4px;}
+.tMar05 {margin-top:5px;}
+.tMar10 {margin-top:10px;}
+.tMar12 {margin-top:12px;}
+.tMar15 {margin-top:15px;}
+.tMar20 {margin-top:20px;}
+.tMar25 {margin-top:25px;}
+.tMar30 {margin-top:30px;}
+.tMar35 {margin-top:35px;}
+.tMar40 {margin-top:40px;}
+.tMar50 {margin-top:50px;}
+.tMar55 {margin-top:55px;}
+.tMar60 {margin-top:60px;}
+.tMar70 {margin-top:70px;}
+.tMar80 {margin-top:80px;}
+.lMar05 {margin-left:5px;}
+.lMar10 {margin-left:10px;}
+.lMar20 {margin-left:20px;}
+.lMar30 {margin-left:30px;}
+.lMar60 {margin-left:60px;}
+.lMar75 {margin-left:75px;}
+.bMarM3 {margin-bottom:-3px;}
+.bMar10 {margin-bottom:10px;}
+.bMar15 {margin-bottom:15px;}
+.bMar20 {margin-bottom:20px;}
+.rMar05 {margin-right:05px;}
+
+.tPad02 {padding-top:2px;}
+.tPad03 {padding-top:3px;}
+.tPad05 {padding-top:5px;}
+.tPad08 {padding-top:8px;}
+.tPad10 {padding-top:10px;}
+.tPad15 {padding-top:15px;}
+.tPad20 {padding-top:20px;}
+.tPad25 {padding-top:25px;}
+.tPad30 {padding-top:30px;}
+.tPad50 {padding-top:50px;}
+.bPad03 {padding-bottom:3px;}
+.bPad05 {padding-bottom:5px;}
+.bPad10 {padding-bottom:10px;}
+.bPad15 {padding-bottom:15px;}
+.bPad20 {padding-bottom:20px;}
+.bPad25 {padding-bottom:25px;}
+.lPad03 {padding-left:03px;}
+.lPad05 {padding-left:05px;}
+.lPad10 {padding-left:10px;}
+.lPad15 {padding-left:15px;}
+.lPad20 {padding-left:20px;}
+.lPad25 {padding-left:25px;}
+.lPad50 {padding-left:50px;}
+.rPad0 {padding-right:0;}
+.rPad10 {padding-right:10px;}
+.rPad15 {padding-right:15px;}
+.rPad25 {padding-right:25px;}
+.rPad50 {padding-right:50px;}
+
+.colorGr {color:#76a532;}
+.colorDgr {color:#589527;}
+.colorOr {color:#f4743a} /*#fd854f;*/
+.colorRgy {color:#8f8f8f;}
+.colorDgy {color:#666;}
+.colorDDgy {color:#555;}
+.colorRd {color:#d02525;}
+.colorRe {color:#ff0000;}
+.colorBk {color:#000 !important;}
+.colorBl {color:#3291e1;}
+
+.cBlk1 {color:#000;}
+.cYgn1 {color:#84ae47;}
+.cRed1 {color:#f96653;}
+.cGry1 {color:#888;}
+
+.bgGr {background-color:#f4f4f4;}
+
+.bold {font-weight:bold;}
+.engFont {font-family:verdana, sans-serif;}
+
+.fs10 {font-size:10px;}
+.fs12 {font-size:12px;}
+.fs13 {font-size:13px; line-height:16px;}
+.fs14 {font-size:14px; line-height:18px;}
+.fs15 {font-size:15px; line-height:20px;}
+.fs16 {font-size:16px; line-height:20px;}
+.fs18 {font-size:18px;}
+.fs24 {font-size:24px;}
+.fs29 {font-size:29px; line-height:31px;}
+
+.lh18 {line-height:18px;}
+.lh24 {line-height:24px;}
+
+/*swiper */
+.swiper-container {position:relative; overflow:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden;z-index:1;}
+.swiper-wrapper {position:relative;width:100%;-webkit-transition-property:-webkit-transform, left, top;-webkit-transition-duration:0s;-webkit-transform:translate3d(0px,0,0);-webkit-transition-timing-function:ease;-moz-transition-property:-moz-transform, left, top;-moz-transition-duration:0s;-moz-transform:translate3d(0px,0,0);-moz-transition-timing-function:ease;-o-transition-property:-o-transform, left, top;-o-transition-duration:0s;-o-transform:translate3d(0px,0,0);-o-transition-timing-function:ease;-o-transform:translate(0px,0px);-ms-transition-property:-ms-transform, left, top;-ms-transition-duration:0s;-ms-transform:translate3d(0px,0,0);-ms-transition-timing-function:ease;transition-property:transform, left, top;transition-duration:0s;transform:translate3d(0px,0,0);transition-timing-function:ease;}
+.swiper-free-mode > .swiper-wrapper {-webkit-transition-timing-function: ease-out;-moz-transition-timing-function: ease-out;-ms-transition-timing-function: ease-out;-o-transition-timing-function: ease-out;transition-timing-function: ease-out;margin: 0 auto;}
+.swiper-slide {float: left;}
+
+/* 
+.headerWrap {width:100%;}
+.headerWrap img {vertical-align:top; display:inline;}
+.header {width:100%; height:70px; padding-top:77px; position:relative; z-index:500;}
+
+.logo {position:absolute; top:57px; left:50%; margin-left:-76px;}
+
+.unbWrap {position:absolute; top:0; right:0; width:100%;}
+.unbBasic {float:right; list-style:none; position:relative;}
+.unbBasic:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.unbBasic li {float:left; height:26px;}
+.unbBasic li a {display:block; color:#777; text-indent:-9999px; background-position:center top; background-repeat:no-repeat; height:26px; overflow:hidden;}
+.unbBasic li a:hover, .unbBasic li a:focus {text-decoration:underline;}
+
+.unbBasic li.unbWelcome {padding:4px 10px 0 0; font-family:Verdana, Dotum, "µ¸¿ò", sans-serif;}
+.unbBasic li.unbWelcome a {display:inline; text-indent:0; height:15px; font-family:Dotum, "µ¸¿ò", sans-serif; font-size:11px; line-height:15px;}
+.unbBasic li.unbWelcome span {font-weight:bold;}
+.unbBasic li.unbLogout a {background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_logout.gif"); width:47px;}
+.unbBasic li.unbLogin a {background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_login.gif"); width:38px;}
+.unbBasic li.unbJoin a {background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_join.gif"); width:57px;}
+.unbBasic li.unbMyfin a {background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_myfin.gif");}
+.unbBasic li.unbMyfin {width:88px;}
+.unbBasic li.unbRegister a {background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_register.gif"); width:58px;}
+.unbBasic li.unbCart a {text-indent:0; background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_cart.gif"); width:26px; height:20px; padding:6px 0 0 23px; letter-spacing:-1px; color:#fe734e; font-size:10px; font-family:Verdana, Dotum, "µ¸¿ò", sans-serif;}
+.unbBasic li.unbCart a:hover, .unbBasic li.unbCart a:focus {text-decoration:none;}
+.unbBasic li.unbCs a {background-image:url("http://image.thefingers.co.kr/academy2012/common/unb_cs.gif"); width:65px;}
+
+.unbBasic li .subUnb {position:absolute; left:0; top:26px; border:1px solid #7fa843; padding:2px 10px; background:#f9f9f9;}
+.unbBasic li .subUnb strong {display:block; padding:3px 12px;}
+.unbBasic li .subUnb ul {width:100%; display:block; overflow:hidden;}
+.unbBasic li .subUnb li {white-space:nowrap; height:18px; width:100%; }
+.unbBasic li .subUnb li span {overflow:hidden; padding:0 7px 0 12px;}
+.unbBasic li .subUnb li em {height:11px; line-height:13px; float:left; padding:5px 0 1px 0; font-style:normal;}
+.unbBasic li .subUnb li a {background:none; display:inline; overflow:visible; text-indent:0; height:11px; line-height:13px; float:left; padding:2px 0 1px 0;}
+.unbBasic li .subUnb li a:hover, .unbBasic li .subUnb li a:focus {text-decoration:none; color:#f68d5e;}
+
+.unb li.subUnbOn a {background-position:center -26px;}
+.unb li.subUnbOn .subUnb {display:block;}
+.unb li.subUnbOff .subUnb {display:none;}
+
+.unb li {position:relative;}
+.unb li .subUnb {left:0; border-top:none; background:#f9f9f9 url("http://image.thefingers.co.kr/academy2012/common/sub_unb_bg.gif") no-repeat left top; }
+.unb li .subUnb strong {display:none;}
+.unb li .subUnb li {display:block; border-top:1px solid #ddd; height:20px; width:112px;}
+.unb li .subUnb li.noLine {border-top:none;}
+.unb li .subUnb li span {background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") no-repeat 3px 8px; display:block;}
+.unb li .subUnb li a {padding:5px 0 4px 0;}
+
+.searchWrap {overflow:hidden; width:100%;}
+.searchWrap .search {float:right; padding:4px 12px; width:166px; background:url("http://image.thefingers.co.kr/academy2012/common/search_bg.gif") right top no-repeat;}
+.searchWrap .search input {border:0;}
+.searchWrap .search .schInput {float:left; font-size:11px; line-height:13px; height:11px; font-family:Dotum, "µ¸¿ò", sans-serif; color:#7fa843; padding:3px 0;}
+.searchWrap .search .schBtn {float:right; margin-top:-1px;}
+
+.sectionWrap {overflow:hidden;}
+.section {float:right; list-style:none;}
+.section li {float:left; padding:0 5px 0 10px; background:url("http://image.thefingers.co.kr/academy2012/common/section_line.gif") left top no-repeat;}
+.section li.fst {background:none;}
+.section li.diyshop {background:none; padding:0 0 0 10px;}
+.section .pngFix {margin-top:1px;}
+
+.gnbWrap {width:100%; z-index:400; position:relative;}
+.gnbBasic {list-style:none;}
+.gnbBasic:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.gnbBasic li a {display:block; text-indent:-9999px; background-position:left -40px; background-repeat:no-repeat; overflow:hidden;}
+.gnbBasic li a span {width:127px; height:40px; display:block; cursor:pointer;}
+.gnbBasic li.gnbTouch a {background-image:url("http://image.thefingers.co.kr/academy2012/common/gnb_touch.gif");}
+.gnbBasic li.gnbSew a {background-image:url("http://image.thefingers.co.kr/academy2012/common/gnb_sew.gif");}
+.gnbBasic li.gnbDeco a {background-image:url("http://image.thefingers.co.kr/academy2012/common/gnb_deco.gif");}
+.gnbBasic li.gnbTaste a {background-image:url("http://image.thefingers.co.kr/academy2012/common/gnb_taste.gif");}
+.gnbBasic li.gnbDraw a {background-image:url("http://image.thefingers.co.kr/academy2012/common/gnb_draw.gif");}
+.gnbBasic li.gnbEnjoy a {background-image:url("http://image.thefingers.co.kr/academy2012/common/gnb_enjoy.gif");}
+
+.gnbBasic li .snb {border:1px solid #8bb350; background:#fff;}
+.gnbBasic li .snb ul {display:block; padding:8px 10px; overflow:hidden;}
+.gnbBasic li .snb li {float:left; padding-right:20px;}
+.gnbBasic li .snb li a {background-image:none; text-indent:0; color:#777; padding:4px 4px 4px 11px; background:url("http://image.thefingers.co.kr/academy2012/common/blt02.gif") left 7px no-repeat; letter-spacing:-0.05em;}
+.gnbBasic li .snb li a:hover, .gnbBasic li .snb li a:focus {color:#f68d5d; text-decoration:underline;}
+
+.gnb li.menuActive {border-left:1px solid #8bb350; border-right:1px solid #8bb350; position:relative;}
+.gnb li.menuActive .snb {display:block;}
+.gnb li.menuActive a {background-position:center -80px;}
+
+.gnb li.menuOn a {background-position:center top;}
+.gnb li.menuOff .snb {display:none;}
+
+.gnb li {float:left; border-left:1px solid #aeca85; border-right:1px solid #aeca85; margin-left:-1px;}
+.gnb li a {background-position:center -40px;}
+.gnb li.gnbTouch {border-left:1px solid #83af47; margin-left:0;}
+.gnb li.gnbEnjoy {border-right:1px solid #759e3c; margin-right:0;}
+
+.gnb li .snb {position:absolute; left:-1px; right:-1px; border-top:none; width:127px;}
+.gnb li .snb ul {display:block; padding:8px 10px; width:107px;}
+.gnb li .snb li {display:block; float:none; border-left:none; border-right:none; margin-left:0; width:100%; padding-right:0;}
+
+.groupWrap {width:161px; height:135px; position:absolute; right:0; top:-7px; background:#95bf55; padding:0 15px;}
+.groupWrap .group {padding:11px 0 7px 0; overflow:hidden; width:100%;}
+.groupWrap .group li {float:left; position:relative; height:24px;}
+.groupWrap .group li .pngFix {position:absolute; top:5px; right:0;}
+.groupWrap .btnWrap a {margin-right:1px;}
+
+.footerWrap {padding-top:40px; width:100%;}
+.footerWrap img {vertical-align:top; display:inline;}
+.footer {width:100%; overflow:hidden; background:url("http://image.thefingers.co.kr/academy2012/common/footer_bg.gif") left top repeat-x;}
+.footer ul {float:left; padding-left:15px;}
+.footer ul li {float:left;}
+.footer ul li a {display:block; padding:13px 15px 12px 15px;}
+.footer dl {float:right; background:#eaeaea url("http://image.thefingers.co.kr/academy2012/common/footer_family_bg.gif") left top no-repeat; padding:0 30px;}
+.footer dl dt {float:left; padding:13px 0 9px 13px; width:82px;}
+.footer dl dd {float:left;}
+.footer dl dd a {display:block; padding:13px 0 12px 13px;}
+
+.footerInfo {position:relative; background:url("http://image.thefingers.co.kr/academy2012/common/footer_logo.gif") 62px 20px no-repeat; padding:23px 180px;}
+.footerInfo address {padding-bottom:4px;}
+.footerInfo p {padding-bottom:18px;}
+.footerInfo p a {margin-left:10px;}
+.footerInfo .topGo {position:absolute; right:11px; top:20px;}
+*/

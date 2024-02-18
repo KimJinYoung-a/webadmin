@@ -1,0 +1,1576 @@
+/* common */
+/* 2016 the fingers */
+.titleWap {overflow:hidden; position:relative; height:65px; padding-top:14px; border-bottom:1px solid #ddd;}
+.titleWap h1 {float:left; font-size:40px; line-height:1.2; letter-spacing:-2px; color:#84ad00;}
+.titleWap p {float:left; padding-left:16px; padding-top:29px; font-size:14px; line-height:1.2; letter-spacing:-0.7px; color:#777;}
+
+h1 img, h2 img, h3 img {vertical-align:top; display:inline;}
+/* ver1
+.titleWap {overflow:hidden; position:relative; height:59px; border-bottom:1px solid #ddd; padding-top:19px;}
+.titleWap h1 {float:left;}
+.titleWap p {float:left; padding-left:15px;}
+*/
+.subtitleWap {overflow:hidden; padding-bottom:6px;}
+.subTitleWrap2 {overflow:hidden; padding:18px 0 10px 0; background:url("http://image.thefingers.co.kr/academy2012/common/line3.gif") left bottom repeat-x;}
+.contTitleWap {padding-top:5px; padding-bottom:12px; border-bottom:1px solid #ddd;}
+.contTitleWap:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.contTitleWap2 {padding-bottom:5px; border-bottom:1px solid #ddd; background:#fff;}
+.contTitleWap2:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.contTitleWap2 img {vertical-align:top; display:inline;}
+
+h1 {font-size:20px; line-height:12px;}
+h2 {font-size:15px; line-height:18px; color:#000;}
+h3 {font-size:11px; line-height:12px;}
+h4 {font-size:14px; line-height:17px; color:#000;}
+
+.noTitle {display:none;}
+.noTitle2 h1 {display:none;}
+div.bLine {border-bottom:1px solid #ddd; padding-bottom:15px;}
+
+.lnb {width:100%;}
+.lnb ul {width:100%;}
+.lnb ul li li {width:100%; font-size:3px; line-height:3px;}
+.lnb ul li li a {display:block; padding:5px 0;}
+.lnb ul ul {padding:7px 0;}
+
+.lnbDiyshop li .subLnbWrap {background:#f8f8f8; padding:5px 25px 0 25px; border-bottom:1px solid #e2e2e2;}
+.lnbDiyshop li .subLnb li {font-size:11px; line-height:13px;}
+.lnbDiyshop li .subLnb li a {background:url("http://image.thefingers.co.kr/academy2012/common/blt04.gif") left 8px no-repeat; padding:5px 10px; display:block;}
+.lnbDiyshop li .subLnb li.selected a {background:url("http://image.thefingers.co.kr/academy2012/common/blt07.gif") left 8px no-repeat; font-weight:bold; color:#fd854f;}
+.lnbDiyshop ul ul {padding:7px 0;}
+.lnbDiyshop ul li span {cursor:pointer;}
+
+input, select {vertical-align:middle; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif;}
+
+.txtBasic {border:1px solid #d2d2d2; font-size:11px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif; color:#777; height:16px; padding:4px 5px 0 5px;}
+.txtVodSearch {border:1px solid #d2d2d2; border-right:none; font-size:11px; font-family:Dotum, "µ¸¿ò", sans-serif; color:#777; height:16px; padding:2px 5px 0 5px;}
+.select {border:1px solid #d2d2d2; font-size:11px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif; color:#777; height:20px;}
+.file {border:1px solid #d2d2d2; background:#fff; font-size:12px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif; height:20px;}
+.check, .radio {width:13px; height:13px; vertical-align:top;}
+textarea {border:1px solid #d2d2d2; font-size:11px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif; color:#777; padding:5px;}
+
+.tblInput {margin:-5px 0 -2px 0;}
+
+.txtInpV16 {height:20px; padding:0 5px; color:#777; border:1px solid #d2d2d2; font-size:11px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif;}
+.selectV16 {height:20px; color:#777; border:1px solid #d2d2d2; font-size:11px; font-family:"malgun Gothic","¸¼Àº°íµñ", Dotum, "µ¸¿ò", sans-serif;}
+.checkV16 {width:13px; height:13px; border:1px solid #d2d2d2; vertical-align:middle;}
+
+.Staff {color:#d82525;}
+.Tree {color:#865e25;}
+.Bean {color:#f68d5d;}
+.Leaf {color:#84ae47;}
+.Bud {color:#a3cf6c;}
+.Seed {color:#f4ca2c;}
+
+.blt03 {background:url("http://image.thefingers.co.kr/academy2012/common/blt03.gif") left 6px no-repeat; padding-left:10px;}
+
+/* tab */
+.tabWrap {width:100%; overflow:hidden; background:#fff;/*border-bottom:2px solid #9cc65c;*/}
+.tabWrap img {vertical-align:top; display:inline; margin-right:5px;}
+.tabWrap li {float:left; border:1px solid #ccc; border-bottom:none; background:#fff; margin-right:-1px;}
+.tabWrap li.tabOn {background:#76a532 url("http://image.thefingers.co.kr/academy2012/common/tab_on_bg.gif") right 11px no-repeat; border:1px solid #76a532; border-bottom:none; position:relative;}
+.tabWrap li a {display:block; padding:0 20px 0 0;}
+.tabWrap a span {font-family:Verdana, Dotum, "µ¸¿ò", sans-serif; color:#fff; line-height:18px; letter-spacing:-1px; display:inline-block; padding-top:3px;}
+.tabWrap li.tabOff a span {color:#777;}
+
+.tabWrap2 {width:100%; overflow:hidden;}
+.tabWrap2 li {float:left;}
+
+/* table */
+table {border-spacing:0; padding:0;}
+table th, table td {padding:0;}
+
+.boardType {width:100%; border-top:2px solid #9cc65c; border-bottom:1px solid #e2e2e2;}
+.boardType td {border-bottom:1px solid #e2e2e2; line-height:16px;}
+.boardType td a {color:#777;}
+.boardType em {font-style:normal;}
+
+.contType {width:100%; border-bottom:1px solid #e2e2e2;}
+.contType caption {display:none;}
+.contType th, .contType td {border-bottom:1px solid #e2e2e2; line-height:20px; text-align:center;}
+.contType th p {padding:4px 10px; font-weight:normal;}
+.contType td p {padding:4px 10px 3px 10px;}
+.contType td span {display:block; padding:2px 10px}
+.contType .lt {text-align:left;}
+
+.listStyle01 caption {display:none;}
+.listStyle01 img {vertical-align:top; display:inline;}
+.listStyle01 th {border-bottom:1px solid #e2e2e2; background:#f5f5f5; font-weight:normal; padding:10px 0 5px 0; white-space:nowrap;}
+.listStyle01 td {padding:5px 0; text-align:center;}
+.listStyle01 td span {padding:3px 10px 0 10px; display:inline-block;}
+.listStyle01 td em {font-style:normal;}
+.listStyle01 td .lPad0 {padding-left:0;}
+.listStyle01 .lt {text-align:left;}
+.listStyle01 tfoot td {background:#fafff2; text-align:right; padding:10px 0 7px 0;}
+
+.listStyle02 {width:100%;}
+.listStyle02 caption {display:none;}
+.listStyle02 th {border-bottom:1px solid #e2e2e2; background:#f5f5f5; font-weight:normal; padding:6px 0; white-space:nowrap;}
+.listStyle02 th span {padding:0 10px;}
+.listStyle02 td {padding:20px 10px; vertical-align:top; text-align:center;}
+.listStyle02 td span {display:block;}
+.listStyle02 em {font-style:normal;}
+.listStyle02 .subject {min-height:32px;}
+
+.listStyle03 caption {display:none;}
+.listStyle03 img {vertical-align:top; display:inline;}
+.listStyle03 th {border-bottom:1px solid #e2e2e2; background:#f5f5f5; font-weight:normal; padding:8px 0 6px 0; white-space:nowrap;}
+.listStyle03 td {padding:25px 0; vertical-align:top; position:relative;}
+.listStyle03 td p {padding:0 10px;}
+.listStyle03 td span {display:block;}
+.listStyle03 td em {font-style:normal;}
+.listStyle03 td .lPad0 {padding-left:0;}
+.listStyle03 td .subject {min-height:32px;}
+
+.listStyle04 caption {display:none;}
+.listStyle04 img {vertical-align:top; display:inline;}
+.listStyle04 th {border:1px solid #e2e2e2; background:#f5f5f5; font-weight:normal; padding:10px 0 5px 0; white-space:nowrap;}
+.listStyle04 td {border:1px solid #e2e2e2; padding:5px 0; text-align:center;}
+.listStyle04 td span {padding:3px 5px 0 5px; display:inline-block;}
+.listStyle04 p {padding:10px 0;}
+.listStyle04 .lt {text-align:left;}
+.listStyle04 .ltNoLine {border-left:none;}
+.listStyle04 .rtNoLine {border-right:none;}
+
+.viewStyle01 caption {display:none;}
+.viewStyle01 th, .viewStyle01 td {padding:10px 0 7px 0; text-align:left; vertical-align:top;}
+.viewStyle01 th p, .viewStyle01 th span, .viewStyle01 td span {padding:0 20px; display:inline-block;}
+.viewStyle01 th {background:#f7f7f7; border-bottom:1px solid #e2e2e2; font-weight:normal;}
+.viewStyle01 th.headTh {background:#fff; padding:20px 0; text-align:center;}
+.viewStyle01 th .lPad0, .viewStyle01 td .lPad0 {padding-left:0;}
+.viewStyle01 td .rPad0 {padding-right:0;}
+.viewStyle01 td .rPad10 {padding-right:10px;}
+.viewStyle01 th.bgNone {background:#fff;}
+.viewStyle01 td.lineLt {border-left:1px solid #e2e2e2;}
+.viewStyle01 th.valignM, .viewStyle01 td.valignM {vertical-align:middle;}
+.mapBtn {position:absolute; left:100%; top:-3px;}
+.zipBtn {position:absolute; left:95%; top:-1px;}
+.cuponBtn {position:absolute; left:100%; top:-3px;}
+.idCheckBtn {position:absolute; left:95%; top:0;}
+.emailCheckBtn {position:absolute; left:100%; top:0;}
+.lineBg {background:url("http://image.thefingers.co.kr/academy2012/common/line.gif") left 50% no-repeat;}
+
+.viewStyle02 caption {display:none;}
+.viewStyle02 img {vertical-align:top; display:inline;}
+.viewStyle02 th {padding:10px 0 8px 0; border-bottom:1px solid #e2e2e2; text-align:left;}
+.viewStyle02 td {padding:12px 0 8px 0;}
+.viewStyle02 td span.mapImg {padding:0 12px 4px 12px;}
+.viewStyle02 th span, .viewStyle02 td span {padding:0 20px; display:inline-block;}
+.viewStyle02 td.etcArea {background:#f7f7f7;}
+.viewStyle02 td .subject {min-height:32px;}
+
+.interestT td div {width:120px; margin:0 auto; padding-left:20px; position:relative;}
+.interestT td .check {position:absolute; left:0; top:0;}
+
+.interestD td div {width:100px; margin:0 auto; padding-left:20px; position:relative;}
+.interestD td .check {position:absolute; left:0; top:0;}
+
+.interestC td {text-align:left; padding:25px 10px; }
+.interestC td div {padding-left:185px; height:100px; position:relative; margin:0 auto;}
+.interestC td .checkArea {position:absolute; left:0; top:0; width:175px;}
+.interestC td .classDate {position:absolute; left:185px; bottom:0;}
+
+.allClass td {text-align:left; padding:20px 15px; border-bottom:1px solid #e2e2e2;}
+.allClass td div {padding-left:215px; height:120px; position:relative; margin:0 auto;}
+.allClass td .checkArea {position:absolute; left:0; top:0; width:203px;}
+.allClass td .previewBtn {position:absolute; left:215px; bottom:10px; width:230px;}
+
+.previewBtn {}
+.previewBtn * {vertical-align:top; font-size:11px; line-height:14px;}
+.previewBtn img {margin-right:2px;}
+.previewBtn span, .previewBtn em {display:inline-block; font-style:normal; padding-left:5px;}
+.previewBtn dfn {margin-top:-1px; display:inline-block; margin-right:5px;}
+
+.tableType {width:100%;}
+.tableType caption {display:none;}
+.tableType img {vertical-align:top; display:inline;}
+.tableType th {font-weight:normal; background:#f5f5f5; padding:7px 10px 4px 10px;}
+.tableType th, .tableType td {border:1px solid #e2e2e2; text-align:center;}
+.tableType th span, .tableType td span {display:inline-block;}
+.tableType td {padding:6px 10px 3px 10px;}
+
+.viewAll td {padding:15px 5px 15px 10px; vertical-align:top;}
+.viewAll td p {border-left:1px dashed #ddd; min-height:90px; padding:0 15px;}
+.viewAll td p span {padding:10px 0; display:block;}
+
+.viewAll .rowType {width:152px;}
+.viewAll .rowType dt {width:60px; padding-top:2px; text-align:left;}
+
+.diyshopBest {width:100%;}
+.diyshopBest caption {display:none;}
+.diyshopBest td {padding:40px 0; vertical-align:top; text-align:center;}
+.diyshopBest td p {position:relative;}
+.diyshopBest td span {display:block;}
+.diyshopBest em {font-style:normal;}
+.diyshopBest .subject {min-height:32px;}
+.diyshopBest td .photo {width:200px; margin:0 auto;}
+.diyshopBest td .photo span.bestFlag {position:absolute; left:0; top:0;}
+
+table.diyshopList td {padding:30px 0; border-bottom:1px solid #ddd;}
+
+.paging {width:100%; text-align:center; vertical-align:top;}
+.paging img {vertical-align:top; display:inline;}
+.paging a {font-family:verdana, sans-serif; padding:0 5px; line-height:22px; color:#777;}
+.paging a strong {color:#000;}
+.paging span a {padding:0 3px;}
+
+/* list */
+.infoList01 {width:100%;}
+.infoList01 li {padding:2px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") left 6px no-repeat;}
+.infoList01 li a {color:#777;}
+
+.taxBill {width:100%;}
+.taxBill li {border-bottom:1px solid #e2e2e2; padding:5px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") left 13px no-repeat;}
+.taxBill li em {display:inline-block; width:120px;}
+dl.taxBill {border-bottom:1px solid #e2e2e2; padding:5px 0; overflow:hidden;}
+dl.taxBill dt {float:left; width:100px; background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") left 9px no-repeat; padding:4px 10px 0 10px;}
+dl.taxBill dd {float:right; width:520px; padding:4px 0 2px 0;}
+
+.infoList02 {width:100%;}
+.infoList02 li {padding:2px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt04.gif") left 6px no-repeat; text-align:left;}
+
+.infoList03 {width:100%;}
+.infoList03 li {padding:1px 5px 2px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt06.gif") left 6px no-repeat;}
+
+.infoList04 {width:100%;}
+.infoList04 li {padding:3px 5px 7px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt03.gif") left 6px no-repeat;}
+
+.infoList05 {width:100%;}
+.infoList05 li {padding:2px 5px 0 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt08.gif") left 6px no-repeat;}
+
+.infoList06 {width:100%;}
+.infoList06 li {padding:2px 15px; background:url("http://image.thefingers.co.kr/academy2012/common/blt09.gif") left 3px no-repeat;}
+
+.infoList07 {width:100%;}
+.infoList07 li {padding:4px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt11.gif") left 9px no-repeat;}
+
+.infoList08 {padding:4px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/blt12.gif") left 6px no-repeat;}
+
+.borardList01 {width:100%;}
+.borardList01 li {border-bottom:1px dashed #ccc; padding:5px 0 1px 0;}
+
+.rowType {width:100%; overflow:hidden;}
+.rowType dt, .rowType dd {float:left; padding-right:10px;}
+
+.listWrap01 em {display:inline-block; padding:5px 0;}
+
+.thumbList01 {width:100%; overflow:hidden;}
+.thumbList01 li {padding:15px 20px; float:left;}
+.thumbList01 li div {border:1px solid #ddd; border-bottom:2px solid #000; width:150px;}
+.thumbList01 li div span {color:#000; display:block; min-height:48px; padding:10px;}
+.thumbList01 li div span strong {display:block;}
+
+/* myfingers */
+.memInfoWrap {background:#f5f5f5; width:160px; padding:10px; line-height:16px;}
+
+.welcomMsg {background:url("http://image.thefingers.co.kr/academy2012/myfingers/dotline1.gif") left bottom repeat-x; padding-bottom:5px; padding-left:5px;}
+.memInfo {background:url("http://image.thefingers.co.kr/academy2012/myfingers/dotline1.gif") left bottom repeat-x; padding:5px;}
+.gradeView {padding-top:3px;}
+.gradeView p {padding-top:5px;}
+
+.gradeStaff strong {color:#d82525;}
+.gradeTree strong {color:#865e25;}
+.gradeBean strong {color:#f68d5d;}
+.gradeLeaf strong {color:#84ae47;}
+.gradeBud strong {color:#a3cf6c;}
+.gradeSeed strong {color:#f4ca2c;}
+
+.infoSummury {border:5px solid #f1f1f1; padding:10px 0; background:#fff; overflow:hidden;}
+.infoSummury dl.noLine {border-left:none;}
+.SumryBox, .SumryBox dt, .SumryBox dd {float:left;}
+.SumryBox {padding:1px 25px 3px 25px; overflow:hidden; width:26%; border-left:1px solid #eaeaea;}
+.SumryBox dt {width:108px; padding:12px 0 7px 0;}
+.SumryBox dd {width:42%; text-align:right;}
+.SumryBox dd span {font-family:verdana; color:#76a532; font-size:36px; line-height:36px; font-weight:bold; letter-spacing:-3px;}
+.SumryBox dd span a {color:#76a532;}
+
+.calTab {width:100%; text-align:center;}
+.calTab img {display:inline;}
+.calTab strong {font-family:verdana, sans-serif; padding:0 5px; line-height:20px; color:#777;}
+
+.calendar {table-layout:fixed;}
+.calendar caption {display:none;}
+.calendar th {border:1px solid #e2e2e2; background:#f5f5f5; font-weight:normal; padding:6px 0; font-family:verdana, sans-serif;}
+.calendar td {border:1px solid #e2e2e2; padding:5px 0; height:100px; vertical-align:top;}
+.calendar td span {font-family:verdana, sans-serif; padding-left:5px;}
+.calendar td p {background:url("http://image.thefingers.co.kr/academy2012/common/blt03.gif") 5px 9px no-repeat; padding:5px 5px 1px 12px;}
+.calendar td p a {color:#777;}
+
+.references li {width:138px;}
+.faqTab li {width:110px;}
+.partnerTab {border-bottom:1px solid #ccc;}
+.partnerTab li {width:120px;}
+.searchTab {border-bottom:1px solid #ccc;}
+.searchTab li {width:145px;}
+
+.qnaAdd {table-layout:fixed;}
+.qnaAdd .aArea td {background:#f8f8f8; padding:5px 30px;}
+.qnaAdd dl {padding:20px 0;}
+.qnaAdd dt {width:75px;}
+.qnaAdd dd {text-align:left; width:600px;}
+
+.qArea {cursor:pointer;}
+
+.aArea div {padding:20px 20px 20px 100px; text-align:left; line-height:16px;}
+.qCont {background:url("http://image.thefingers.co.kr/academy2012/common/q.png") 20px 23px no-repeat; border-bottom:1px solid #ddd;}
+.aCont {background:url("http://image.thefingers.co.kr/academy2012/common/a.png") 20px 23px no-repeat;}
+.faqA {background:url("http://image.thefingers.co.kr/academy2012/common/arrow.gif") 100px 18px no-repeat;}
+.aArea .faqA {padding:20px 80px 20px 125px;}
+
+.qnaList td {padding:10px 0 20px 0;}
+.qnaList div {padding:20px 20px 20px 80px; text-align:left;}
+.qnaList .qCont {border-bottom:none;}
+.qnaList .aCont {background-color:#f8f8f8;}
+
+.myLoginWrap {width:380px; margin:40px auto;}
+.myLogin {background:#f8f8f8; padding:25px 40px; position:relative;}
+.myLogin span {width:50px; display:inline-block;}
+.myLogin .btnMyLogin {position:absolute; top:25px; right:40px;}
+
+.zipCode {background:#f8f8f8; padding:15px; text-align:center;}
+.zipCode span {width:50px; display:inline-block;}
+.zipCode img {vertical-align:top;}
+
+.zipCodeView {overflow:auto; height:200px;}
+
+.contBox {border:1px solid #e2e2e2; background:#f5f5f5; padding:25px; text-align:center;}
+.contBox2 {border:5px solid #eee; background:#fff; padding:15px; text-align:center;}
+.contBox3 {background:#f5f5f5; padding:20px 8px 17px 8px;}
+.contBox4 {border:1px solid #ddd;}
+.contBox5 {background:#f5f5f5; padding:20px; margin:20px auto;}
+.contBox6 {background:#f5f5f5; padding:20px;}
+.contBox7 {background:#f5f5f5; padding:30px;}
+
+.spotTxt {background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") left 4px no-repeat; padding-left:10px;}
+
+.memOutPaper {padding:20px 0; background:#f8f8f8;}
+.memOutPaper ul {overflow:hidden; margin:0 20px; padding-bottom:15px; background:url("http://image.thefingers.co.kr/academy2012/myfingers/dotline1.gif") left bottom repeat-x;}
+.memOutPaper ul li {float:left; padding-right:20px;}
+.memOutTxt {padding:0 20px;}
+
+.memOutCertify {padding:20px 0; background:#f8f8f8;}
+.memOutCertify th, .memOutCertify td {text-align:left; border-bottom:none;}
+.memOutCertify th {font-weight:normal;}
+
+.certifyForm {overflow:hidden; padding-bottom:20px; border-bottom:1px solid #e2e2e2;}
+.certifyForm dl {width:49%;}
+.certifyForm dl dt, .certifyForm dl dd {padding:0 20px;}
+.certifyForm dl dd span {width:120px; display:inline-block;}
+.certifyForm .lineR {border-right:1px solid #e2e2e2;}
+
+.mileageViewBox img, .cuponBox img {vertical-align:top; display:inline;}
+.mileageViewBox {overflow:hidden; background:#f7f7f7; border-bottom:1px solid #e2e2e2; padding:25px 25px 20px 25px;}
+.cuponBox {overflow:hidden; background:#fff; border-bottom:1px solid #e2e2e2; border-top:1px solid #e2e2e2; padding:15px 30px 13px 30px;}
+
+.satisfyForm {overflow:hidden; margin:0 15px; background:url("http://image.thefingers.co.kr/academy2012/myfingers/dotline1.gif") left bottom repeat-x;}
+.satisfyForm dt, .satisfyForm dd {float:left;}
+.satisfyForm dt {width:70px; font-weight:bold; padding-top:2px;}
+.satisfyForm dd {padding-left:20px;}
+dl.bgNone {background:none;}
+
+.afterView .rowType {padding:0 23px; width:152px;}
+.afterView .rowType dt {width:60px; padding-top:2px; text-align:left;}
+
+.afterView th {padding:20px 0; text-align:center;}
+.afterView td {padding:20px;}
+.afterView td dt {border-bottom:1px dashed #bbb; padding-bottom:10px; position:relative; width:100%;}
+.afterView td dt p {padding-right:80px;}
+.afterView td dt p span {display:block; padding:0 0 3px 0;}
+.afterView td dt .date {position:absolute; right:0; bottom:10px; padding-right:0;}
+.afterView td dd {padding-top:5px;}
+.afterView td dd p {padding:10px 0;}
+
+/* login */
+.loginWrap {overflow:hidden; position:relative; padding-bottom:105px;}
+.loginWrap:after {position:absolute; left:50%; top:0; width:1px; height:100%; background-color:#e0e0e0; content:'';}
+.loginWrap .ftLt {width:480px;}
+.loginWrap .ftRt {width:479px; border-left:1px solid #e0e0e0;}
+.loginWrap .loginForm {padding:60px 65px 50px 70px;}
+
+.login {padding:25px 0; position:relative; width:100%;}
+.login span {padding-right:10px; display:inline-block;}
+.login .btnLogin {position:absolute; top:25px; right:0;}
+.idSave {position:absolute; top:95px; left:50px;}
+
+.loginAdd {position:absolute; bottom:0; width:50%; background:#f8f8f8; border-bottom:1px solid #ddd;}
+.loginAdd img {vertical-align:top; display:inline;}
+.loginAdd dl {padding:20px 90px;}
+.loginAdd dl dt, .loginAdd dl dd {padding-left:10px;}
+.loginAdd dl dt {background:url("http://image.thefingers.co.kr/academy2012/common/blt05.gif") left 5px no-repeat;}
+
+.loginLimitV15a {width:246px; padding:12px 22px; border:1px solid #fe734e;}
+.loginLimitV15a .lmtMsg1 {padding-left:35px; color:#fe734e; font-weight:bold; font-size:12px; letter-spacing:0; background:url(http://image.thefingers.co.kr/academy2012/member/ico_limit.png) 0 50% no-repeat;}
+
+.memberGuideWrap {overflow:hidden; border-top:1px solid #ddd; border-bottom:1px solid #ddd; padding:20px 45px;}
+.memberGuideWrap dl {float:left;}
+.memberGuide {width:330px; padding:20px 25px 20px 80px; background-repeat:no-repeat; background-position:left 20px;}
+.memberGuide img {vertical-align:top; display:inline;}
+.memberGuide dd {padding-top:10px;}
+
+.memGrade {background-image:url("http://image.thefingers.co.kr/academy2012/member/benefit_img01.gif");}
+.memMileage {background-image:url("http://image.thefingers.co.kr/academy2012/member/benefit_img02.gif");}
+.memStay {background-image:url("http://image.thefingers.co.kr/academy2012/member/benefit_img03.gif");}
+.memInterest {background-image:url("http://image.thefingers.co.kr/academy2012/member/benefit_img04.gif");}
+.memCounsel {background-image:url("http://image.thefingers.co.kr/academy2012/member/benefit_img05.gif");}
+.memEvent {background-image:url("http://image.thefingers.co.kr/academy2012/member/benefit_img06.gif");}
+
+.popContainer .loginForm {padding:15px 50px 0 50px;}
+.popContainer .login {padding:25px 0 15px 0;}
+.popLoginAdd {position:relative; padding-bottom:97px; border-top:1px solid #e0e0e0; overflow:hidden; background:#f8f8f8;}
+.popLoginAdd .ftLt {left:0; width:240px;}
+.popLoginAdd .ftRt {right:0; width:239px; border-left:1px solid #e0e0e0;}
+.popLoginAdd .loginAdd {border-bottom:none;}
+.popLoginAdd .loginAdd dl {padding:25px 20px; text-align:center;}
+.popLoginAdd .loginAdd dl dt {background:none; padding-left:0;}
+.popLoginAdd .loginAdd dl dd {text-align:center; padding-left:0;}
+
+
+/* id,pw search */
+.idSearchWrap {overflow:hidden; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0;}
+.idSearchWrap .ftLt {width:599px; border-right:1px solid #e0e0e0;}
+.idSearchWrap .ftRt {width:360px;}
+.idSearchWrap .idSearch {padding:50px 60px 50px 60px;}
+
+.searchInput {padding:25px 0; position:relative; width:100%;}
+.searchInput span {padding-right:10px; display:inline-block; width:101px;}
+.searchInput .btnIdSearch {position:absolute; top:25px; right:0;}
+.idAgree {position:absolute; top:90px; left:114px;}
+
+.idSearchCmt {border-bottom:1px solid #e0e0e0; padding:20px; background:#fafafa;}
+
+.pwSearchWrap {overflow:hidden; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0;}
+.pwSearchWrap .emailSend {float:left; width:315px;}
+.pwSearchWrap .phoneSend {float:left; width:328px; border-left:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
+.pwSearchWrap .ipinSearch {float:right; width:315px;}
+.pwSearchWrap .ipinSearch .pwSearch span {padding-right:10px; display:inline-block; width:50px;}
+.pwSearchWrap .pwSearch {padding:30px 22px;}
+.pwSearchWrap .phoneSend .pwSearch {padding:30px 24px;}
+.pwSearchWrap .searchInput {padding:25px 0 0 0;}
+
+.popup2 h1 {font-size:16px; line-height:20px;}
+
+.photoList {overflow:hidden; width:100%;}
+.photoList img {vertical-align:top; display:inline;}
+.photoList li {float:left; padding-right:10px;}
+.photoList li:hover, .photoList li.photoOn {position:relative;}
+.photoList li:hover span, .photoList li.photoOn span {display:block; position:absolute; left:0; top:0; width:42px; height:42px; cursor:pointer; background:url("http://image.thefingers.co.kr/academy2012/common/photo_on.gif") left top no-repeat;}
+
+
+/* CS */
+.lnbNotice {width:100%;}
+.lnbNotice dt {padding-bottom:5px; position:relative;}
+.lnbNotice dt span {position:absolute; right:0; top:0;}
+.lnbNotice dd {padding:10px 0 10px 5px; border-top:2px solid #eaeaea; border-bottom:1px solid #eaeaea;}
+
+.faqSearchWrap {background:url("http://image.thefingers.co.kr/academy2012/cs/bg_quick_service_line.gif") left bottom repeat-x; padding-bottom:11px; position:relative; height:70px;}
+.faqSearchWrap img {vertical-align:top; display:inline;}
+.faqSearch {background:#7fa843; width:480px; padding:24px 20px;}
+.faqSearch .select {height:22px;}
+
+.quickSvc {position:absolute; right:0; top:0; background:url("http://image.thefingers.co.kr/academy2012/cs/bg_quick_service.gif") right top no-repeat; width:227px; height:81px;}
+.quickSvc dl {padding:13px 18px; font-size:9px; line-height:9px;}
+.quickSvc dl dt {padding-bottom:5px;}
+.quickSvc dl dt img {vertical-align:top; display:inline;}
+.quickSvc dl dd .infoList01 li {float:left; width:85px; padding:6px 0 6px 10px; background-position:left 8px;}
+.quickSvc dl dd .infoList01 li.dotLine {border-bottom:1px dotted #ddd;}
+
+.mapWrap {border:4px solid #f0f0f0; position:relative; padding:20px 133px 20px 20px;}
+.mapWrap .mapList {position:absolute; right:-4px; top:20px; width:122px;}
+.mapWrap .mapList li {border-bottom:1px solid #fff; background:url("http://image.thefingers.co.kr/academy2012/cs/map_list_off.gif") right top repeat-y;}
+.mapWrap .mapList li a {display:block; padding:10px 10px 6px 17px; color:#777; letter-spacing:-1px;}
+.mapWrap .mapList li:hover, .mapWrap .mapList li.listOn {background:url("http://image.thefingers.co.kr/academy2012/cs/map_list_on.gif") left 50% no-repeat;}
+.mapWrap .mapList li:hover a, .mapWrap .mapList li.listOn a {color:#fff;}
+.mapWrap h3 {font-size:16px; line-height:20px; color:#000;}
+.mapWrap .boardType {border-top:none;}
+
+.useInfo {background:url("http://image.thefingers.co.kr/academy2012/cs/bg_use.jpg") left top no-repeat; padding:53px 0 70px 60px;}
+.useLink {overflow:hidden;}
+.useLink li {float:left;}
+
+/* fingers story */
+.totalTxt {font-family:verdana, sans-serif; border-left:1px solid #e8e8e8; line-height:13px; color:#000; padding-left:10px; margin:5px 0 0 10px;}
+
+.moveBtn span {font-size:8px; line-height:8px;}
+.moveBtn img {vertical-align:top; display:inline;}
+
+.storyCont {padding:10px 0; border-bottom:1px solid #ddd; text-align:center;}
+
+.scrapDo {position:relative; float:left;}
+.scrapDo span {cursor:pointer;}
+.scrapView {border:1px solid #bbb; border-top:none; width:87px; padding:10px 7px 7px 7px; overflow:hidden; position:absolute; left:0; top:19px; background:#fff url("http://image.thefingers.co.kr/academy2012/common/lyr_top_bg.gif") left top no-repeat; z-index:100;}
+.scrapView li {float:left; padding:0 2px;}
+
+.cmtWrap .boardType {border-top:none;}
+.cmtWrap .boardType td {padding:15px 0;}
+.cmtWrap .boardType td span {padding:0;}
+.cmtBox {position:relative; padding:15px 175px 15px 15px; background:#f5f5f5;}
+.cmtBox a {position:absolute; right:15px; top:15px; display:block;}
+
+
+/* category */
+.teacherCmtWrap {overflow:hidden; background:#f5f5f5; padding:15px;}
+.teacherCmtWrap .ftLt {width:120px; text-align:center;}
+.teacherCmtWrap .ftLt img {vertical-align:top;}
+.teacherCmtWrap .ftLt span {display:block;}
+.teacherCmtWrap .ftRt {width:310px; min-height:133px; border-left:1px dashed #d2d2d2; padding-left:11px;}
+
+.detailCont {padding:30px 20px 60px 20px;}
+.detailArea {text-align:center; padding:30px 0 20px 0;}
+
+.openLyr {table-layout:fixed;}
+.openLyr .titArea {cursor:pointer;}
+.openLyr .viewArea td {background:#f8f8f8; padding:5px 30px;}
+
+.afterResult {overflow:hidden; padding:10px 0;}
+.detailAfter .starView {width:165px;}
+.detailAfter .starView dt {width:60px; text-align:left;}
+.detailAfter .afterCont {width:470px; text-align:left;}
+.detailAfter .afterCont p {border-left:1px dashed #ddd; min-height:90px; padding-left:20px; line-height:18px;}
+
+.viewArea .aArea div {padding:20px 20px 20px 70px;}
+
+.questionWrite {padding:30px 20px; border-bottom:1px solid #ddd;}
+.btnQnaWrite, .btnQnaCnacel {cursor:pointer;}
+
+.icoPhoto {vertical-align:top; margin:2px 0 0 5px;}
+ 
+.sideListWrap {border-top:1px solid #ddd; text-align:center; padding:15px 10px;}
+.sideListWrap dt {padding-top:5px;}
+.sideListWrap dd li {padding:12px 0;}
+.sideListWrap dd span {display:block;}
+.sideListWrap dd em {font-style:normal;}
+
+.vrBtn a {display:block; width:100%; position:relative;}
+.vrBtn span {position:absolute; left:50%; top:50%; margin:-21px 0 0 -21px; background:url("http://image.thefingers.co.kr/academy2012/common/play.png") left top no-repeat; width:43px; height:43px;}
+
+.lyrWrap {border:2px solid #bbb; position:absolute; left:50%; top:50%; background:#fff;}
+.innerlyr {width:100%; position:relative;}
+.lyrHead {background:#eee; padding:10px 0;}
+.lyrCont {padding:30px 0;}
+.lyrCloseBtn {position:absolute; right:10px; top:10px; cursor:pointer;}
+
+.bestLectureWrap {background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif") left bottom repeat-x; padding:15px 0 40px 0;}
+.bestLecture {overflow:hidden; width:100%;}
+.bestLecture li {position:relative; float:left; width:240px; height:240px; border-bottom:1px solid #eaeaea;}
+.bestLecture li img {vertical-align:top;}
+.bestLecture li .topFlag {position:absolute; width:37px; height:51px;}
+.topFlag {right:10px; top:0;}
+.bestCont {border-right:1px solid #eaeaea; width:200px; height:60px; padding:20px 19px 0 20px; text-align:center;}
+.bestCont p {font-weight:bold; color:#000;}
+.bestCont a {color:#000;}
+.best4 .bestCont {border-left:1px solid #eaeaea; width:199px;}
+
+.btnRt {position:absolute; right:0; top:0;}
+
+.top3Best {overflow:hidden; padding:10px 0 20px 0;}
+.top3Best dt {width:90px; float:left;}
+.top3Best dd {width:870px; float:right;}
+.top3Best dd ul {width:100%; overflow:hidden;}
+.top3Best dd li {width:240px; padding-left:50px; float:left; text-align:center;}
+.top3Best dd li .subject {min-height:32px;}
+.top3Best dd li .subject a {color:#000;}
+.top3Best .top1 {background:url("http://image.thefingers.co.kr/academy2012/lecture/top1.gif") 28px 3px no-repeat;}
+.top3Best .top2 {background:url("http://image.thefingers.co.kr/academy2012/lecture/top2.gif") 27px 3px no-repeat;}
+.top3Best .top3 {background:url("http://image.thefingers.co.kr/academy2012/lecture/top3.gif") 27px 3px no-repeat;}
+
+.categoryWrap {border:1px solid #e2e2e2; background:#fff; padding:1px;}
+.categoryWrap ul {background:#f5f5f5; overflow:hidden; padding:8px 25px 5px 25px;}
+.categoryWrap ul li {float:left; background:url("http://image.thefingers.co.kr/academy2012/common/blt04.gif") left 6px no-repeat; padding:3px 30px 3px 10px; white-space:nowrap;}
+.categoryWrap ul li.selected {background:url("http://image.thefingers.co.kr/academy2012/common/blt07.gif") left 6px no-repeat; font-weight:bold; color:#ff815f;}
+.categoryWrap ul li.selected a {color:#ff815f;}
+
+/* ver1
+.processStep {overflow:hidden;}
+.processStep li {float:left; padding-right:20px;}
+*/
+
+/* 201609 ¸®´º¾ó */
+.processStep {overflow:hidden;}
+.processStep li {float:left; font-size:28px; line-height:1.8; padding:0 0 0 61px; color:#999; font-weight:500; letter-spacing:-1px; background:url(http://image.thefingers.co.kr/2016/common/bg_tit_process.gif) no-repeat 26px 50%;}
+.processStep li:first-child {padding:0; background:none;}
+.processStep .current {font-size:38px; line-height:1.2; color:#b1da2b; font-weight:600;}
+
+.memInfoBox {background:#f5f5f5; width:170px; padding:10px 12px;}
+.memInfoBox dt {padding:10px 5px 5px 30px; font-size:12px; background-position:left top; background-repeat:no-repeat; border-bottom:1px dashed #c6c6c6;}
+.memInfoBox dd {padding:10px 10px 5px 10px;}
+.memInfoBox dd p {padding:2px 0;}
+.memInfoBox dd span {width:70px; display:inline-block;}
+
+.memStaff dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/memgrade_symbol_staff.gif");}
+.memTree dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/memgrade_symbol_tree2.gif");}
+.memBean dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/memgrade_symbol_bean2.gif");}
+.memLeaf dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/memgrade_symbol_leaf2.gif");}
+.memBud dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/memgrade_symbol_bud2.gif");}
+.memSeed dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/memgrade_symbol_seed2.gif");}
+.noMem dt {background-image:url("http://image.thefingers.co.kr/academy2012/common/symbol2.gif"); padding:7px 5px 8px 30px;}
+
+.memStaff strong {color:#d82525;}
+.memTree strong {color:#865e25;}
+.memBean strong {color:#f68d5d;}
+.memLeaf strong {color:#84ae47;}
+.memBud strong {color:#a3cf6c;}
+.memSeed strong {color:#f4ca2c;}
+
+.registConfirmBox {border:5px solid #f1f1f1; background:#fff; padding:7px 20px 5px 20px; font-size:12px; overflow:hidden;}
+.registConfirmBox div {border-bottom:1px solid #e2e2e2;}
+.registConfirmBox p {padding:10px 0;}
+.registConfirmBox span {padding-left:20px;}
+.registConfirmBox .positionR {margin-right:65px; padding-right:5px;}
+.registConfirmBox dt {float:left; width:140px; text-align:center; padding-top:25px;}
+.registConfirmBox dd {float:right; width:730px;}
+
+.emptyClass {background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line2.gif") left top repeat-x; padding:70px 0 30px 0; text-align:center;}
+.emptyMsg {background:url("http://image.thefingers.co.kr/academy2012/pay/img_noClass.gif") center top no-repeat; padding-top:160px;}
+.emptyCartMsg {background:url("http://image.thefingers.co.kr/academy2012/pay/img_noCart.gif") center top no-repeat; padding-top:165px;}
+
+.slaeInfoWrap {width:660px; float:left;}
+.payPriceWrap {width:270px; float:right;}
+
+.cardInfo {margin:0 20px; width:221px;}
+.cardInfo dt {padding:10px 0 5px 0;}
+.cardInfo dd ul {border-top:1px solid #e2e2e2; padding:10px 5px;}
+.cardInfo dd ul li {color:#000; padding:2px 0;}
+.cardInfo dd em {display:inline-block; width:60px;}
+.cardInfo dd strong {display:inline-block; width:60px;}
+.boardType .contBox3 {border-bottom:1px solid #e2e2e2;}
+
+.cardInfo dd ul.infoList03 li {color:#777; padding:1px 5px 2px 10px;}
+
+.electInsur {border-top:1px dashed #bbb; border-bottom:1px dashed #bbb; padding:15px;}
+.electInsur dt {width:120px;}
+
+/* search */
+.serarchInput {border:4px solid #84af46; padding:6px 10px 5px 10px; font-size:16px; font-family:Dotum, "µ¸¿ò", sans-serif; color:#699429;}
+.searchBtn {vertical-align:top; margin-left:5px;}
+
+.bestKey {margin:20px auto;}
+.bestKey strong {padding-right:14px; background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") right 3px no-repeat;}
+.bestKey span {color:#699429; padding-left:10px;}
+.bestKey em {font-style:normal; padding:0 5px;}
+
+.searchCate {padding:12px 120px 9px 12px; border-bottom:2px solid #ccc; position:relative; width:828px;}
+.searchCate dt {padding-top:4px; width:60px;}
+.searchCate dd {width:740px;}
+.searchCate .select {margin-right:8px;}
+.searchCate .sorting {position:absolute; right:0; top:12px; margin-right:3px;}
+
+.noResult {padding:100px 0;}
+
+.searchTip {border-top:1px solid #ccc; border-bottom:1px solid #ccc; background:#f8f8f8; padding:25px;}
+.searchTip .rowType dt {width:155px; text-align:center;}
+
+.categoryList {overflow:hidden;}
+.categoryList li {float:left; padding:6px 10px 6px 11px; line-height:130%; height:13px; background:url("http://image.thefingers.co.kr/academy2012/common/line2.gif") left 50% no-repeat; white-space:nowrap;}
+.categoryList li.selected {font-weight:bold; color:#699429;}
+.categoryList li.selected a {color:#699429;}
+
+table.vodType {border-top:none;}
+table.vodType td {padding:20px 15px;}
+table.vodType td .subject {text-align:left; font-size:12px;}
+
+
+/* diy shop */
+.couponBox {border:1px solid #ddd; margin:0 auto; width:300px; text-align:center;}
+.couponBox dt {height:23px; text-indent:-9999px; overflow:hidden;}
+.couponBox dd {padding:12px 0;}
+.couponBox dd.rate {background:#f6f6f6; padding:22px 0; font-size:55px; line-height:55px; font-family:arial, sans-serif; color:#589527; font-weight:bold;}
+
+.greenCp dt {background:#589527 url("http://image.thefingers.co.kr/academy2012/common/coupon_head1.gif") left center no-repeat;}
+.greenCp dd.rate {color:#589527;}
+
+.pinkCp dt {background:#fe734e url("http://image.thefingers.co.kr/academy2012/common/coupon_head2.gif") left center no-repeat;}
+.pinkCp dd.rate {color:#fe734e;}
+
+.couponDetailWrap {border-top:1px solid #ddd;}
+.couponDetail {overflow:hidden; border-bottom:1px solid #ddd;}
+.couponDetail dt, .couponDetail dd {padding:7px 10px 4px 10px;}
+.couponDetail dt {width:80px; float:left; font-weight:bold; color:#000;}
+.couponDetail dd {width:200px; float:left;}
+
+.diyshopCate {padding:12px 120px 9px 12px; border-bottom:1px solid #ccc; position:relative; width:636px;}
+.diyshopCate dt {padding-top:4px; width:85px;}
+.diyshopCate dd {width:515px;}
+.diyshopCate .select {margin-right:8px; float:left;}
+.diyshopCate .viewing {position:absolute; right:0; top:12px; margin-right:3px; overflow:hidden;}
+
+.howView {overflow:hidden; float:left;}
+.howView li {float:left; padding:5px;}
+.howView li a {background-position:left top; background-repeat:no-repeat; height:12px; text-indent:-9999px; display:block; overflow:hidden;}
+.howView li a.bigImg {background-image:url("http://image.thefingers.co.kr/academy2012/common/btn/view_big.gif"); width:53px;}
+.howView li a.smallImg {background-image:url("http://image.thefingers.co.kr/academy2012/common/btn/view_small.gif"); width:62px;}
+.howView li.selected a {background-position:left -13px;}
+
+.hotKey dd {background:#f5f5f5; padding:5px 15px 10px 15px;}
+.hotKey dd li {border-bottom:1px dashed #d2d2d2; padding:5px 10px 3px 20px; background-image:url("http://image.thefingers.co.kr/academy2012/diyshop/hot_keywords_lank.gif"); background-repeat:no-repeat;}
+.hotKey dd .lank01 {background-position:5px 5px;}
+.hotKey dd .lank02 {background-position:5px -18px;}
+.hotKey dd .lank03 {background-position:5px -42px;}
+.hotKey dd .lank04 {background-position:5px -66px;}
+.hotKey dd .lank05 {background-position:5px -90px;}
+
+.bestBrand {font-size:10px; line-height:10px;}
+.bestBrand img {vertical-align:top; display:inline;}
+.bestBrand dt {position:relative;}
+.bestBrand dd {padding-top:5px;}
+.bestBrand .callTabs {right:0; top:1px;}
+
+.callTab {position:absolute; overflow:hidden;}
+.callTab li {float:left; width:10px; height:10px; margin-left:10px; text-indent:-99999px; overflow:hidden; background:url("http://image.thefingers.co.kr/academy2012/common/tab/switch_tab.gif") no-repeat -13px top; cursor:pointer;}
+.callTab li.selected {background-position:left top;}
+
+.callTabs {position:absolute; overflow:hidden;}
+.callTabs li {float:left; width:10px; height:10px; margin-left:10px; text-indent:-99999px; overflow:hidden; background:url("http://image.thefingers.co.kr/academy2012/common/tab/switch_tab.gif") no-repeat -13px top; cursor:pointer;}
+.callTabs li.selected {background-position:left top;}
+
+.brandList dt {padding-bottom:5px;}
+.brandListView {overflow:auto; height:200px; border:1px solid #ddd;}
+.brandView {padding:10px;}
+.brandView li {padding:1px 0;}
+
+#wishForm {background:none;}
+#wishForm .popContainer {padding:0;}
+
+.diyshopWrap {overflow:hidden; background:url("http://image.thefingers.co.kr/academy2012/common/line3.gif") left bottom repeat-x; padding-bottom:3px;}
+.viewWin {width:550px; height:345px; overflow: hidden; position: relative;}
+.viewWin .imgSlide {position:absolute; left:0; top:0;}
+.mainSlideBnr {float:left; width:550px; height:345px; padding-bottom:25px; position:relative;}
+.mainBnr01 {float:right; width:190px; background:url("http://image.thefingers.co.kr/academy2012/diyshop/main_bnr_bg.gif") left top repeat; padding:8px 0;}
+.mainBnr01 p {padding:8px 0;}
+
+.todayPick .contTitleWap2 {position:relative;}
+.todayPick .contTitleWap2 .callTab {right:5px; top:2px;}
+
+.mainBnr02 img {vertical-align:top;}
+.mainBnr02 .brickWrap {float:left; width:481px;}
+.mainBnr02 .brickWrap ul {overflow:hidden;}
+.mainBnr02 .brickWrap ul li {width:200px; float:left; padding:0 20px 19px 20px; border-bottom:1px solid #e2e2e2;}
+.mainBnr02 .brickWrap ul li:first-child {border-right:1px solid #e2e2e2;}
+.mainBnr02 .ftRt {width:250px;}
+
+.slideNum {overflow:hidden; position:absolute; right:0; bottom:5px;}
+.slideNum li {float:left; padding:1px 5px 1px 10px; background:url("http://image.thefingers.co.kr/academy2012/common/num_line.gif") left top no-repeat;}
+.slideNum li.first {background:none;}
+.slideNum li a.active {background-position:left -13px;}
+.slideNum li a {display:block; width:13px; height:11px; text-indent:-99999px; overflow:hidden; background-repeat:no-repeat; background-position:left -1px;}
+.slideNum li .num01 {background-image:url("http://image.thefingers.co.kr/academy2012/common/num01.gif");}
+.slideNum li .num02 {background-image:url("http://image.thefingers.co.kr/academy2012/common/num02.gif");}
+.slideNum li .num03 {background-image:url("http://image.thefingers.co.kr/academy2012/common/num03.gif");}
+
+.cartPutin {background:url("http://image.thefingers.co.kr/academy2012/diyshop/img_cart.gif") center top no-repeat; text-align:center; padding:55px 0 10px;}
+
+
+/* lecture PICK */
+.pick {width:100%;}
+.pick img {vertical-align:top;}
+.pick caption {display:none;}
+.pick th {text-align:right;}
+.pick td {padding:15px 0; border-bottom:1px solid #d2d2d2;}
+.pick .wrapping {width:100%; position:relative;}
+
+.pickList {width:300px; padding-left:15px;}
+.pickList:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.pickList li {width:100px; float:left; font-size:11px; line-height:13px; position:relative;}
+.pickList li.lecView {cursor:pointer;}
+
+.begin .pickList {padding-left:30px;}
+.begin .pickTag {position:absolute; left:0; top:50%; margin-top:-36px; z-index:1001;}
+
+.lyrDetail {border:5px solid #ddd; background:#fff; position:absolute; display:none;}
+.lyrDetail div {width:180px; padding:10px;}
+.bdrTop {border-top:1px solid #ddd;}
+
+.pick .lyrDetail {left:50px; top:50px;}
+.pick .high .lyrDetail {left:-160px; top:50px;}
+
+.pick .last .lyrDetail {left:50px; top:-230px;}
+.pick .high .last .lyrDetail {left:-160px; top:-230px;}
+
+/* video */
+.lnbVideo img {vertical-align:top;}
+.lnbVideo li {background:#7fa843 url("http://image.thefingers.co.kr/academy2012/vod/lnb_bg_off.gif") right 13px no-repeat; border-bottom:1px solid #fff; position:relative;}
+.lnbVideo li span {display:block; font-size:10px; line-height:11px; height:12px; padding:9px 25px 9px 0; background-repeat:no-repeat; background-position:left top; text-indent:-9999px; overflow:hidden; cursor:pointer;}
+.lnbVideo a {position:absolute; top:6px; left:55px; font-family:verdana, sans-serif; font-size:10px; color:#fff; }
+.lnbVideo .lnbOn a {color:#699429;}
+
+.videoAll span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_all.gif");}
+.videoTouch span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_touch.gif");}
+.videoSew span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_sew.gif");}
+.videoDeco span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_deco.gif");}
+.videoTaste span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_taste.gif");}
+.videoDraw span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_draw.gif");}
+.videoEnjoy span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_enjoy.gif");}
+.videoInterview span {background-image:url("http://image.thefingers.co.kr/academy2012/vod/lnb_interview.gif");}
+
+.lnbVideo li.lnbOn {background:#fff;}
+.lnbVideo li.lnbOn span {color:#777; background-position:left -30px;}
+
+.lnbVideo .videoAll {border-top:2px solid #7fa843;}
+.lnbVideo .videoAll span {padding:7px 25px 9px 0;  background-position:left -1px;}
+.lnbVideo .videoAll a {left:42px;}
+
+.lnbVideo .videoInterview {border-bottom:2px solid #7fa843;}
+.lnbVideo .videoInterview span {padding:9px 25px 7px 0;}
+.lnbVideo .videoInterview a {left:80px;}
+
+.lnbContView {height:180px; padding-left:16px;}
+.videoAll .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_all_bg.gif") right bottom no-repeat;}
+.videoTouch .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_touch_bg.gif") right bottom no-repeat;}
+.videoSew .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_sew_bg.gif") right bottom no-repeat;}
+.videoDeco .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_deco_bg.gif") right bottom no-repeat;}
+.videoTaste .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_taste_bg.gif") right bottom no-repeat;}
+.videoDraw .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_draw_bg.gif") right bottom no-repeat;}
+.videoEnjoy .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_enjoy_bg.gif") right bottom no-repeat;}
+.videoInterview .lnbContView {background:#fff url("http://image.thefingers.co.kr/academy2012/vod/lnb_interview_bg.gif") right bottom no-repeat;}
+
+.vodView {width:641px; padding:45px 16px 0 14px; margin:0 auto; background:url("http://image.thefingers.co.kr/academy2012/vod/vod_bg.gif") center top no-repeat; text-align:center; height:480px;}
+.vodTitWrap {overflow:hidden;}
+.vodTit {float:left; width:420px; margin-top:5px; padding:0 0 5px 25px; background:url("http://image.thefingers.co.kr/academy2012/vod/blt_vod.gif") left top no-repeat; text-align:left;}
+.vodBtn {float:right;}
+
+.scheduleCal img {vertical-align:top;}
+.scheduleCal dt {text-align:center; position:relative; z-index:300; width:100%;}
+.scheduleCal dt span {vertical-align:top;}
+.scheduleCal dt div.thisMonth {display:inline-block; width:250px; font:68px/1.1 arial, verdana, sans-serif; font-weight:bold; color:#000; padding:0 35px 0 25px; background:url("http://image.thefingers.co.kr/academy2012/common/arrow2.gif") right 30px no-repeat; cursor:pointer;}
+.scheduleCal dt div.monthSelect {background-position:right -50px;}
+.scheduleCal dd {z-index:90;}
+
+.scheduleCal .lyrWrap {display:none; left:50%; top:100%; margin-left:-170px; font:14px/1.1 arial, verdana, sans-serif; z-index:100;}
+.scheduleCal .lyrWrap .lyrHead {font-family:Dotum, "µ¸¿ò", sans-serif; text-align:left;}
+.scheduleCal .lyrWrap .lyrCont {padding:15px 0;}
+.scheduleCal .lyrWrap dt {font:14px/1.1 arial, verdana, sans-serif;}
+
+.selectCont {padding:0 20px;}
+.selectCont dt {border-bottom:1px solid #e2e2e2; padding:5px 0; text-align:left;}
+.selectCont dt p {padding-left:5px;}
+.selectCont dd {border-bottom:1px solid #e2e2e2; padding:4px 0;}
+.selectCont dd ul.selYear {padding:0;}
+.selectCont dd ul.selYear li {padding:3px 6px;}
+.selectCont dd ul.selMonth {padding:0 4px;}
+.selectCont dd .selctList {overflow:hidden;}
+.selectCont dd .selctList li {float:left; padding:3px 4px;}
+.selectCont dd .selctList li a {display:block; padding:2px 3px; font-weight:bold;}
+.selectCont dd .selctList li a:hover, .selectCont dd .selctList li.on a {background:#76a532; color:#fff;}
+
+.calendarTb {width:100%; border-top:2px solid #9cc65c; z-index:150;}
+.calendarTb caption {display:none;}
+.calendarTb img {vertical-align:top; display:inline;}
+.calendarTb th {background:#f5f5f5; padding:7px 0 4px 0; font-weight:bold; font-family:arial, verdana, sans-serif; font-size:14px;}
+.calendarTb th, .calendarTb td {border:1px solid #e2e2e2; text-align:center;}
+.calendarTb td {vertical-align:top;}
+.calendarTb td .innerCell {position:relative; padding:10px; width:116px; min-height:130px; text-align:left;}
+.calendarTb th.sunday, .calendarTb td.sunday .date, .calendarTb td.sunday .date a {color:#fd854f;}
+
+.calendarTb td .lecNum {font-family:verdana, sans-serif; color:#777; font-size:11px; display:inline-block; line-height:13px; font-weight:bold; vertical-align:top; font-style:normal; letter-spacing:-1px; padding-left:5px; height:23px;}
+.calendarTb td .date {font-family:arial, verdana, sans-serif; color:#777; font-size:14px; display:inline-block; line-height:14px; font-weight:bold; vertical-align:top; text-align:center;}
+.calendarTb td .date a {color:#777;}
+.calendarTb td span.today {background:url("http://image.thefingers.co.kr/academy2012/common/cal_selected_bg.gif") no-repeat left top; color:#fff; width:23px; height:19px; margin-top:-3px; padding-top:4px;}
+.calendarTb td span.today a, .calendarTb td.sunday span.today, .calendarTb td.sunday span.today a {color:#fff;}
+
+.calendarTb td .onedayC {background-position:left top;}
+.calendarTb td .weeklyC {background-position:left top;}
+.calendarTb td .onedayS {background-position:left top;}
+.calendarTb td .weeklyS {background-position:left top;}
+
+.classList {width:100%; padding-top:7px; color:#555;}
+.classList li {position:relative; cursor:pointer; padding:0 0 5px 20px; vertical-align:top; line-height:13px;}
+.classList .closing {color:#aaa;}
+
+.classList .lyrDetail {left:0; top:15px;}
+.saturday .classList .lyrDetail {left:-110px; top:100%;}
+.lastWeek .classList .lyrDetail {left:0; top:-290px;}
+.lastWeek .saturday .classList .lyrDetail {left:-110px; top:-290px;}
+
+.selectGroup {float:left; padding-top:4px;}
+.selectGroup span {padding-right:15px; vertical-align:top; line-height:130%;}
+
+.selectOption {padding-left:150px; position:relative; z-index:200;}
+.selectOption:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.allViewSelect {position:absolute; left:0; top:0; width:138px; height:23px; z-index:300;}
+.allViewSelect a {color:#777;}
+.allViewSelect dt {height:100%; height:23px; overflow:hidden; font:11px Dotum, "µ¸¿ò", sans-serif; background:url("http://image.thefingers.co.kr/academy2012/common/cal_all_view.gif") no-repeat left top;}
+.allViewSelect dt.selected {background-position:left -23px; color:#fd854f; font-weight:bold;}
+.allViewSelect dt span {display:block; height:100%; padding:6px 23px 0 10px; cursor:pointer; text-align:left;}
+.allViewSelect dd {display:none; width:100%; position:absolute; left:0; top:23px;}
+.allViewSelect dd ul {border:1px solid #d3d3d3; border-top:none; background:#fff;}
+.allViewSelect dd ul li {width:100%;}
+.allViewSelect dd ul a {display:block; height:12px; padding:6px 0 6px 30px; width:106px; line-height:13px;}
+.allViewSelect dd ul a:hover, .allViewSelect dd ul a.on{background-color:#F2F2F2;}
+
+.allViewSelect dd ul li .onedayC {background-position:10px 6px;}
+.allViewSelect dd ul li .weeklyC {background-position:10px 6px;}
+.allViewSelect dd ul li .onedayS {background-position:10px 6px;}
+.allViewSelect dd ul li .weeklyS {background-position:10px 6px;}
+
+.onedayC {background:url("http://image.thefingers.co.kr/academy2012/common/tag_o.gif") no-repeat;}
+.weeklyC {background:url("http://image.thefingers.co.kr/academy2012/common/tag_w.gif") no-repeat;}
+.onedayS {background:url("http://image.thefingers.co.kr/academy2012/common/tag_os.gif") no-repeat;}
+.weeklyS {background:url("http://image.thefingers.co.kr/academy2012/common/tag_ws.gif") no-repeat;}
+
+
+/* DIY Brand */
+.brandTopWrap {overflow:hidden; padding-bottom:10px; background:url('http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif') bottom repeat-x;}
+.brandTopWrap img {vertical-align:top;}
+.brandTopWrap .ftRt {width:700px;}
+.diybrandWrap {float:left; width:240px; height:335px;}
+.diybrandWrap dd {background:url('http://image.thefingers.co.kr/academy2012/brand/brand_bg.gif') no-repeat; height:312px;}
+.diybrandWrap .brandName {text-align:center; height:176px;}
+.diybrandWrap .brandName .engName {min-height:80px; padding-top:40px;}
+.diybrandWrap .brandExp {padding:0 20px; overflow:hidden; height:95px; margin-top:20px;}
+
+
+/* join us */
+.joinStep {overflow:hidden;}
+.joinStep img {vertical-align:top;}
+.joinStep li {float:left;}
+
+.joinWrap {padding:50px 30px;}
+
+.usedCont {border:1px solid #d6d6d6; overflow-y:scroll; padding:0 0 0 10px;}
+/* 0729Ãß°¡*/
+.agreement {color:#777; padding:10px;}
+.agreement h4 {font-size:11px; color:#444; margin:30px 0 12px;}
+.agreement h4:first-child {margin-top:0;}
+.agreement h5 {font-size:11px; margin:10px 0 5px;}
+.agreement .btnTop {display:none;}
+
+.usedCmtBox {border-bottom:1px solid #e0e0e0; padding:15px 20px; background:#fafafa; width:860px;} /* 0729¼öÁ¤ */
+div.bdrNone {border-bottom:none;}
+
+.joinGroup {background:#fafafa; padding:35px 0;}
+.joinGroup ul {overflow:hidden; margin:0 auto;}
+.joinGroup li {float:left; width:290px; text-align:center; vertical-align:top;}
+.joinGroupCont {padding:30px;}
+
+.realConfirmWrap {border-top:1px solid #eaeaea;}
+.realConfirm {padding:25px 0; position:relative; width:435px; margin:0 auto;}
+.realConfirm span {padding-right:10px; display:inline-block; width:65px;}
+.realConfirm .btnRealOk {position:absolute; top:25px; right:0;}
+.realConfirm .idAgree {position:absolute; top:90px; left:77px;}
+
+.doneMsg {background:url("http://image.thefingers.co.kr/academy2012/member/done_bg.gif") left top no-repeat; padding:109px 0 116px 83px; position:relative; width:877px;}
+.doneMsg .loginForm {position:absolute; top:109px; right:112px; width:320px;}
+
+.joinWrap .boardType {border-top:1px solid #e2e2e2;}
+
+.warning {background:url("http://image.thefingers.co.kr/academy2012/common/ico_warning.gif") left top no-repeat; padding:2px 0 0 17px;}
+
+.msgBox {padding:65px 30px;}
+div.mailRe {background:url('http://image.thefingers.co.kr/academy2012/member/join_confirm_img01.jpg') no-repeat right top;}
+div.joinOk {background:url('http://image.thefingers.co.kr/academy2012/member/join_confirm_img02.jpg') no-repeat right top; border-bottom:1px solid #9cc65c}
+
+.erProcess dd {overflow:hidden; _zoom:1; background:url('http://image.thefingers.co.kr/academy2012/member/join_error_box_bg.gif') center bottom no-repeat; width:900px; padding:10px 0 30px 0;}
+.erProcess dd div {width:50%; float:left; text-align:center; padding-top:85px; background-position:center top; background-repeat:no-repeat;}
+.erProcess dd div.errorEmail {background-image:url('http://image.thefingers.co.kr/academy2012/member/join_icon_email.gif');}
+.erProcess dd div.errorPhone {background-image:url('http://image.thefingers.co.kr/academy2012/member/join_icon_phone.gif');}
+.erProcess dd div p {text-align:center; font-size:12px;}
+.erProcess dd div p img {display:inline;}
+
+.lyrBoxTop {background:url('http://image.thefingers.co.kr/academy2012/common/lyr_top_lt.png') no-repeat left top; height:13px; font-size:5px; line-height:5px;}
+.lyrBoxTop div {margin-left:13px; background:url('http://image.thefingers.co.kr/academy2012/common/lyr_top_rt.png') no-repeat right top; height:13px; font-size:5px; line-height:5px;}
+.lyrBox {background:url('http://image.thefingers.co.kr/academy2012/common/lyr_btm_lt.png') no-repeat left bottom;}
+.lyrBox .lyrInner {margin-left:13px; background:url('http://image.thefingers.co.kr/academy2012/common/lyr_btm_rt.png') no-repeat right bottom; padding:39px 59px 34px 39px}
+.infoFrame dd {padding:25px 10px; line-height:18px; text-align:center;}
+.lyrBtm {overflow:hidden; _zoom:1; padding:10px 5px 0 5px; border-top:1px solid #9cc65c;}
+
+.lyrBoxTop2 {background:url('http://fiximage.10x10.co.kr/web2012/common/lyrpop_top_lt2.png') no-repeat left top; height:13px; font-size:5px; line-height:5px;}
+.lyrBoxTop2 div {margin-left:13px; background:url('http://fiximage.10x10.co.kr/web2012/common/lyrpop_top_rt2.png') no-repeat right top; height:13px; font-size:5px; line-height:5px;}
+.lyrBox2 {background:url('http://fiximage.10x10.co.kr/web2012/common/lyrpop_btm_lt2.png') no-repeat left bottom;}
+.lyrBox2 .lyrInner {margin-left:13px; background:url('http://fiximage.10x10.co.kr/web2012/common/lyrpop_btm_rt2.png') no-repeat right bottom; padding:39px 59px 34px 39px}
+
+.infoTbl {border-top:1px solid #ddd; width:100%; border-spacing:0; padding:0;}
+.infoTbl th, .infoTbl td {border-bottom:1px solid #ddd; font-size:12px; padding:10px 20px 5px 20px; line-height:18px;}
+.infoTbl th {background:#f5f5f5; font-weight:normal; text-align:left;}
+
+.infoFrame dd .methodInput {margin:15px auto; overflow:hidden; _zoom:1;}
+.infoFrame dd .methodInput dt, .methodInput dd {float:left; text-align:left;}
+.infoFrame dd .methodInput dt {width:60px; height:14px; font-size:12px; font-weight:bold; line-height:12px; padding:9px 10px 0 0;}
+.infoFrame dd .methodInput dd {padding:0 10px;}
+.infoFrame dd .methodInput dd span {padding:6px 5px 0px 5px; display:inline-block;}
+.infoFrame dd .methodInput dd select {margin-left:10px;}
+
+.bgGray2 {background:#f3f3f3; border:1px solid #ddd; padding:30px 25px;}
+.bgWhite {background:#fff; border:1px solid #ddd; padding:20px 30px;}
+
+.idpwContBox {overflow:hidden; _zoom:1}
+.idpwContBox .ftLt {width:478px;}
+.idpwContBox .ftRt {width:318px;}
+.idpwContBox dt {text-align:center; padding-bottom:10px; font-weight:bold; border-bottom:1px solid #ddd; font-size:12px; line-height:18px;}
+.idpwContBox dt .radio {margin-right:3px;}
+.idpwContBox dt span {padding:0 10px;}
+.idpwContBox img {vertical-align:top; display:inline;}
+.idpwContBox dd {text-align:left;}
+.idpwContBox dd.ct {text-align:center;}
+.idpwContBox dd strong {display:inline-block; padding-top:5px; text-align:left;}
+.idpwContBox dd .tblTxtInput {height:18px;}
+.idpwContBox dd .tblSlct {height:24px;}
+.idpwContBox dd fieldset {margin:0 auto;}
+.idpwContBox .ftLt dd {padding:10px 35px;}
+.idpwContBox .ftRt dd {padding:10px 15px;}
+
+.idResult {padding-top:30px;}
+.idResult p {padding-left:30px;}
+.idResult .idResultBox {background:#aaa; padding:12px 30px 9px 30px; text-align:center; color:#fff; margin-top:10px; font-size:12px;}
+.idResult .idResultBox span {display:inline-block; padding:4px 10px; white-space:nowrap; max-width:261px;}
+
+/* good teacher */
+.teacherWrap {overflow:hidden; background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif") left bottom repeat-x; padding:0 0 40px 0;}
+.teacherWrap img {vertical-align:top;}
+.teacherVisual {float:left; width:650px; border-right:1px solid #ddd; padding-right:19px;}
+.teacherVisual dt {float:left;}
+.teacherVisual dd {float:left; position:relative; overflow:hidden; width:418px; height:340px;}
+.teacherVisual dd span.prev {position:absolute; left:10px; top:160px; z-index:10;}
+.teacherVisual dd span.next {position:absolute; right:10px; top:160px; z-index:10;}
+.teacherVisual .slidesContainer {height:340px;}
+
+.goodTeacher {float:right; width:271px; font-size:10px; line-height:10px;}
+.goodTeacher img {vertical-align:top; display:inline;}
+.goodTeacher dt {position:relative; border-bottom:1px solid #e2e2e2; padding:8px 0;}
+.goodTeacher dd {padding-top:17px;}
+.goodTeacher .callTab {right:0; top:8px;}
+
+.teacherList {border-bottom:1px solid #ccc;}
+.teacherList caption {display:none;}
+.teacherList td {vertical-align:top;}
+.teacherList td div {width:180px; padding:10px 0 40px 0;}
+.teacherList td div.trCont {padding:5px 0 3px 0; border-top:2px solid #9cc65c; border-bottom:1px solid #ddd;}
+.teacherList td div.trCont p {padding:3px 5px;}
+
+.teacherView {width:100%;}
+.teacherView caption {display:none;}
+.teacherView th {background:#f8f8f8 url("http://image.thefingers.co.kr/academy2012/common/teacher_bg_btm.gif") left bottom repeat-y; border-top:1px solid #000; border-bottom:1px solid #e2e2e2; font-weight:normal; vertical-align:top;}
+.teacherView th div {width:242px; background:url("http://image.thefingers.co.kr/academy2012/common/teacher_bg.gif") left top no-repeat; padding:31px 0 36px 0;}
+.teacherView td {border:1px solid #e2e2e2; border-left:none; padding:20px 40px 20px 50px; vertical-align:top;}
+.teacherView td dl.ftLt {width:380px; border-right:1px dashed #d6d6d6; padding-right:35px;}
+.teacherView td .actView {overflow:hidden; height:176px;}
+.teacherView td dd.extend {overflow:visible; height:100%;}
+.teacherView td .btnMoreView {width:45px; height:12px; display:block; background:url("http://image.thefingers.co.kr/academy2012/common/btn/more_view.gif") left top no-repeat; text-indent:-9999px; overflow:hidden; cursor:pointer;}
+.teacherView td p.fold {background-position:left -11px;}
+.teacherView td dl.ftRt {width:175px; padding-left:35px;}
+.teacherView td dl dd {white-space:normal; word-break:break-all;}
+
+.trGallery {padding:65px 60px; border:1px solid #e2e2e2; border-top:none; overflow:hidden;}
+.trGallery .galleryList {float:left; width:320px;}
+.trGallery .galleryList dt {border-bottom:1px solid #ddd; padding:0 19px 6px 19px;}
+.trGallery .galleryList dd {}
+.trGallery .galleryList dd ul {overflow:hidden; padding:10px; border-bottom:1px solid #ddd;}
+.trGallery .galleryList dd ul li {float:left; padding:9px; position:relative; width:80px;}
+.trGallery .galleryList dd ul li img {vertical-align:top; border:1px solid #eaeaea;}
+.trGallery .galleryList dd ul li span {position:absolute; left:10px; top:10px; display:none; width:80px; height:80px; background:url("http://image.thefingers.co.kr/academy2012/common/photo_frame.gif") left top no-repeat;}
+.trGallery .galleryList dd ul li.current img {border:1px solid #fd854f;}
+.trGallery .galleryList dd ul li.current span {display:block;}
+.trGallery .gallerySlide {float:right; width:400px; position:relative; text-align:center; padding:0 48px;}
+.trGallery .gallerySlide .slidesContainer {width:400px;}
+.trGallery .gallerySlide span.prev {position:absolute; left:0; top:182px;}
+.trGallery .gallerySlide span.next {position:absolute; right:0; top:182px;}
+
+.fullArea .detailAfter .afterCont {width:730px;}
+.trClassAfter {background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif") left top repeat-x; padding-top:35px;}
+
+
+/* event */
+.nomemMailing {position:relative; width:100%; padding-bottom:25px;}
+.nomemMailing span.tit {width:65px; display:inline-block; font-weight:bold;}
+.nomemMailing .siteAgree {position:absolute; left:65px; bottom:0;}
+
+.eventMenu {overflow:hidden; position:absolute; right:200px; bottom:20px;}
+.eventMenu img {vertical-align:top;}
+.eventMenu li {float:left; padding:0 2px;}
+
+.eventCont {background:url("http://image.thefingers.co.kr/academy2012/common/line4.gif") left bottom repeat-x; padding:10px 0 65px 0;}
+
+.eventBnr {position:relative; width:100%;}
+.eventBnr span {position:absolute; left:0; top:0; width:99px; height:99px; display:block;}
+
+.eventInfo {border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; background:#f5f5f5; padding:12px 0 10px 40px;}
+.eventInfo .infoList01 li {padding:2px 40px 2px 10px;}
+.eventInfo .infoList01 li span {padding:0 10px;}
+
+.eventCoupon {width:100%; border-top:2px solid #9cc65c;}
+.eventCoupon caption {display:none;}
+.eventCoupon td {background:url("http://image.thefingers.co.kr/academy2012/event/coupon-no.gif") 50% 50% no-repeat; padding:20px 0; vertical-align:top;}
+.eventCoupon .couponBox {margin:0;}
+.eventCoupon .couponBox .down {background:url("http://image.thefingers.co.kr/academy2012/event/ico_down.gif") right 2px no-repeat; padding-right:12px; display:inline-block; margin:0 auto;}
+.eventCoupon .couponInfo {border-bottom:none; padding:0 0 20px 300px;}
+
+.couponInfo {background:url("http://image.thefingers.co.kr/academy2012/event/bg_coupon.gif") left top no-repeat; padding:0 0 45px 300px; border-bottom:3px solid #ddd;}
+
+.eventBox {border:1px solid #ddd; width:298px;}
+.eventTit {padding:15px 12px; height:33px;}
+
+.mailZineWrap {padding:50px 0 35px 0; position:relative; width:100%; text-align:center; vertical-align:top; border-bottom:3px solid #ddd;}
+.mailZineWrap .moveBtn {overflow:hidden; position:absolute; left:0; width:100%;}
+.mailZineWrap .top {top:120px;}
+.mailZineWrap .btm {bottom:127px;}
+
+.mailInfoWrap {overflow:hidden;}
+.mailInfoWrap img {vertical-align:top;}
+.mailInfo {background:url("http://image.thefingers.co.kr/academy2012/event/bg_mail.gif") left top no-repeat; padding-left:180px;}
+.mailInfo dl {width:340px;}
+.topLine {border-top:1px solid #ddd;}
+.mailInfoWrap .ftRt {width:380px; border-left:1px solid #ddd; padding:0 0 10px 30px;}
+.mailingList {width:380px;}
+.mailingList dt {padding:5px 5px 15px 5px; border-bottom:1px solid #ddd;}
+.mailingList dd {}
+.mailingList dd li {border-bottom:1px solid #ddd; overflow:hidden; padding:7px 5px 5px 5px;}
+.mailingList dd li span {display:inline-block; width:75px; padding-right:10px; margin-right:7px; font-family:verdana, sans-serif;}
+.mailingList dd li.selected span {font-weight:bold; color:#7fa843; background:url("http://image.thefingers.co.kr/academy2012/common/blt01.gif") right 5px no-repeat;}
+.mailingList dd li.selected {font-weight:bold;}
+
+.lnbBook dt {padding-bottom:9px;}
+.lnbBook dd {border-top:1px solid #ddd; border-bottom:1px solid #ddd; padding:10px;}
+.lnbBook dd li {padding:5px 0 3px 0;}
+.lnbBook dd li.selected {font-weight:bold; color:#fe734e; background:url("http://image.thefingers.co.kr/academy2012/common/blt10.gif") right 8px no-repeat;}
+.lnbBook dd li.selected a {color:#fe734e;}
+
+.lnbBook .btnWrap .pageMove {display:inline-block; width:21px; height:21px; text-indent:-9999px; background-position:left -21px; background-repeat:no-repeat; float:left;}
+.lnbBook .btnWrap .moveLt {background-image:url("http://image.thefingers.co.kr/academy2012/common/arrow_left3.gif");}
+.lnbBook .btnWrap .moveRt {background-image:url("http://image.thefingers.co.kr/academy2012/common/arrow_right3.gif"); width:20px;}
+.lnbBook .btnWrap .on {position:relative; background-position:left top;}
+
+.bookContWrap {overflow:hidden;}
+.bookContWrap .lnbBook {float:left; width:180px;}
+.bookContWrap .bookCont {float:right; width:760px;}
+.bookContWrap .bookCont .contImg {background:url("http://image.thefingers.co.kr/academy2012/common/line4.gif") left bottom repeat-x; padding:10px 0 65px 0;}
+.bookContWrap .bookCont .contImg img {border:1px solid #eee;}
+
+
+/* main */
+.visualWrap {overflow:hidden;}
+.visualWrap img {vertical-align:top;}
+.visualWrap .mainBnrLt {float:left; width:220px;}
+.visualWrap .mainBnrLt dl {width:200px; position:relative; margin-top:5px;}
+.visualWrap .mainBnrLt dl dt {padding:242px 0; text-align:center; width:100%;}
+.visualWrap .mainBnrLt dl dd.bnr1 {position:absolute; left:0; top:0;}
+.visualWrap .mainBnrLt dl dd.bnr2 {position:absolute; left:0; bottom:0;}
+.visualWrap .mainBnrRt {padding:90px 0 20px 0; float:right; width:200px; background:url("http://image.thefingers.co.kr/academy2012/main/bg_bnr.gif") center bottom no-repeat;}
+.visualWrap .mainBnrRt li {padding-bottom:15px;}
+
+.visualWrap .mainVisual {float:left; position:relative; width:520px;}
+.visualWrap .visualPaging {position:absolute; top:20px; right:25px; overflow:hidden;}
+.visualWrap .visualPaging li {float:left; width:35px; height:39px; background:url("http://image.thefingers.co.kr/academy2012/main/line.gif") left 14px no-repeat;}
+.visualWrap .visualPaging li.first {background:none; margin-left:0; padding-left:0;}
+.visualWrap .visualPaging li a {display:block; text-indent:-99999px; overflow:hidden; background-position:center 14px; background-repeat:no-repeat; padding:14px 9px 10px 14px; height:10px; margin-left:4px;}
+.visualWrap .visualPaging li a.visual01 {background-image:url("http://image.thefingers.co.kr/academy2012/main/no01.gif");}
+.visualWrap .visualPaging li a.visual02 {background-image:url("http://image.thefingers.co.kr/academy2012/main/no02.gif");}
+.visualWrap .visualPaging li a.visual03 {background-image:url("http://image.thefingers.co.kr/academy2012/main/no03.gif");}
+.visualWrap .visualPaging li a.visual04 {background-image:url("http://image.thefingers.co.kr/academy2012/main/no04.gif");}
+.visualWrap .visualPaging li a.visual05 {background-image:url("http://image.thefingers.co.kr/academy2012/main/no05.gif");}
+.visualWrap .visualPaging li.selected a {background-position:center -16px;}
+
+.contList {overflow:hidden; border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;}
+.contList li {float:left;}
+
+.hotClick {padding:0 5px; margin-top:5px;}
+.hotClick li {padding:25px 20px; vertical-align:top; width:150px;}
+.hotClick dt {font-size:12px; font-weight:bold; color:#000; padding-top:10px;}
+.hotClick dt a {color:#000;}
+.hotClick dd {padding-top:5px;}
+
+.mainContWrap {padding-bottom:50px; background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif") left bottom repeat-x;}
+.mainContWrap .ftLt {width:450px;}
+.mainContWrap .ftRt {width:480px;}
+
+.videoTit {width:450px; height:22px; padding-top:44px; background:url("http://image.thefingers.co.kr/academy2012/main/character.gif") right bottom no-repeat;}
+.videoBox {width:430px; height:442px; padding:20px 10px 13px 10px; background:url("http://image.thefingers.co.kr/academy2012/main/bg_video.gif") left top no-repeat;}
+.videoThumb {overflow:hidden; padding:0 2px;}
+.videoThumb li {float:left; padding:19px 10px 0 10px;}
+.videoThumb li img {border:1px solid #f1f9e3;}
+
+.videoBox p {padding:0 10px; text-align:center;}
+
+.trList {background:#f8f8f8; width:476px; padding:20px 2px}
+.trList li {width:120px; height:235px; padding:0 19px; border-right:1px solid #e2e2e2;}
+.trList li.last {border-right:none;}
+.trList dt {font-size:12px; font-weight:bold; color:#000; padding-top:10px;}
+.trList dt a {color:#000;}
+.trList dd {padding-top:5px;}
+.trList dd.kind {font-family:georgia, serif; font-style:italic; letter-spacing:-0.03em; color:#888; padding-top:3px;}
+.trTit {width:100%; height:22px; padding-top:44px;}
+
+.storyTit {width:100%; padding-top:36px; height:22px;}
+
+.mainDiyshop {overflow:hidden; border-top:3px solid #e2e2e2; border-bottom:1px solid #e2e2e2;}
+.mainDiyshop img {vertical-align:top;}
+.mainDiyshop .ftLt {padding:30px; width:308px;}
+.mainDiyshop .shopTit {padding-bottom:17px;}
+
+.mainDiyshop .ftRt {background:#f8f8f8; width:560px; padding:15px; position:relative;}
+.mainDiyshop .shopList {overflow:hidden;}
+.mainDiyshop .shopList li {padding:10px 15px; float:left; text-align:center;}
+
+.mainDiyshop .callTab {right:30px; top:20px;}
+
+.mainNotice {background:url("http://image.thefingers.co.kr/academy2012/common/line3.gif") left top repeat-x; padding-top:3px; overflow:hidden;}
+.mainNotice img {vertical-align:top;}
+.mainNotice div {float:left; border-right:1px solid #ddd; padding:25px 0; height:142px;}
+.mainNotice div.contact {padding:40px 0 30px 0; width:218px; text-align:center;}
+
+.mainNotice div.quickLink {padding:40px 19px 30px 19px; width:223px;}
+.mainNotice div.quickLink dt {position:relative;}
+.mainNotice div.quickLink dt .more {position:absolute; right:0; top:0;}
+.mainNotice div.quickLink dd {border-bottom:1px solid #e2e2e2; padding:8px 0; font-size:11px; line-height:11px;}
+.mainNotice div.quickLink dd a {padding:0 5px;}
+
+.mainNotice div.notice {padding:40px 19px 30px 19px; width:223px;}
+.mainNotice div.notice dt {border-bottom:2px solid #eaeaea; padding-bottom:6px; position:relative;}
+.mainNotice div.notice dt .more {position:absolute; right:0; top:0;}
+.mainNotice div.notice dd {padding-top:8px;}
+.mainNotice div.notice dd .infoList01 li {padding:3px 10px; background-position:left 9px;}
+
+.mainNotice div.snsInquiry {border-right:none; text-align:center; width:217px;}
+.mainNotice div.snsInquiry a {padding:0 5px;}
+
+
+/* site map */
+.sitemap {overflow:hidden; padding-top:15px; background-position:left top; background-repeat:no-repeat; margin-top:40px;}
+.sitemap dt {float:left; width:185px; padding-top:15px;}
+.sitemap dd {float:right; width:750px; padding-top:35px;}
+.sitemap dd .menuWrap {overflow:hidden;}
+.sitemap dd .menuWrap .menu {float:left; padding:0 0 35px 35px; min-width:215px;}
+.sitemap dd .menuWrap .menu .infoList07 {padding-top:10px;}
+
+.map01 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap01.gif");}
+.map02 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap02.gif");}
+.map03 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap03.gif");}
+.map04 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap04.gif");}
+.map05 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap05.gif");}
+.map06 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap06.gif");}
+.map07 {background-image:url("http://image.thefingers.co.kr/academy2012/sitemap/sitemap07.gif");}
+
+.usePrivate {overflow:hidden;}
+.usePrivate .ftLt {width:49%; border-right:1px solid #e2e2e2;}
+.usePrivate .ftRt {width:49%;}
+.usePrivate ul {padding:05px 20px;}
+.usePrivate ul li a {color:#f4743a;}
+.usePrivate ul li {padding:1px 0;}
+
+/* °³ÀÎÁ¤º¸Ãë±Þ¹æÄ§ 0729Ãß°¡ */
+.anchorNav {overflow:hidden; width:100%; font-size:11px;}
+.anchorNav:after {content:" "; display:block; clear:both;}
+.anchorNav p {padding:11px 0 30px; color:#777;}
+.anchorNav a {color:#d50c0c;}
+.anchorNav ul {float:left; width:290px; padding-top:30px; letter-spacing:-1px;}
+.anchorNav ul.wide {width:340px;}
+.anchorNav ul li ul {margin-bottom:1px;}
+.anchorNav ul li ul li {margin-top:2px;}
+
+.articleSection {margin-top:45px; padding:20px 20px 14px; background:#f9f9f9; color:#777; font-size:11px; font-family:Dotum;}
+.articleSection h4 {margin:30px 0 12px; font-size:16px; color:#333; font-family:Dotum;}
+.articleSection h5 {margin-top:16px; font-size:11px; color:#777;}
+.articleSection .btnTop {margin:4px 0 30px; text-align:right;}
+.articleSection table {background:#fff;}
+.articleSection em {font-style:normal; color:#d50c0c;}
+
+.boardList {font-size:11px; }
+.boardList table {text-align:center; width:100%; border-top:3px solid #555; border-bottom:1px solid #ccc;}
+.boardList table caption {overflow:hidden; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px;}
+.boardList table thead th {border-bottom:1px solid #ccc;}
+.boardList table th {border-top:1px solid #ccc;}
+.boardList table td {border-top:1px solid #eee;}
+.boardList table th {padding:9px 0; color:#555;}
+.boardList table td {padding:11px 0 7px;}
+
+/***** 2016 NEW *****/
+
+.detailInfoV16 .asideV16 .teacherInfo .thumbImg,
+.detailInfoV16 .asideV16 .teacherInfo .thumbImg span,
+.noDataV16 span,
+.icoPhotoV16,
+.fingerQnaV16 .ico {background-image:url(http://image.thefingers.co.kr/2016/common/sp_common_v1.png); background-repeat:no-repeat;}
+
+/* list */
+.breadcrumbV16 {width:100%; padding-bottom:15px; line-height:1.2;}
+.breadcrumbV16:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.breadcrumbV16 div {float:left; padding:0 10px 0 13px; background:#fff url(http://image.thefingers.co.kr/2016/common/arrow_right.gif) 0 50% no-repeat; vertical-align:top;}
+.breadcrumbV16 div a {color:#333; vertical-align:top;}
+.breadcrumbV16 div:last-child {font-weight:bold;}
+.breadcrumbV16 .home {float:left; padding:2px 10px 0 0;}
+.breadcrumbV16 .home a {display:inline-block; width:12px; height:10px; font-size:0; line-height:0; background:url(http://image.thefingers.co.kr/2016/common/ico_home.png) 0 50% no-repeat;}
+
+.noDataV16 {padding:70px 0; text-align:center;}
+.noDataV16 span {display:block; width:120px; height:106px; margin:0 auto; background-position:0 -130px;}
+.noDataV16 p {padding-top:25px; font-size:18px; color:#666;}
+
+.categoryListV16 {border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#f9f9f9;}
+.categoryListV16 ul {overflow:hidden; padding:12px 0; width:100%;}
+.categoryListV16 li {float:left; width:152px; padding:12px 0 12px 40px;}
+.categoryListV16 li a {font-size:12px; color:#000;}
+.categoryListV16 li.current a {font-weight:bold;}
+
+.sortingWrapV16 {padding-top:15px;}
+.sortingWrapV16:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.sortingWrapV16 .searchV16 {position:relative; width:147px; height:27px; padding:5px 37px 0 12px; border:1px solid #ddd;}
+.sortingWrapV16 .searchV16 .schInputV16 {width:140px; height:22px; color:#000; font-size:12px; line-height:21px; outline:none; border:0;}
+.sortingWrapV16 .searchV16 .schBtnV16 {position:absolute; right:0; top:0; width:17px; height:17px; padding:8px; border-left:1px solid #ddd;}
+.sortingWrapV16 .typeV16 {float:left; padding-top:8px;}
+.sortingWrapV16 .typeV16 label {margin-right:20px; padding-left:5px; font-size:12px; color:#666; vertical-align:middle;}
+.sortingWrapV16 .sortingV16 {float:left;}
+
+.sortingV16 .sortGrp {display:inline-block; position:relative; width:138px; margin-left:10px; border:1px solid #ddd; }
+.sortingV16 p {height:33px; padding-left:15px; margin:0; color:#333; font-size:12px; line-height:33px; text-align:left; background:#fff url(http://image.thefingers.co.kr/2016/common/arrow_select_down.gif) 100% 50% no-repeat; cursor:pointer;}
+.sortingV16 .sortList {display:none; position:absolute; left:-1px; top:33px; z-index:40; width:100%; border:1px solid #ddd; border-top:0; background-color:#fff;}
+.sortingV16 .sortList li a {display:block; font-size:12px; padding:11px 0 11px 15px;}
+.sortingV16 .sortList li a:hover {text-decoration:underline;}
+.sortingV16 .sortOn p {background-image:url(http://image.thefingers.co.kr/2016/common/arrow_select_up.gif);}
+.sortingV16 .sortOn .sortList {display:block;}
+
+.thumbImg {position:relative;}
+.fingerListV16 {overflow:hidden; width:100%;}
+.fingerListV16 ul {overflow:hidden; width:987px; margin:0 -14px 0 -13px;}
+.fingerListV16 li {float:left; width:300px; height:310px; margin:0 14px 30px 13px; line-height:1.2; border:1px solid #e5e5e5;}
+.fingerListV16 li img {vertical-align:top;}
+.fingerListV16 li .fingerBadge {position:absolute; right:10px; top:0;}
+.fingerListV16 li .fingerBadge .badge {margin-top:10px;}
+.fingerListV16 li .fingerBadge .new2 {margin-top:0;}
+.fingerListV16 li .fingerBadge .best {margin-top:0;}
+.fingerListV16 li .fingerCont {position:relative; padding:18px 50px 0 14px; border-top:1px solid #e5e5e5;}
+.fingerListV16 li .teacher a {color:#84ad00; font-size:13px;}
+.fingerListV16 li .title {padding-top:10px;}
+.fingerListV16 li .title a {display:inline-block; overflow:hidden; max-width:100%; color:#000; font-size:14px; font-weight:bold; text-overflow:ellipsis; white-space:nowrap;}
+.fingerListV16 li .price {padding-top:15px; color:#999; font-size:12px;}
+.fingerListV16 li .txt {padding-top:15px; color:#999; font-size:12px;}
+.fingerListV16 li .btnFavor {position:absolute; right:10px; top:38px;}
+
+.lectureListV16 .fingerListV16 li {height:285px;}
+.lectureListV16 .fingerListV16 li .title {padding-top:0;}
+.lectureListV16 .btnGroupV16 {position:absolute; right:0; top:0px;}
+.lectureListV16 .btnGroupV16 .btn {height:22px; margin-left:7px; padding:0 15px; font-size:12px; line-height:22px; font-weight:bold; border-radius:12px;}
+.lectureListV16 .btnGroupV16 .btn:hover {color:#fff;}
+
+.paginationV16 {text-align:center; margin-top:30px;}
+.paginationV16 a {display:inline-block; width:33px; height:33px; margin:0 2px; line-height:33px; color:#666; vertical-align:top; border:1px solid #ddd; font-size:12px; background-color:#fff;}
+.paginationV16 span {display:block; height:7px;}
+.paginationV16 .arrow span {width:4px; margin:14px auto 0; background:url(http://image.thefingers.co.kr/2016/common/arrow_pagination.gif) 0 0 no-repeat; text-indent:-999em;}
+.paginationV16 .first span {width:8px; background-position:0 0;}
+.paginationV16 .prev span {background-position:-13px 0;}
+.paginationV16 .next span {background-position:-22px 0;}
+.paginationV16 .end span {width:8px; background-position:100% 0;}
+.paginationV16 .current {color:#fff; border:1px solid #a3cf13; background-color:#b1da2b;}
+
+/* detail */
+.icoPhotoV16 {display:inline-block; width:20px; height:16px; background-position:-130px -45px; text-indent:-999em; vertical-align:middle;}
+
+.tab1 {border-bottom:1px solid #dedcdf;}
+.tab1 ul {width:100%;}
+.tab1 ul:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.tab1 li {float:left; color:#999; font-size:13px; border-bottom:4px solid #fff; background:url("http://image.thefingers.co.kr/2016/common/bg_line.gif") 0 50% no-repeat;}
+.tab1 li:first-child {background:none;}
+.tab1 li a {display:inline-block; padding:10px 20px; color:inherit; font-size:inherit;}
+.tab1 li.current {color:#000; font-weight:bold; border-bottom:4px solid #b2da2c;}
+
+.starV16 {display:inline-block; width:90px; height:14px; text-align:left; background:url(http://image.thefingers.co.kr/2016/common/ico_star.png) 0 0 repeat-x; vertical-align:top;}
+.starV16 span {display:inline-block; height:14px; text-align:left; background:url(http://image.thefingers.co.kr/2016/common/ico_star.png) 0 100% repeat-x; vertical-align:top;}
+.starV16.score00 span {width:0;}
+.starV16.score01 span {width:18px;}
+.starV16.score02 span {width:36px;}
+.starV16.score03 span {width:54px;}
+.starV16.score04 span {width:72px;}
+.starV16.score05 span {width:90px;}
+
+.spinnerV16 {overflow:hidden;}
+.spinnerV16 input {float:left; width:30px; height:18px; padding:0; text-align:center; vertical-align:top;}
+.spinnerV16 .buttons {float:left; width:13px; padding-left:2px;}
+.spinnerV16 .buttons div {width:13px; height:9px; background-position:0 0; background-repeat:no-repeat; cursor:pointer; text-indent:-999em;}
+.spinnerV16 .buttons .up {margin-bottom:2px; background-image:url(http://image.thefingers.co.kr/academy2012/common/arrow_top.gif);}
+.spinnerV16 .buttons .down {background-image:url(http://image.thefingers.co.kr/academy2012/common/arrow_btm.gif);}
+
+.itemList {width:135px; margin:0 auto;}
+.itemList li {margin-bottom:20px; color:#666; font-size:12px; line-height:13px;}
+.itemList .thumbImg img {width:133px; height:88px; border:1px solid #e5e5e5; vertical-align:top;}
+.itemList .title {overflow:hidden; padding:8px 8px 0; font-weight:bold; text-overflow:ellipsis; white-space:nowrap;}
+.itemList .price {padding-top:5px;}
+
+.fingerDetailV16 .asideV16 {float:right; width:160px; padding-right:12px;}
+.fingerDetailV16 .asideV16 .btnArr {font-weight:bold; border-radius:15px; }
+.fingerDetailV16 .starV16 {float:left;}
+.fingerDetailV16 .average {display:inline-block; float:left; padding-left:5px; color:#666; font-size:12px; line-height:14px; vertical-align:top;}
+.fingerDetailV16 .paginationV16 a {width:14px; height:14px; margin:0; font-size:11px; line-height:18px; border:0;}
+.fingerDetailV16 .paginationV16 span {display:block; height:7px;}
+.fingerDetailV16 .paginationV16 .arrow {width:17px; height:17px; border:1px solid #ddd;}
+.fingerDetailV16 .paginationV16 .arrow span {margin-top:5px;}
+.fingerDetailV16 .paginationV16 .prev {margin:0 10px 0 3px;}
+.fingerDetailV16 .paginationV16 .next {margin:0 3px 0 10px;}
+.fingerDetailV16 .paginationV16 .current {color:#000; font-weight:bold; border:0; background-color:#fff}
+
+.detailInfoV16 {overflow:hidden; padding-top:30px; border-top:1px solid #ddd;}
+.detailInfoV16 .detailImgV16 {float:left; width:390px; padding-right:30px;}
+.detailInfoV16 .detailImgV16 .imgSlide {overflow:visible !important; position:relative; z-index:1; padding-bottom:58px;}
+.detailInfoV16 .detailImgV16 .imgSlide img {width:390px; height:260px;}
+.detailInfoV16 .detailImgV16 .slidesjs-pagination {overflow:hidden; position:absolute; left:0; bottom:0; width:409px;}
+.detailInfoV16 .detailImgV16 .slidesjs-pagination li {float:left; margin-right:7px;}
+.detailInfoV16 .detailImgV16 .slidesjs-pagination li:first-child {margin-right:8px;}
+.detailInfoV16 .detailImgV16 .slidesjs-pagination li a {display:block; position:relative; width:72px; height:48px; text-indent:-999em; background-size:72px 48px; opacity:.4;}
+.detailInfoV16 .detailImgV16 .slidesjs-pagination li a.active {opacity:1;}
+.detailInfoV16 .detailImgV16 .slidesjs-pagination li a.active span {display:inline-block; position:absolute; left:0; top:0; width:66px; height:42px; border:3px solid #f96653;}
+
+.detailInfoV16 .detailImgV16 .relatedIssue {overflow:hidden; margin-top:30px; border:1px solid #e5e5e5; border-radius:8px;}
+.detailInfoV16 .detailImgV16 .relatedIssue h3 {height:28px; padding:11px 0 0 18px; border-bottom:1px solid #e5e5e5; background:url(http://image.thefingers.co.kr/2016/common/bg_slash.gif) 0 0 repeat;}
+.detailInfoV16 .detailImgV16 .relatedIssue ul {padding:20px 20px 10px;}
+.detailInfoV16 .detailImgV16 .relatedIssue li {position:relative; padding:0 0 6px 9px; font-size:12px; line-height:13px;}
+.detailInfoV16 .detailImgV16 .relatedIssue li:after {content:''; display:inline-block; position:absolute; left:0; top:5px; width:4px; height:1px; background-color:#666;}
+.detailInfoV16 .detailImgV16 .relatedIssue li a {color:#666;}
+.detailInfoV16 .detailImgV16 .relatedIssue li a:hover {text-decoration:underline;}
+.detailInfoV16 .saleInfoV16 {float:left; width:320px; padding-right:30px; border-right:1px solid #eee;}
+.detailInfoV16 .saleInfoV16 .fingerBadge .badge {margin-right:3px;}
+.detailInfoV16 .saleInfoV16 h2 {padding-top:16px; font-size:16px; line-height:21px; font-weight:bold;}
+.detailInfoV16 .saleGroupV16 {padding:10px 0; border-bottom:1px solid #e2e2e2;}
+.detailInfoV16 .saleGroupV16 dl {overflow:hidden; padding:3px 0;}
+.detailInfoV16 .saleGroupV16 dt {float:left; width:80px;}
+.detailInfoV16 .saleGroupV16 dd {float:left; width:240px; line-height:13px; font-family:dotum;}
+.detailInfoV16 .saleGroupV16 dd .btn {margin-top:-2px;}
+
+.detailInfoV16 .optionWrapV16 {background:#f8f8f8;}
+.detailInfoV16 .optionWrapV16 img {vertical-align:top;}
+.detailInfoV16 .optionWrapV16 dl {padding:20px 15px 10px;}
+.detailInfoV16 .optionWrapV16 dt {padding:0 0 12px 0; line-height:10px;}
+.detailInfoV16 .optionWrapV16 dd {overflow:hidden;}
+.detailInfoV16 .optionWrapV16 dd table {width:100%; margin-top:-1px;}
+.detailInfoV16 .optionWrapV16 dd table td {padding:5px 0; border-top:1px dashed #ccc;}
+.detailInfoV16 .optionWrapV16 .total {padding:13px 15px; color:#000; text-align:right; background-color:#e2e2e2;}
+
+.detailInfoV16 .optionWrapV16 li {padding:5px 0; line-height:18px; border-top:1px dashed #ccc;}
+.detailInfoV16 .optionWrapV16 li:first-child {border-top:0;}
+.detailInfoV16 .optionWrapV16 li .optionV16 {float:left; width:150px;}
+.detailInfoV16 .optionWrapV16 li .spinnerV16 {float:left; width:50px;}
+.detailInfoV16 .optionWrapV16 li .priceV16 {float:left; width:65px; padding-right:10px; text-align:right;}
+.detailInfoV16 .optionWrapV16 li .btnDelV16 {float:right; width:15px; padding-top:2px; text-align:right;}
+
+.detailInfoV16 .saleInfoV16 .btnGroupV16 {overflow:hidden; padding-top:10px;}
+.detailInfoV16 .saleInfoV16 .btnGroupV16 div {float:left;}
+.detailInfoV16 .saleInfoV16 .btnGroupV16 .btn {width:130px; margin-right:10px;}
+.detailInfoV16 .saleInfoV16 .btnGroupV16 .btnFavor {width:40px; margin-right:0; text-align:center;}
+.detailInfoV16 .saleInfoV16 .btnGroupV16 .btnFavor span {width:14px; height:12px; margin:2px auto 0; vertical-align:top; background-image:url(http://image.thefingers.co.kr/2016/common/ico_heart2.png);}
+.detailInfoV16 .saleInfoV16 .btnGroupV16 .btnFavor em {display:inline-block; padding-top:4px; color:#999; font-size:11px; line-height:11px; vertical-align:top;}
+.detailInfoV16 .asideV16 .teacherInfo {text-align:center;}
+.detailInfoV16 .asideV16 .teacherInfo .thumbImg {position:relative; width:120px; height:120px; margin:0 auto; background-position:0 0;}
+.detailInfoV16 .asideV16 .teacherInfo .thumbImg span {display:inline-block; position:absolute; left:0; top:0; width:120px; height:120px; background-position:0 -246px;}
+.detailInfoV16 .asideV16 .teacherInfo .thumbImg img {width:120px; height:120px;}
+.detailInfoV16 .asideV16 .teacherInfo .name {padding-top:18px; color:#000; font-size:14px; line-height:17px; font-weight:bold;}
+.detailInfoV16 .asideV16 .teacherInfo .name a {color:#000;}
+.detailInfoV16 .asideV16 .otherInfo {margin-top:30px; border-top:1px dashed #ccc;}
+.detailInfoV16 .asideV16 .otherInfo dl {padding:25px 8px 0; font-size:12px;}
+.detailInfoV16 .asideV16 .otherInfo dt {padding-bottom:8px; color:#666; line-height:13px; font-weight:bold;}
+.detailInfoV16 .asideV16 .otherInfo dd {overflow:hidden;}
+.detailInfoV16 .asideV16 .otherInfo .tag {margin-left:-10px;}
+.detailInfoV16 .asideV16 .otherInfo .tag a {display:inline-block; margin:0 0 5px 10px; color:#999; font-size:11px; line-height:12px;}
+.detailInfoV16 .asideV16 .otherInfo .tag a:hover {text-decoration:underline;}
+
+.detailContWrapV16 .asideV16 {padding-top:18px; text-align:center;}
+.detailContWrapV16 .asideV16 img {vertical-align:top;}
+.detailContWrapV16 .asideV16 h3 {padding-bottom:24px;}
+.detailContWrapV16 .asideV16 .section2 {margin-top:30px; padding-top:25px; border-top:1px dashed #ccc;}
+
+.detailContWrapV16 {position:relative; margin-top:60px; padding-top:20px; border-top:1px solid #ddd; background:url(http://image.thefingers.co.kr/2016/common/ico_hand.gif) 100% 100% no-repeat;}
+.detailContWrapV16:after {content:" "; display:block; height:0; clear:both; visibility:hidden;}
+.detailContV16 {float:left; width:730px; padding:0 20px; border-right:1px solid #eee;}
+.detailContV16 .tab1 {margin-top:90px;}
+.detailContV16 .tabCont {padding:50px 40px 0 30px;}
+.detailContV16 .itemInfo .tab1 {position:absolute; left:0; top:-41px; margin-top:0; border-bottom:0;}
+.detailContV16 .itemInfo .tabCont {padding:0;}
+.detailContV16 .itemInfo .detailAreaV16 {width:600px; padding:0 0 110px 50px; text-align:center; font-size:14px; line-height:24px; color:#666;}
+.detailContV16 .itemInfo .detailAreaV16 .txt {padding:45px 30px;}
+.detailContV16 .itemInfo .detailAreaV16 img {max-width:600px; vertical-align:top;}
+.detailContV16 .itemInfo .restInfo {overflow:hidden; padding:10px 0 0 14px; border-top:1px solid #eee;}
+.detailContV16 .itemInfo .restInfo dt {margin-bottom:18px; padding-left:12px; color:#333; font-size:14px; line-height:15px;  font-weight:bold;background:url(http://image.thefingers.co.kr/2016/common/blt_bar.gif) 0 49% no-repeat;}
+.detailContV16 .itemInfo .restInfo dt span {padding-left:15px; font-size:11px; font-weight:normal; color:#999; vertical-align:top;}
+.detailContV16 .itemInfo .restInfo dl {float:left; margin-top:50px; }
+.detailContV16 .itemInfo .restInfo dd p {line-height:19px;}
+.detailContV16 .itemInfo .restInfo dd {padding:10px 15px; font-size:12px; background-color:#f9f9f9; border-top:2px solid #ddd;}
+.detailContV16 .itemInfo .restInfo .type1 {width:320px;}
+.detailContV16 .itemInfo .restInfo .type1 li {position:relative; padding:18px 10px; color:#666; text-align:right; border-top:1px solid #e5e5e5;}
+.detailContV16 .itemInfo .restInfo .type1 li:first-child {border-top:0;}
+.detailContV16 .itemInfo .restInfo .type1 li strong {position:absolute; left:10px; top:50%; margin-top:-8px;}
+.detailContV16 .itemInfo .restInfo .type1 dd p {padding:18px 10px 20px; border-top:1px solid #e5e5e5;}
+.detailContV16 .itemInfo .restInfo .type2 {width:670px;}
+.detailContV16 .itemInfo .restInfo .type2 dd {padding:30px 25px;}
+.detailContV16 .itemInfo .restInfo .type2 .list {overflow:hidden; margin-top:-12px;}
+.detailContV16 .itemInfo .restInfo .type2 .list span {display:inline-block; float: line-height:13px; padding:12px 16px 0 0;}
+.detailContV16 .itemInfo .restInfo .type2 .list strong {padding-right:5px;}
+.detailContV16 .boardInfo {overflow:hidden; width:100%; padding-bottom:12px;}
+.detailContV16 .boardInfo .article {float:left; padding:0 25px;}
+.detailContV16 .boardInfo .total {padding-left:12px; color:#666; font-size:13px; font-weight:bold; line-height:15px;}
+
+.fingerTableV16 {width:100%; border-top:2px solid #ddd; table-layout:fixed;}
+.fingerTableV16 caption {overflow:hidden; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px;}
+.fingerTableV16 td {padding:9px 10px; color:#666; font-size:11px; border-bottom:1px solid #ddd;}
+.fingerTableV16 .txt {font-size:12px;}
+.fingerTableV16 .image {padding-top:10px;}
+.fingerTableV16 .image img {display:inline-block; width:420px; padding-top:10px; vertical-align:top;}
+.fingerTableV16 .titleAreaV16 .txt {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; cursor:pointer;}
+.fingerTableV16 .viewAreaV16 { background:#f9f9f9;}
+.fingerTableV16 .viewAreaV16 td {padding:30px 30px 15px;}
+.fingerTableV16 .viewAreaV16 .txt {color:#777; line-height:18px;}
+.fingerTableV16 .viewAreaV16 .btnGroupV16 {overflow:hidden; padding-top:30px;}
+
+.fingerQnaV16 .qnaProcess span {display:inline-block; width:52px; height:17px; text-align:center; font-weight:bold; line-height:17px; vertical-align:top; background-color:#fff; border-radius:4px;}
+.fingerQnaV16 .qnaProcess .ing {color:#a1ca1b; border:1px solid #a1ca1b;}
+.fingerQnaV16 .qnaProcess .finish {color:#aaa; border:1px solid #aaa;}
+
+.detailContV16 .fingerReviewV16 .boardInfo .total {background:url(http://image.thefingers.co.kr/2016/common/blt_bar2.gif) 100% 50% no-repeat;}
+
+
+/******************* old *******************/
+.lectureList {overflow:hidden; border-bottom:1px solid #e2e2e2;}
+.lectureList li {float:left; width:303px; background:url("http://image.thefingers.co.kr/academy2012/lecture/lecture_box_btm.gif") left bottom no-repeat; margin:0 8px 30px 8px;}
+.lectureList li div {background:url("http://image.thefingers.co.kr/academy2012/lecture/lecture_box_top.gif") left top no-repeat; padding:15px 18px 18px 15px; position:relative;}
+.lectureList li div .check {position:absolute; right:18px; bottom:18px;}
+
+.popWrap .detailPhoto {float:left; width:400px; }
+.popWrap .detailView {width:340px;}
+.popWrap .detailView .detailGroup {padding:9px 0 6px 5px;}
+
+.detailView {float:right;}
+.detailView .detailGroup {border-bottom:1px solid #e0e0e0;}
+.detailView .rowType {padding:3px 0 2px 0; line-height:16px;}
+.detailView .rowType dt {width:65px; padding-top:1px;}
+.detailView .rowType dd {width:250px;}
+.detailView .rowType dd img {vertical-align:top;}
+.detailView .btnWrap a {margin-right:5px;}
+.detailView .rowType .ftRt {float:right;}
+
+.diyDetailWrap {overflow:hidden; padding:20px 0 30px 0; background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif") left bottom repeat-x;}
+.innderDiyDetail {position:relative; overflow:hidden; padding:0 220px 0 0; background:url("http://image.thefingers.co.kr/academy2012/common/detail_bg.gif") 759px top repeat-y;}
+.diyDetailWrap .detailPhoto {float:left; width:400px;}
+.diyDetailWrap .detailView {float:right; width:320px;}
+.diyDetailWrap .detailView .detailGroup {padding:9px 0 6px 0;}
+.diyDetailWrap .detailView span {display:inline-block;}
+.diyDetailWrap .detailView h1 {font-size:16px; font-weight:bold; color:#000; line-height:20px;}
+.diyDetailWrap .detailView .rowType dd {width:245px; padding-right:0;}
+.detailView .btnWrap span a {margin-right:0;}
+.verticalBtn a {display:block; margin-bottom:4px;}
+
+.optionWrap {background:#f8f8f8;}
+.optionWrap dl {padding:10px 5px;}
+.optionWrap dl dt {padding:10px 5px;}
+.optionWrap dl dd {overflow:hidden;}
+.optionWrap dl dd table {margin-top:-1px; width:100%;}
+.optionWrap dl dd table td {padding:5px 0 0 0; border-top:1px dashed #ccc;}
+.optionWrap .optionTotal {background:#e2e2e2; padding:14px 10px 10px 10px; color:#000; text-align:right;}
+.optionWrap .optionTotal span {padding-right:10px;}
+.detailSide {width:190px; position:absolute; top:0; right:0;}
+.brandBox {padding:25px 15px; text-align:center; background:#f8f8f8;}
+.couponDown {background:url("http://image.thefingers.co.kr/academy2012/common/coupon_bg_down.gif") 158px top no-repeat;}
+.couponDown p {width:154px; height:45px; background:url("http://image.thefingers.co.kr/academy2012/common/coupon_bg.gif") left top no-repeat; text-align:center; color:#fff; font-family:arial, sans-serif; font-size:30px; line-height:33px;}
+.couponDown p a {display:block; width:154px; height:40px; color:#fff; padding-top:4px;}
+.couponDown p a:hover {color:#fff;}
+.sideCont {padding-left:10px;}
+.sideCont img {vertical-align:top;}
+.sideCont dt {font-size:11px; line-height:11px;}
+.sideCont dt a {display:inline-block;}
+
+.detailContBg {background:url("http://image.thefingers.co.kr/academy2012/common/symbol.gif") right bottom no-repeat;}
+.detailContWrap {overflow:hidden; margin-top:30px; background:url("http://image.thefingers.co.kr/academy2012/common/detail_bg.gif") 759px top repeat-y;}
+.detailContWrap .detailContainer {float:left; width:740px; padding-right:19px; border-right:1px solid #ddd;}
+.detailContWrap .detailSideCont {float:right; width:180px; padding:20px 0 200px 20px;}
+.detailTab {width:100%; overflow:hidden; height:21px; background:url("http://image.thefingers.co.kr/academy2012/common/tab/tab_bg.gif") left bottom repeat-x;}
+.detailTab li {float:left; font-size:12px; line-height:12px;}
+.detailTab li img {vertical-align:top;}
+
+.locationWrap {border-bottom:1px solid #ddd; padding-bottom:11px;}
+.detailWrap {position:relative; overflow:hidden; padding:20px 20px 30px 20px; background:url("http://image.thefingers.co.kr/academy2012/common/bg_across_line.gif") left bottom repeat-x;}
+.detailWrap .detailPhoto {float:left; width:480px;}
+.detailWrap .detailView {float:right; width:420px;}
+.detailWrap .detailView .detailGroup {padding:9px 10px 6px 15px;}
+.detailWrap .detailView span {display:inline-block;}
+.detailWrap .detailView h1 {font-size:16px; font-weight:bold; color:#000; line-height:20px;}
+/******************* old *******************/
