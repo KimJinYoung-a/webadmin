@@ -1,0 +1,19 @@
+# gitignore
+web.config
+*.bak
+iis-e-settings.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+scmwork.code-workspace
+.vscode/launch.json
+.vs/config/applicationhost.config
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+/.vs/2_Trunc/v15/.suo
+/.vs/VSWorkspaceState.json
+.idea/*
+.vscode/settings.json
+admin/newreport/xldwn
