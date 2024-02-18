@@ -1,0 +1,5 @@
+<%
+
+dbACADEMYget.Close
+
+%>
