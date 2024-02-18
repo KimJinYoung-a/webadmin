@@ -1,0 +1,39 @@
+	.btd20 { 
+	 		font-size:25px; 	
+			font-weight:bold;
+		}
+		
+	body,table,tr,td     {
+		font-family: µ¸¿ò, Verdana;  
+		font-size:12px; 		
+		scrollbar-face-color: F2F2F2; 
+		scrollbar-shadow-color:#bbbbbb; 
+		scrollbar-highlight-color: #bbbbbb; 
+		scrollbar-3dlight-color: #FFFFFF; 
+		scrollbar-darkshadow-color: #FFFFFF; 
+		scrollbar-track-color: #F2F2F2; 
+		scrollbar-arrow-color: #bbbbbb; 
+		scrollbar-base-color:#E9E8E8;
+		line-height: 150%;	 
+	}
+		
+	.tbl01{		 
+	border-top:2px solid #000000;		
+	border-bottom:1px solid #000000;		
+	} 
+	
+	.td01{	 
+	border-bottom:1px solid #bbbbbb;	
+	font-size:11px;  
+	color:#868080;
+	}
+
+	.td02{	 
+		border-bottom:1px solid #000000;	 
+	}
+ 	
+	.btdsmall{ 
+			font-size:11px;  
+			color:#868080;
+		}
+		 

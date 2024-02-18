@@ -1,0 +1,105 @@
+<%
+'// 롯데아이몰API 연동서버 URL
+Dim ltiMallAPIURL, ltiMallAuthNo, ltiMallTenID, tenBrandCd, tenDlvCd, tenDlvFreeCd
+IF application("Svr_Info") = "Dev" THEN
+	'ltiMallAPIURL = "http://openapidev.lotteimall.com"	'' 테스트서버
+	ltiMallAPIURL = "http://openapitst.lotteimall.com"	'' 테스트서버
+	tenDlvCd = "26645"
+	tenDlvFreeCd = "577045"
+Else
+	ltiMallAPIURL = "https://openapi.lotteimall.com"		'' 실서버
+	tenDlvCd = "23725"
+	tenDlvFreeCd = "577045"
+End if
+ltiMallTenID = "011799LT"
+'테섭 비번 : cube101010
+'// 롯데아이몰 인증코드 확인(매일 업데이트; 어플리케이션변수에 저장)
+'2015-04-22 김진영 하단 ltiMallAuthDate 어플리케이션 저장 부분 주석처리..
+'#######################	wapi서버로 변경하면서 여기에서 세션에 저장할 필요성이 없어짐 	#############################
+'If Application("ltiMallAuthDate") = "" or Datediff("d", Application("ltiMallAuthDate"), date()) > 0 Then
+
+Dim updateAuth, dbAuthNo
+dim iisql, tmpltiMallAuthNo
+iisql = "select top 1 isnull(iniVal, '') as iniVal, lastupdate "&VbCRLF
+iisql = iisql & " from db_etcmall.dbo.tbl_outmall_ini"&VbCRLF
+iisql = iisql & " where mallid='lotteimall'"&VbCRLF
+iisql = iisql & " and inikey='auth'"
+rsget.Open iisql, dbget, 1
+if not rsget.Eof then
+    dbAuthNo	= rsget("iniVal")
+    updateAuth	= rsget("lastupdate")
+end if
+rsget.close
+
+If DateDiff("h", updateAuth, now()) > 12 OR dbAuthNo = "" then
+	Dim objXML, xmlDOM
+	Set objXML= CreateObject("MSXML2.ServerXMLHTTP.3.0")
+	    objXML.Open "GET", ltiMallAPIURL & "/openapi/createCertification.lotte?strUserId=" & ltiMallTenID & "&strPassWd=cube101010!*", False
+		objXML.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+		objXML.Send()
+		If objXML.Status = "200" Then
+			Set xmlDOM = Server.CreateObject("MSXML2.DomDocument.3.0")
+			xmlDOM.async = False
+			xmlDOM.LoadXML BinaryToText(objXML.ResponseBody, "euc-kr")
+			On Error Resume Next
+				tmpltiMallAuthNo = xmlDOM.getElementsByTagName("SubscriptionId").item(0).text		'인증번호 저장
+
+				If Err <> 0 then
+					tmpltiMallAuthNo = ""
+				End If
+
+				iisql = "update db_etcmall.dbo.tbl_outmall_ini "&VbCRLF
+				iisql = iisql & " set iniVal='"&tmpltiMallAuthNo&"'"&VbCRLF
+				iisql = iisql & " ,lastupdate=getdate()"&VbCRLF
+				iisql = iisql & " where mallid='lotteimall'"&VbCRLF
+				iisql = iisql & " and inikey='auth'"
+				dbget.Execute iisql
+
+				If Application("ltiMallAuthNo") = "" Then														'인증 실패됐을 경우
+					Response.Write "<script language=javascript>alert('Lotteimall.com인증코드 전송에러가 발생하였습니다.\n나중에 다시 시도해보세요');history.back();</script>"
+					Response.End
+				End If
+
+				Application("ltiMallAuthDate") = now()															'인증시간 기록
+				If Err <> 0 then
+					Response.Write "<script language=javascript>alert('Lotteimall.com인증에 오류가 발생했습니다.\n나중에 다시 시도해보세요');history.back();</script>"
+					Response.End
+				End If
+			On Error Goto 0
+			Set xmlDOM = Nothing
+		Else
+			Response.Write "<script language=javascript>alert('Lotteimall.com과 통신중에 오류가 발생했습니다.\n나중에 다시 시도해보세요');history.back();</script>"
+			Response.End
+		End If
+	Set objXML = Nothing
+'End If
+	ltiMallAuthNo = tmpltiMallAuthNo
+Else
+	ltiMallAuthNo = dbAuthNo
+End If
+
+'#######################################################################################################################
+
+'Dim objXML, xmlDOM
+'Set objXML= CreateObject("MSXML2.ServerXMLHTTP.3.0")
+'    objXML.Open "GET", ltiMallAPIURL & "/openapi/createCertification.lotte?strUserId=" & ltiMallTenID & "&strPassWd=cube101010", False
+'	objXML.setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+'	objXML.Send()
+'	If objXML.Status = "200" Then
+'		Set xmlDOM = Server.CreateObject("MSXML2.DomDocument.3.0")
+'		xmlDOM.async = False
+'		xmlDOM.LoadXML BinaryToText(objXML.ResponseBody, "euc-kr")
+'		On Error Resume Next
+'			ltiMallAuthNo = xmlDOM.getElementsByTagName("SubscriptionId").item(0).text		'인증번호 저장
+'			If ltiMallAuthNo = "" Then														'인증 실패됐을 경우
+'				Response.Write "<script language=javascript>alert('Lotteimall.com인증코드 전송에러가 발생하였습니다.\n나중에 다시 시도해보세요');history.back();</script>"
+'				Response.End
+'			End If
+'		On Error Goto 0
+'		Set xmlDOM = Nothing
+'	Else
+'		Response.Write "<script language=javascript>alert('Lotteimall.com과 통신중에 오류가 발생했습니다.\n나중에 다시 시도해보세요');history.back();</script>"
+'		Response.End
+'	End If
+'Set objXML = Nothing
+%>

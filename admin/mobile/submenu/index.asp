@@ -1,0 +1,20 @@
+<%@ language=vbscript %>
+<% option explicit %>
+<%
+'###########################################################
+' Description :  메인페이지
+' History : 2014.03.11 이종화
+'###########################################################
+%>
+<!-- #include virtual="/admin/incSessionAdmin.asp" -->
+
+<!-- #include virtual="/lib/util/htmllib.asp" -->
+<!-- #include virtual="/lib/db/dbopen.asp" -->
+<!-- #include virtual="/admin/lib/adminbodyhead.asp"-->
+<!-- #include virtual="/lib/function.asp"-->
+<!-- #include virtual="/lib/offshop_function.asp"-->
+
+<!-- #include virtual="/admin/mobile/submenu/inc_subhead.asp"-->
+
+<!-- #include virtual="/admin/lib/adminbodytail.asp"-->
+<!-- #include virtual="/lib/db/dbclose.asp" -->

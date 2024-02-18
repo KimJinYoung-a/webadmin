@@ -1,0 +1,20 @@
+html {
+	overflow: -moz-scrollbars-vertical;
+	overflow-y :scroll;
+}
+
+.container {
+	padding-top: 30px;
+}
+
+.pagination.center {
+	text-align: center;
+}
+
+.pagination ul {
+	display: -moz-inline-box; /* FF2 or lower */
+	display: inline-block;
+	/* IE6/7 inline-block hack */
+	*display: inline;
+	*zoom: 1;
+}
