@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+	<TITLE>입력창</TITLE>
+	<META http-equiv="Content-Type" content="text/html; charset=euc-kr">
+      	<!-- This code can be reused as long as this copyright notice is not removed -->
+      	<!-- Copyright 1999 InsideDHTML.com, LLC.  All rights reserved.
+           See www.siteexperts.com for more information.
+      	-->
+	<LINK rel="stylesheet" type="text/css" href="/css/seoul_cp.css">
+    <STYLE TYPE="text/css">
+         	.today {color:#ff6600; font-weight:bold;font-size:12}
+         	.days {font-weight:bold }
+         	.tempday {font-size:12 }
+    </STYLE>
+<Script Language="JavaScript">
+	function validate(){
+		if(document.all.buftext.value.length<1){
+			alert('값을 입력하세요.');
+			document.all.buftext.focus();
+			return;
+		}
+		document.all.ret.value = document.all.buftext.value;
+		window.close();
+	}
+
+	function Cancel() {
+		document.all.ret.value = "";
+		window.close();
+	}
+</script>
+</HEAD>
+<BODY bgcolor="#ffffff" OnUnload="window.returnValue = document.all.ret.value;">
+   	<INPUT type="hidden" name="ret">
+<!----------------------------------------------------------------------------->
+<TABLE width="227" border="0" align="center" cellpadding="5" cellspacing="0">
+<TR>
+<TD>
+	<TABLE width="217" border="0" cellspacing="1" cellpadding="0" bgcolor="CCCCCC">
+	<TR>
+    <TD bgcolor="ffffff" align=center>
+    	<font size=2>기타입력</font><br>
+		<input type="text" name="buftext" value="" size=18 maxlength=20 onKeyPress="if (event.keyCode == 13) validate();"><br>
+		<input type=button value="확인" onclick="validate()">
+    </TD>
+    </TR>
+    </TABLE>
+</TD>
+</TR>
+</TABLE>
+<!--------------------------------------------------------------------------->
+</BODY>
+</HTML>
+

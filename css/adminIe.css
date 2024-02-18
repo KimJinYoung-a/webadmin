@@ -1,0 +1,20 @@
+@charset "euc-kr";
+
+.overHidden {_zoom:1;}
+
+/* scm login */
+.scmLogin h1 {width:510px; margin:0 auto; padding:70px 0; font-size:34px; font-family:verdana;}
+.scmLogin h1 span {width:132px; height:132px; margin-bottom:-15px; background-image:url(/images/admin_login_logo2.png);}
+.scmLogin .loginBox {width:510px;}
+.scmLogin .loginBox .tabNav li {width:170px; height:74px;}
+.scmLogin .loginBox .tabNav li a {font-size:16px; line-height:74px;}
+.scmLogin .loginBox .tabCont {padding:78px 66px 88px;}
+.scmLogin .loginBox .btn {height:66px; font-size:16px;}
+.scmLogin .loginBox input[type=text],
+.scmLogin .loginBox input[type=password] {width:330px; height:56px; padding:0 24px; font-size:14px; line-height:54px;}
+.scmLogin .loginBox p {margin-bottom:20px;}
+.scmLogin .loginBox p label {left:24px; margin-top:-7px; font-size:14px; line-height:17px;}
+.scmLogin .loginBox .btnArea {margin-top:30px;}
+.scmLogin .loginBox .timeLimit strong {font-size:30px;}
+.scmLogin .loginBox .btnReapply {width:264px; height:48px; font-size:14px; border-radius:22px;}
+.scmLogin .help li {display:inline; line-height:16px;}

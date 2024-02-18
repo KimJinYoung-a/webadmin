@@ -1,0 +1,314 @@
+
+html, body {height:100%;}
+
+/* Popup layout */
+body > .heightgird {min-height:100%; height:auto;}
+.heightgird {position:relative;}
+.popWrap {padding-bottom:45px;}
+.popWrap .popHeader {padding:27px 15px 15px; background:#d50c0c; color:#fff;}
+.popWrap .popHeader h1 {font-size:26px; line-height:1; font-weight:700; color:#fff;}
+.popContent {padding:30px; font-size:12px;}
+.popFooter {position:absolute; bottom:0; width:100%; padding:0; border-top:1px solid #ddd; background:#f5f5f5;}
+.popFooter .btnArea {float:right; padding:8px 30px 11px 0;}
+.popFooter .btnArea .btn {padding:5px 11px 3px 24px; border:0; border-bottom:1px solid #efefef; background:#999 url(http://fiximage.10x10.co.kr/web2013/common/btn_close_popup.gif) 11px center no-repeat;}
+.popFooter .btnArea .btn:hover {border:0; border-bottom:1px solid #efefef; background:#8a8a8a url(http://fiximage.10x10.co.kr/web2013/common/btn_close_popup.gif) 11px center no-repeat;}
+.popFooter button {font-weight:normal;}
+
+/* Table Style */
+.popContent .boardList table td {padding:8px 0 6px;}
+.popContent .boardList table td.lt {padding:8px 0 6px 10px;}
+.popContent .boardList .fix {color:#d50c0c;}
+.popContent .boardList .now {color:#333; font-weight:bold;}
+.popContent .boardList .select {width:110px; height:22px;}
+.popContent .boardList {color:#777;}
+
+.boardView {margin-bottom:25px; color:#333;}
+.boardView .title {width:100%; padding-bottom:10px; background:url(http://fiximage.10x10.co.kr/web2013/common/bg_tail.gif) 20px bottom no-repeat; font-size:12px;}
+.boardView .title span {float:right; font-size:11px; color:#888;}
+.boardView .detail {overflow-y:scroll; height:277px; padding:11px 15px 6px; background:#f4f4f4;}
+.boardView .detail p {padding-bottom:20px;}
+
+/* Find Depositor Popup */
+.depositorMsg {font-size:12px; text-align:center;}
+.depositorMsg p {padding-bottom:12px;}
+.depositorMsg .email {display:block; padding-top:7px;}
+.depositorMsg .note {padding-top:37px; color:#888; font-size:11px;text-align:left;}
+.depositorMsg .note em {color:#222; font-style:normal;}
+
+/* Event Popup */
+.popContent .eventMsg {position:relative; margin-bottom:30px; padding:8px 20px 10px; border:4px solid #f5f5f5; text-align:right;}
+.popContent .eventMsg .decoration {position:absolute; left:-4px; top:-4px;}
+.popContent .eventMsg p {padding-top:5px; color:#888; text-align:left;}
+.popContent .eventMsg .btnArea {margin-top:-18px;}
+.popContent .eventMsg .btnArea a {margin:0;}
+.popContent .eventMsg .btnArea .linkBtn {background:url(http://fiximage.10x10.co.kr/web2013/cscenter/bul_black_arrow.gif) right 2px no-repeat; line-height:15px;}
+
+/* Product Review Popup */
+.popReview {color:#777;}
+.popReview .titleArea {position:relative; margin-bottom:23px;}
+.popReview .titleArea h2 {font-weight:normal;}
+.popReview .titleArea span {position:absolute; right:0; top:0;}
+
+/* Add to Cart Popup */
+.addCart {text-align:center;}
+.addCart p {margin-bottom:22px; padding:43px 0 38px; background:#f8f8f8;}
+.addCart .btnArea a {margin:0 6px;}
+.addCart .btnArea a:first-child {margin-right:5px;}
+.addCart .btnArea .btn {width:138px; padding:11px 0 12px;}
+
+/* MY TEN BY TEN */
+.popContent .mySection {padding-bottom:0;}
+.popContent .mySection .docForm tbody th, .popContent .mySection .docForm tbody td {padding:10px 0 10px 17px; text-align:left; font-size:13px;}
+.popContent .mySection .docForm tbody th.ct {padding-left:0; text-align:center;}
+.popContent .mySection .docForm table .select {padding-left:5px; font-weight:normal;}
+.popContent .mySection table tbody .emailSelect {margin-left:4px; font-size:11px; font-weight:normal;}
+.popContent .mySection .btnArea .btn {margin:0 3px; font-size:12px; font-weight:normal;}
+.popContent .mySection .docForm .txtInp {font-weight:normal;}
+.popContent .mySection .symbol {padding:0 3px;}
+.popContent .mySection .radioBox input {vertical-align:top; margin-top:2px;}
+.popContent .mySection .radioBox label {padding:0 18px 0 8px;}
+.popContent .mySection .radioBox .btn {margin-left:-10px;}
+
+.popContent .mySection h2 {margin:28px 0 10px; color:#000; font-size:16px;}
+.popContent .mySection .productInfo h2 {margin-top:39px;}
+.popContent .mySection .etcInfo h2:first-child {margin-top:39px;}
+
+.popContent .guidanceMsg {padding:0 0 16px; border-bottom:2px solid #ddd;}
+.popContent .guidanceMsg h2 {margin-top:0; color:#d50c0c;}
+.popContent .guidanceMsg .sorry {margin-bottom:10px; color:#000; font-size:14px;}
+
+.popContent .mySection .delivery {position:relative;}
+.popContent .mySection .delivery h2 {margin-top:0;}
+.popContent .mySection .delivery .btn {position:absolute; right:0; top:0;}
+
+.popContent .mySection .helpSection {margin-top:0;}
+.popContent .mySection .helpSection h3 {margin:12px 0 2px; padding-left:13px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_btn_arr_red03.gif) left 6px no-repeat; color:#d50c0c; font-size:11px;}
+.popContent .mySection .mileage {padding:21px 0 22px;; border:5px solid #ddd; text-align:center;}
+.popContent .mySection .helpSection.endLine {padding-bottom:16px; border-bottom:1px solid #ccc;}
+
+/* Zip code */
+.popContent .finder {margin:20px 0 36px; padding:16px 0; text-align:center;}
+.popContent .finder .field {margin:12px auto 6px; width:260px; padding:6px 7px 4px 20px ; border:1px solid #d50c0c; background:#fff; text-align:left;}
+.popContent .finder .field input {width:240px; height:18px; color:#d50c0c; font-size:12px; vertical-align:top;}
+.popContent .finder .field .btnSearch {width:13px; height:14px; background:url(http://fiximage.10x10.co.kr/web2013/common/btn_search3.gif) left top no-repeat;}
+.popContent .finder .field .btnSearch:hover {background:url(http://fiximage.10x10.co.kr/web2013/common/btn_search3.gif) left bottom no-repeat ;}
+.popContent .zipcode {max-height:269px; height:auto !important; height:269px; overflow-y:auto; border-bottom:1px solid #ccc;}
+.popContent .zipcode table {border-bottom:0;}
+
+/* Order Made */
+.orderMade textarea {width:90%; padding:14px 15px;}
+.orderMade .bulletArrow {margin-top:9px; padding-left:13px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_btn_arr_red03.gif) left 5px no-repeat; line-height:1.5em;}
+
+/* Coupon */
+.popContent .couponIssue h2 {margin:0 0 40px; padding-bottom:10px; border-bottom:2px solid #555;}
+.popContent .couponIssue ul.list {margin:40px 0 0; padding:15px 20px 15px; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; background:#f5f5f5;}
+
+.popContent .coupArea {margin:-30px -30px 0; padding:25px 0; background:#f7f7f7 url(http://fiximage.10x10.co.kr/web2013/my10x10/bg_zigzag_white.gif) left bottom repeat-x;}
+.popContent .coupArea .couponBox {margin:0 auto;}
+
+.popContent .productList h2 {margin:18px 0 12px; padding:0 0 0 13px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_btn_arr_red03.gif) left 6px no-repeat; color:#333; font-weight:normal;}
+
+/* Freebie Image Detail View */
+.popContent .pdtPhotoWrap {float:none;}
+.popContent .pdtPhotoWrap h2 {padding:5px 0 13px; color:#000; font-size:16px; font-weight:normal;}
+
+/* EMS Fee */
+.popContent .emsWrap table th {background:#fcfcfc; font-weight:bold; font-size:11px;}
+.popContent .emsWrap table tbody th {background:#f9f9f9;}
+.popContent .emsWrap table tbody td {text-align:center;}
+.popContent .emsWrap table tbody td.lt {padding-left:15px;}
+.popContent .emsWrap table th, .popContent .emsWrap table td {padding:5px 0 6px;}
+.popContent table.lastLine {border-bottom:1px solid #ccc;}
+
+/* Product Review Write */
+.itemField span {float:left; width:100px; padding-left:8px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt11.gif) left 7px no-repeat;}
+.itemField ul {float:left; width:580px; margin-top:-6px;}
+.itemField ul li {width:140px; padding:6px 0 0 5px;}
+.satisfactionList {width:688px; margin-bottom:-8px;}
+.satisfactionList .itemField {padding:8px 0; border-top:1px solid #e5e5e5;}
+.satisfactionList .itemField:first-child {border-top:0; padding-top:0;}
+.satisfactionList .itemField ul li {width:110px;}
+
+.layPop {position:relative;}
+.layPop .contLyr {left:0; top:12px; background:url(http://fiximage.10x10.co.kr/web2013/common/contlyr_pointer.gif) 71px 10px no-repeat; text-align:left;}
+.layPop .moreInfo {overflow:hidden; width:354px; font-size:11px;}
+.layPop .moreInfo ul, .layPop .moreInfo .code {float:left; height:49px; margin-top:7px; padding-top:6px;}
+.layPop .moreInfo ul {width:214px;}
+.layPop .moreInfo ul li {overflow:hidden; padding-bottom:7px;}
+.layPop .moreInfo ul li .title {float:left; width:84px;}
+.layPop .moreInfo ul li .con {float:left; width:130px;}
+.layPop .moreInfo .code { width:124px; padding-left:15px; border-left:1px solid #cfcfcf;}
+.layPop .moreInfo .code em {border-bottom:1px solid #d50c0c;}
+
+.attachFile {overflow:hidden;}
+.attachFile .inputFile {float:left;}
+.attachFile .btnListDel {float:left; vertical-align:middle; margin:7px 0 0 10px; padding:0;}
+.attachFile .imgArea {clear:both; margin-bottom:10px; padding-top:10px;}
+.attachFile .imgArea img {display:block; max-width:450px; margin-bottom:5px;}
+.attachFile .imgArea label {font-size:11px;}
+
+.goodsInfo {overflow:hidden;}
+.goodsInfo .pdtPhoto {float:left; width:170px;}
+.goodsInfo .pdfInfo {float:left; width:510px; font-size:11px;}
+
+.popContent .certCont {padding:0; text-align:center;}
+.popContent .certCont .help {padding:8px 10px 13px; text-align:left; letter-spacing:-1px; color:#555;}
+.popContent .certCont .help li {margin-top:5px; padding-left:10px; background:#fbfbfb url(http://fiximage.10x10.co.kr/web2013/common/blt13.gif) left 6px no-repeat;}
+.popContent .certCont div.help {padding:12px 15px 12px;}
+.popContent .certCont .help .handling {padding:4px 0 0 21px;}
+
+.kakaoFinish {padding-top:100px; background:url(http://fiximage.10x10.co.kr/web2013/my10x10/bg_kakao.gif) center 10px no-repeat;}
+
+/* My Anniversary */
+.anniversaryFinish {width:380px; margin:0 auto;}
+.anniversaryFinish .count {font-size:14px; color:#000;}
+.anniversaryFinish .anniversaryList {position:relative; margin-top:27px;}
+.anniversaryFinish .anniversaryList ul li {padding-top:155px; background:url(http://fiximage.10x10.co.kr/web2013/my10x10/bg_anniversary.gif) center top no-repeat;}
+
+.anniversaryFinish .anniversaryList .prevBtn, .anniversaryFinish .anniversaryList .nextBtn {position:absolute; top:76px; width:15px; height:26px; background-position:left top; background-repeat:no-repeat; background-color:#fff; text-indent:-999em;}
+.anniversaryFinish .anniversaryList .prevBtn {left:10px; background-image:url(http://fiximage.10x10.co.kr/web2013/common/btn_prev_next.gif);}
+.anniversaryFinish .anniversaryList .prevBtn:hover {background-position:left bottom;}
+.anniversaryFinish .anniversaryList .nextBtn {right:10px; background-image:url(http://fiximage.10x10.co.kr/web2013/common/btn_prev_next.gif); background-position:right top;}
+.anniversaryFinish .anniversaryList .nextBtn:hover {background-position:right bottom;}
+
+.anniversaryFinish .remember {margin-top:11px; padding:6px 0; background-color:#f0f0f0;}
+.anniversaryFinish .btnClear {margin-top:19px; padding:0 0 0 13px; border-bottom:1px solid #05a5af; background:#fff url(http://fiximage.10x10.co.kr/web2013/common/btn_close_mint.gif) left 2px no-repeat; color:#05a5af; font-size:11px; font-weight:normal;}
+.popFooter .today {float:left; padding:12px 0 0 30px; font-size:11px;}
+
+/* Balance change Popup */
+.balanceChg {text-align:center;}
+.balanceChg div {margin-bottom:22px; padding:58px 0 56px; background:#f8f8f8;}
+.balanceChg .btnArea a {margin:0 6px;}
+.balanceChg .btnArea a:first-child {margin-right:5px;}
+.balanceChg .btnArea .btn {width:138px; padding:11px 0 12px;}
+
+/* giftcard regist Popup */
+.giftcardRegist {text-align:center;}
+.giftcardRegist div {margin-bottom:22px; padding:58px 0; background:#f8f8f8;}
+.giftcardRegist .btnArea a {margin:0 6px;}
+.giftcardRegist .btnArea a:first-child {margin-right:5px;}
+.giftcardRegist .btnArea .btn {width:138px; padding:11px 0 12px;}
+
+/* Order Receipt */
+.companyInfo {margin:40px -30px 0 -30px; padding:25px 30px; border-top:2px solid #ccc; border-bottom:2px solid #ccc;}
+.companyInfo img {max-width:100%;}
+
+/* Reservation Receipt */
+.reservationInfo {overflow:hidden;}
+.reservationInfo .photo {float:left; width:200px; padding-right:15px;}
+.reservationInfo .baseTable {float:left; width:633px;}
+
+@media print {
+#orderPrint .baseTable th, #orderPrint .baseTable td {padding:4px 0;}
+#orderPrint .rowTable th {white-space:nowrap;}
+#orderPrint .baseTable tfoot td {padding:4px 15px;}
+#orderPrint .btnArea, #orderPrint .popFooter {display:none;}
+#orderPrint .reservationInfo .baseTable {width:65%;}
+}
+
+/* Tax */
+.taxWrap {overflow:hidden;}
+.taxWrap table {float:left; width:345px;}
+.taxWrap table.first {margin-right:30px;}
+.popContent .taxWrap .docForm tbody td {padding-right:15px;}
+
+/* Gift Card Resend */
+.resendSelect {padding:8px 10px; background:#f0f0f0; font-size:12px;}
+
+/* Gift Card Email Review */
+.giftcardView {background:#dcdcdc url(http://fiximage.10x10.co.kr/web2013/my10x10/bg_giftcard.gif) left top repeat-y;}
+.giftcardView .popHeader {padding-top:20px; padding-left:30px;}
+.giftcardView .giftcardReview {width:790px; padding:15px 10px 0; text-align:center;}
+
+/* Wish Folder */
+.folderItem {font-size:13px;}
+.folderList {position:relative; overflow-y:auto; border-top:2px solid #555; border-bottom:1px solid #ddd; background:#f9f9f9;}
+.wishFolder .folderList {height:147px;}
+.folderManage .folderList {height:245px;}
+.folderList li {height:19px; padding:15px 20px 14px; border-top:1px solid #ddd;}
+.folderList li .check {margin-right:5px;}
+.folderList li img {vertical-align:middle;}
+.folderList li.noData {height:19px; background:url(http://fiximage.10x10.co.kr/web2013/my10x10/blt_hypen.gif) 45px center no-repeat;}
+.folderManage .folderList li {position:relative;}
+.folderManage .folderList li .btnArea {position:absolute; right:20px; top:12px;}
+.folderManage .folderList li .btnArea .btn {margin:0;}
+.folderList li.folderModify {z-index:1; height:auto; padding:15px 20px 14px; border-top:0; background:#eaeaea url(http://fiximage.10x10.co.kr/web2013/my10x10/bg_arrow_folder_manage.gif) 20px top no-repeat; font-size:11px;}
+.folderList li.folderModify .txtInp {width:203px; margin-right:5px; padding:0px 10px 2px; font-size:11px;}
+.folderList li.folderModify label {margin:0 5px 0 3px;}
+.folderManage .folderList li.folderModify .btnArea {top:15px;}
+.folderList li.folderModify .modifying .contLyr {left:-60px; top:5px; background:url(http://fiximage.10x10.co.kr/web2013/common/contlyr_pointer.gif) 61px 10px no-repeat;}
+.folderList li.folderModify .modifying .contLyr ul li {height:auto; padding:0 0 0 13px; border:0; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_btn_arr_red03.gif) left 6px no-repeat;}
+.folderList li.folderModify .modifying .setting {margin-top:5px; zoom:1;}
+.folderList li.folderModify .modifying .setting:after {content:""; display:block; clear:both;}
+.newFloder {padding:17px 20px 14px; border-bottom:2px solid #ddd; zoom:1;}
+.newFloder:after {content:""; display:block; clear:both;}
+.newFloder .add {float:left; padding-left:21px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_plus.gif) left 8px no-repeat;}
+.newFloder .txtInp {width:100px; padding:0; border:0; color:#888;}
+.newFloder .txtInp:focus {color:#000;}
+.newFloder .setting {float:right; font-size:11px; letter-spacing:-1px;}
+.newFloder .setting label {margin:0 5px 0 3px;}
+.folderItem .setting .choice, .folderItem .setting .addInfo, .folderItem .setting .folderBtn {float:left;}
+
+.folderItem .addInfo {position:relative; width:12px; height:12px; margin:3px 15px 0 0;}
+.folderItem .addInfo .ico {display:block; width:12px; height:12px; text-indent:-999em; cursor:pointer; background:url(http://fiximage.10x10.co.kr/web2013/common/ico_help_rollover.gif) left top no-repeat;}
+.folderItem .addInfo .ico:hover {background:url(http://fiximage.10x10.co.kr/web2013/common/ico_help_rollover.gif) left bottom no-repeat;}
+.folderItem .contLyr {position:absolute; left:-200px; top:10px; width:320px; background:url(http://fiximage.10x10.co.kr/web2013/common/contlyr_pointer.gif) 201px 10px no-repeat;}
+
+.folderManage .newFloder .setting .contLyr {position:absolute; left:-220px; top:-135px; width:320px; padding-bottom:5px; background:url(http://fiximage.10x10.co.kr/web2013/common/contlyr_pointer_down.gif) 221px bottom no-repeat;}
+
+.folderItem .list li {margin-top:1px; padding-left:13px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_btn_arr_red03.gif) left 5px no-repeat;}
+.folderItem .btnS1 {font-size:12px;}
+
+.folderItem .help {margin-top:29px; padding:8px 10px 13px; border-top:1px solid #eaeaea; border-bottom:1px solid #eaeaea; background:#fbfbfb; font-size:12px;}
+.folderItem .help li {margin-top:4px; padding-left:10px; background:#fbfbfb url(http://fiximage.10x10.co.kr/web2013/common/blt13.gif) left 5px no-repeat;}
+.folderItem .help a img {margin:6px 0 0 5px; vertical-align:top;}
+
+/* Nonmember agreement */
+.nonMemAgree {padding:15px 15px 0; border:1px solid #bbb; margin:30px 0 20px; color:#777;}
+.nonMemAgree ol li {text-indent:-15px; padding:0 0 15px 15px;}
+.nonMemAgree ol li li {padding-bottom:0;}
+
+/* Traffic Guidance*/
+.trafficGuidance .titleArea {overflow:hidden; margin-bottom:28px; padding-bottom:12px; background:url(http://fiximage.10x10.co.kr/web2013/my10x10/bg_double_line_ccc.gif) left bottom repeat-x;}
+.trafficGuidance .titleArea h2 {float:left; margin-top:0;}
+.trafficGuidance .titleArea .btn {float:right;}
+.trafficGuidance .section {padding-bottom:48px;}
+.trafficGuidance .section h3 {margin-top:0; padding-bottom:9px; border-bottom:2px solid #ddd; color:#000; font-size:14px;}
+.trafficGuidance .section h4 {margin-top:16px; padding:0 0 4px 13px; background:url(http://fiximage.10x10.co.kr/web2013/common/blt_btn_arr_red03.gif) left 7px no-repeat; color:#555; font-size:12px;}
+.trafficGuidance .section .devide {padding:0 15px 0;}
+.trafficGuidance .section .devide ul {margin-left:12px;}
+.trafficGuidance .section .devide ul li {margin-top:5px;}
+.trafficGuidance .section .devide h4 .btn {margin-top:-2px;}
+.trafficGuidance .section .devide .map {margin-top:15px;}
+.trafficGuidance .section .parking {margin-top:21px; padding:10px 15px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background:#f8f8f8;}
+.trafficGuidance .section .parking h4 {margin-top:0;}
+
+.emailApplicate {background:#fbfbfb; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; padding:25px 20px 13px 20px;}
+.emailApplicate .frmType dt {font-size:12px; font-weight:normal; width:70px;}
+
+/* 건강/식품/의료기기 */
+.popContent .healthReview .rating ul {width:100%;}
+.popContent .healthReview .rating ul li {float:left; width:130px; padding-left:0; border:0;}
+.popContent .healthReview .rating li span {width:35px; padding-right:15px; text-align:right;}
+
+.healthNoti {background:#f7f7f7;}
+.healthNoti p {text-align:center; font-size:11px; margin:30px 0 25px; padding-top:40px; background:url(http://fiximage.10x10.co.kr/web2013/common/ico_warning02.png) center top no-repeat;}
+
+
+/* gift */
+.giftPop {position:relative;}
+.giftPop .giftHeadWrap {height:97px; background:url(http://fiximage.10x10.co.kr/web2013/gift/bg_sub_head.gif) left top repeat;}
+.giftPop .giftHead {width:100%;}
+.giftPop .giftHead h2 { padding:17px 0 0 28px;}
+.giftPop .popFooter {background:#fff;}
+.giftPop .giftContWrap {padding:30px 30px 70px; background:#f5f5f5;}
+.giftPop .giftCont {width:auto;}
+.giftPop .giftWrite .contLyr {left:-4px; top:8px; background-position:8px 10px;}
+.giftPop .giftWrite .myBrdBox {width:630px; margin:0 auto;}
+.giftPop .giftWrite .brdCont,
+.giftPop .giftWrite .brdInfo {padding-left:25px; padding-right:25px;}
+.giftPop .giftWrite .questionGuide .findPdt em {background:url(http://fiximage.10x10.co.kr/web2013/gift/blt_arrow04.gif) right 5px no-repeat;}
+
+.giftPop .modifyPop .step03 .selectAB {padding:0 34px;}
+.giftPop .modifyPop .step03 .selectAB .item {padding-right:0;}
+.giftPop .modifyPop .step03 .selectAB .voteArea {width:100%; padding-right:0;}

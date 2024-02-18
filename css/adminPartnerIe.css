@@ -1,0 +1,13 @@
+@charset "euc-kr";
+
+.overHidden {_zoom:1;}
+
+.summaryBoard div {*height:79px; *width:30%;}
+.dashboard .graphArea .graph {*height:20px;}
+.dashboard .graphArea .yAxis p {*width:51px;}
+.dashboard .graphArea .graph .graphInfo {*position:absolute; *left:100%; *top:11px;}
+
+.helpBox dt {line-height:13px;}
+.loginCont h1 {*height:161px;}
+.loginInput .formTxt {*height:18px; *width:224px; *padding:5px 10px;}
+.loginInput .helpBox {bottom:153px;}

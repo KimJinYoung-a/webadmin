@@ -1,0 +1,5 @@
+<%
+
+dbagirl_dbget.Close
+
+%>

@@ -1,0 +1,577 @@
+@charset "utf-8";
+/************************* COMMON *************************/
+/* password search */
+.tit {font-size:1.8rem; color:#333; line-height:2.4rem;}
+.textForm1 {padding:0.5rem 2rem; border:1px solid #ddd; border-radius:2rem; background-color:#fff; text-align:left; vertical-align:middle;}
+.textForm2 {padding:0.5rem 1.5rem; border:1px solid #ddd; border-radius:0.4rem; background-color:#fff; text-align:left; vertical-align:middle;}
+.btnCertify {width:28%;}
+.inputUnit label {visibility:hidden; width:0; height:0; overflow:hidden; position:absolute; top:-1000%; line-height:0;}
+
+.pwrSearch {position:relative; padding-top:20rem; color:#999; font-size:1.2rem; line-height:1.6rem; text-align:center; background-color:#fff;}
+.pwrSearch:after {display:block; position:absolute; left:50%; top:6rem; width:10rem; height:10rem; margin-left:-5rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_lock.png) no-repeat 50% 0; background-size:10rem; content:'';}
+.pwrSearch .inputUnit {padding:5rem;}
+
+.certifyNumList {width:100%; padding:0.6rem 2.5rem; margin-top:3.5rem; background-color:#eee;}
+.certifyNumList li {display:table; width:100%; height:6.8rem; text-align:left; border-top:1px solid #ddd; color:#999;}
+.certifyNumList li:first-child {border-top:none;}
+.certifyNumList li div {display:table-cell; vertical-align:middle; line-height:1.7rem;}
+.certifyNumList li div b {font-size:1.1rem;}
+.certifyNumList li div p {font-size:1.4rem;}
+.certifyNumList li.selected {color:#333;}
+.certifyNumList li.selected .btnWht {color:#333; background-color:#f3f3f3;}
+.certifyNumInput {display:table; position:relative; width:100%; padding:3.5rem 2.5rem; background-color:#a6d216;}
+.certifyNumInput form {display:table; width:100%;}
+.certifyNumInput div {display:table-cell;}
+.certifyNumInput .textForm2 {position:relative; border:none;}
+.certifyNumInput .textForm2 .timer {position:absolute; right:1.5rem; top:50%; margin-top:-0.7rem; font-weight:500; font-size:1.3rem; color:#666;}
+.certifyNumInput .btnCertify {padding-left:1.5rem; width:32.5%;}
+.certifyNumInput .btnGrn {background-color:#7dab00;}
+.certifyNumInput label {visibility:hidden; width:0; height:0; overflow:hidden; position:absolute; top:-1000%; line-height:0;}
+
+.pwrReset {position:relative; padding-top:20rem; color:#999; font-size:1.2rem; line-height:1.6rem; text-align:center;}
+.pwrReset:after {display:block; position:absolute; left:50%; top:6rem; width:10rem; height:10rem; margin-left:-5rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_unlock.png) no-repeat 50% 0; background-size:10rem; content:'';}
+.pwrReset .idView {display:table; width:100%; height:5rem; margin-top:3.5rem; background-color:#eee;}
+.pwrReset .idView span {display:table-cell; vertical-align:middle; font-size:1.8rem; font-weight:bold; color:#333;}
+.pwrReset .inputUnit {padding:2.5rem;}
+.pwrReset .inputUnit .textForm2 {margin-top:0.5rem;}
+
+/* notice view */
+.noticeView {padding:2.5rem 1.5rem; margin-bottom:2.5rem; background-color:#fff; text-align:left;}
+.noticeTit {padding:0 1rem 2rem; border-bottom:1px solid #ddd;}
+.noticeTit h2 {font-size:1.8rem; line-height:2.4rem; font-weight:bold; color:#333;}
+.noticeTit span {display:block; margin-top:1rem; font-size:1.4rem; color:#999;}
+.noticeCont {padding:2.5rem 1rem 0; font-size:1.4rem; line-height:2rem; color:#555; word-break:break-all;}
+
+/* ask view */
+.askView {padding:2.25rem 1.5rem; background-color:#fff; text-align:left;}
+.askTit {padding:0 1rem 2rem; border-bottom:1px solid #ddd;}
+.askTit dfn {display:inline-block; height:1.85rem; padding:0 0.7rem; color:#fff; font-size:1.1rem; font-weight:600; line-height:1.9rem; border-radius:0.9rem;}
+.askTit h2 {margin-top:1.25rem; font-size:1.8rem; line-height:2.4rem; font-weight:bold; color:#333;}
+.askTit span {display:block; margin-top:1rem; font-size:1.4rem; color:#999;}
+.askCont {padding:2.5rem 1rem 1.5rem; font-size:1.4rem; line-height:2rem; color:#555; word-break:break-all;}
+
+/* push message */
+.pushMsg {min-height:20rem; background-color:#eee;}
+.pushHead {display:table; width:100%; background-color:#fff;}
+.pushHead div {position:relative; display:table-cell; padding:1.2rem 2rem; vertical-align:middle;}
+.pushHead .pushSort {width:10.9rem; border-right:1px solid #ddd;}
+.pushHead .pushSort button {position:relative; padding-right:1.3rem; font-size:1.4rem; color:#666; background-color:#fff;}
+.pushHead .pushSort button:after {display:block; position:absolute; right:0; top:50%; width:0.8rem; height:0.5rem; margin-top:-0.25rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_select.png) no-repeat 100% 0; background-size:auto 1.2rem; content:'';}
+.pushHead .pushSort button.active:after {background:url(http://image.thefingers.co.kr/apps/2016/blt_select.png) no-repeat 100% 100%; background-size:auto 1.2rem;}
+.pushHead .pushSort ul {display:none; position:absolute; left:0; top:100%; right:-1px; padding:1rem 0; background-color:rgba(255,255,255,0.95); border-right:1px solid #ddd; border-bottom:1px solid #ddd;}
+.pushHead .pushSort ul:after {position:absolute; left:1.2rem; top:0; right:1.1rem; height:1px; background-color:#ddd; content:'';}
+.pushHead .pushSort ul li a {display:block; padding:1rem 2rem; font-size:1.4rem; color:#bbb;}
+.btnPushSet {text-align:right; vertical-align:middle;}
+.btnPushSet label {position:absolute; right:7.2rem; top:50%; margin-top:-0.7rem; font-size:1.4rem; line-height:1; color:#666;}
+.btnPushSet button {overflow:hidden; width:4.4rem; height:2.6rem; background:url(http://image.thefingers.co.kr/apps/2016/btn_alarm.png?v=1) no-repeat 0 50%; background-size:auto 2.6rem; text-indent:-9999em;}
+.btnPushSet button.settingOn {background:url(http://image.thefingers.co.kr/apps/2016/btn_alarm.png?v=1) no-repeat 100% 50%; background-size:auto 2.6rem;}
+.pushList li {margin-top:1rem; background-color:#fff;}
+.pushList li a {display:block; padding:2rem 2rem 1.5rem;}
+.pushList li p {overflow:hidden; display:-webkit-box; width:100%; max-height:4.7rem; padding:1rem 0 0.5rem; font-size:1.5rem; line-height:1.8rem; color:#333; text-overflow:ellipsis; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word;}
+.pushList li span {font-size:1.2rem; color:#999;}
+.pushList li span em {display:inline-block; padding:0 1rem; color:#ddd;}
+.pushList dfn {display:inline-block; height:1.85rem; padding:0 0.7rem; color:#fff; font-size:1.1rem; font-weight:600; line-height:1.9rem; border-radius:0.9rem;}
+.flagNoti dfn {background-color:#a6d216;}
+.flagAprv dfn {background-color:#bbb;}
+.flagIng dfn {background-color:#a6d216;}
+.flagFinish dfn {background-color:#bbb;}
+
+
+/************************* ART *************************/
+.basicImgRegist {padding:1.5rem 1rem; border-top:1px solid #eee;}
+.basicImgRegist .swiper-container {overflow:visible;}
+.basicImgRegist .swiper-slide {width:11.4rem; height:7.6rem; background-color:#ddd;}
+.basicImgRegist .swiper-slide button {overflow:hidden; width:100%; height:100%; background:#ddd url(http://image.thefingers.co.kr/apps/2016/bg_img_regist.png) no-repeat 50% 50%; background-size:6.65rem auto; text-indent:-999em;}
+.basicImgRegist .swiper-slide:nth-child(4) button {background:#ddd url(http://image.thefingers.co.kr/apps/2016/bg_vod_regist.png) no-repeat 50% 50%; background-size:6.65rem auto;}
+.basicImgRegist .swiper-slide:nth-child(4).done button {background:#ddd url(http://image.thefingers.co.kr/apps/2016/bg_vod_regist_done.png) no-repeat 50% 50%; background-size:cover;}
+
+.registUnit {position:relative; border-top:2px solid #c9e56d; margin-bottom:2rem; background-color:#fff;}
+.registUnit h2 {padding:1.8rem 1.5rem; font-size:1.5rem; font-weight:bold; color:#333; text-align:left; border-bottom:1px solid #eee;}
+.registUnit h2 span {font-size:1.3rem; color:#666; font-weight:500;}
+.disabled:after {display:block; position:absolute; left:0; top:0; right:0; bottom:0; width:100%; height:100%; background-color:rgba(255,255,255,0.6); content:''; z-index:10;}
+
+.list {display:table; width:100%;}
+.list li {display:table; width:100%; min-height:5rem; padding:1.5rem; border-top:1px solid #eee; background-color:#fff;}
+.list li:first-child {border-top:none;}
+.list dfn {display:table-cell; width:33.5%; height:100%; padding:0 1.5rem 0 0; vertical-align:middle; font-size:1.4rem; color:#666; font-weight:500; white-space:nowrap;}
+.list dfn em {padding-right:1rem; color:#bbb;}
+.list div {display:table-cell; vertical-align:middle; font-size:1.4rem; font-weight:500; color:#333; text-align:right;}
+.list input[type=text], .list input[type=number], .list input[type=email], .list input[type=tel] {width:100%; height:1.96rem; font-size:1.4rem; font-weight:500; text-align:right;}
+.list input[type=text]::-webkit-input-placeholder,
+.list input[type=number]::-webkit-input-placeholder,
+.list input[type=email]::-webkit-input-placeholder,
+.list input[type=tel]::-webkit-input-placeholder {text-align:right;}
+.list textarea {width:100%; font-size:1.3rem; font-weight:500; text-align:center; overflow:visible;}
+.list textarea::-webkit-input-placeholder {text-align:center;}
+.critical b {position:relative;}
+.critical b:after {position:absolute; right:-0.4em; top:0.1rem; width:0.3rem; height:0.3rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_dot.png) no-repeat 50% 50%; background-size:0.3rem 0.3rem; content:'';}
+
+.optSet .list div {color:#666;}
+.optSet .list input[type=text], .optSet .list input[type=number], .optSet .list input[type=email] {font-size:1.5rem;}
+
+.listButton {position:relative; font-size:1.4rem; color:#333; font-weight:500; text-align:right;}
+.listButton:after {position:absolute; right:0; top:50%; width:0.6rem; height:1.2rem; margin-top:-0.55rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_button_arw.png) no-repeat 0 0; background-size:0.6rem 1.1rem; content:'';}
+.listButton span {display:none;}
+.listButton span.setContView {display:block; position:absolute; top:50%; right:1.5rem; bottom:0; left:0; margin-top:-0.75rem; line-height:1.2; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align:right;}
+
+.selectBtn, .list li.selectBtn, .artList li.selectBtn {overflow:hidden; display:table; width:100%; padding:1.5rem 1rem; background-color:#fff;}
+.selectBtn div {display:table-cell; vertical-align:middle;}
+.selectBtn select {position:relative; width:100%; height:4rem; padding:0 1.5rem; font-size:1.4rem; color:#333; border-radius:0.4rem; background:#eee url(http://image.thefingers.co.kr/apps/2016/ico_arw_btm.png) no-repeat 100% 50%; background-size:auto 0.6rem; font-weight:500;}
+.selectBtn select:disabled {color:#bbb;}
+.selectBtn .selected {background-color:#a6d216; color:#fff; border:1px solid #a6d216;}
+.selectBtn .grid2, .selectBtn .grid3, .selectBtn .grid4 {padding-left:0.25rem; padding-right:0.25rem;}
+.selectBtn .grid2:first-child, .selectBtn .grid3:first-child, .selectBtn .grid4:first-child {padding-left:0;}
+.selectBtn .grid2:last-child, .selectBtn .grid3:last-child, .selectBtn .grid4:last-child {padding-right:0;}
+.selectBtn li {float:left;}
+
+.quantity .hiddenCont {display:none;}
+
+.detail .registUnit {margin-bottom:1.5rem; text-align:center;}
+.detail .addBtn {padding:0 1rem 8rem;}
+.addBtn {padding:0 1rem; text-align:center; font-size:1.3rem; color:#999;}
+.addBtn .btnB1 {border-radius:0.4rem; font-size:1.4rem; font-weight:500;}
+.itemAdd {position:relative; padding-left:2rem;}
+.itemAdd:after {display:block; position:absolute; left:0; top:50%; width:1.5rem; height:1.5rem; margin-top:-0.75rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_button_add.png) no-repeat 0 0; background-size:1.5rem auto; content:'';}
+.question {position:relative; padding-left:2.4rem;}
+.question:after {display:block; position:absolute; left:0; top:50%; width:1.6rem; height:1.6rem; margin-top:-0.75rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_question.png) no-repeat 0 0; background-size:1.6rem auto; content:'';}
+
+.ckBtn {display:table; padding-left:5rem; text-align:left; background:#eee url(http://image.thefingers.co.kr/apps/2016/bg_check_gry.png) no-repeat 0 50%; background-size:3.5rem auto;}
+.ckBtn.selected {background:#a6d216 url(http://image.thefingers.co.kr/apps/2016/bg_check_grn.png) no-repeat 0 50%; background-size:3.5rem auto;}
+
+.getBtn {padding:1.5rem 1rem;}
+
+.btnImgRegist {width:11.4rem; height:7.6rem; margin-top:1rem; background:#ddd url(http://image.thefingers.co.kr/apps/2016/bg_img_regist.png) no-repeat 50% 50%; background-size:6.65rem auto; text-indent:-999em;}
+
+.floatingBar {display:table; position:fixed; left:0; bottom:0; width:100%; background-color:#fff; z-index:20;}
+.floatingBar p {display:table-cell; width:50%;}
+.floatingBar p:first-child {padding-right:1px;}
+.floatingBar p:last-child {padding-left:1px;}
+.floatingBar button {width:100%; height:5rem; background-color:#666; color:#fff; font-size:1.5rem; font-weight:600;}
+
+.attentionBar {display:table; position:fixed; left:0; top:0; width:100%; padding:1.5rem; font-size:1.3rem; line-height:1.6rem; background-color:#333; color:#fff; z-index:20;}
+div.badNotice {background-color:#f96653; text-indent:-1.85rem; padding-left:3rem;}
+
+/*.vodAdd, .spcNote {border-top:1px solid #ddd;}*/
+.linkInsert {background-color:#fff; width:100%; padding:2.5rem 1.5rem;}
+.linkInsert textarea {width:100%; padding:0; font-size:1.5rem; font-weight:500; color:#333; line-height:1.7rem;}
+.linkInsert textarea::-webkit-input-placeholder {color:#bbb; font-size:1.4rem;}
+.linkNotice {padding-top:17rem; text-align:center; background:url(http://image.thefingers.co.kr/apps/2016/bg_fingers_hand.png) no-repeat 50% 10rem; background-size:8rem 4.2rem; color:#bbb; font-size:1.2rem; line-height:1.5rem; font-weight:500;}
+.linkNotice .fs1-5r {line-height:2rem;}
+
+.ctgySetting .selectBtn {background-color:#fff;}
+.ctgySetting .selectBtn select {position:relative; width:100%; height:4rem; padding:0 1.5rem; font-size:1.4rem; color:#333; border-radius:0.4rem; background:#eee url(http://image.thefingers.co.kr/apps/2016/ico_arw_btm.png) no-repeat 100% 50%; background-size:auto 0.6rem; font-weight:500;}
+.ctgySetting .selectBtn select:disabled {color:#bbb;}
+
+.ctgySetting .addBtn {padding:1.5rem 1rem 0;}
+.ctgySetting .addBtn button.active {background-color:#a6d216;}
+.addCtgyList {margin-top:3rem; background-color:#fff;}
+.addCtgyList li {display:table; width:100%; height:4rem; border-bottom:1px solid #eee;}
+.addCtgyList li:first-child {border-top:0.2rem solid #c9e56e;}
+.addCtgyList li div {display:table-cell; padding:0 2rem; vertical-align:middle; font-size:1.4rem; color:#666;}
+.addCtgyList li div span:first-child {padding:0 0.8rem 0 0; background:none;}
+.addCtgyList li div span {display:block; float:left; padding:0 0.8rem 0 1.2rem; line-height:1.2; background:url(http://image.thefingers.co.kr/apps/2016/blt_arw_rt.png) no-repeat 0 50%; background-size:0.4rem auto;}
+.btnListDel {overflow:hidden; width:1.6rem; height:1.6rem; background:url(http://image.thefingers.co.kr/apps/2016/btn_list_delete.png) no-repeat 50% 50%; background-size:1.6rem 1.6rem; text-indent:-999em;}
+.btnDrop {padding:0 1.5rem; text-align:left;}
+
+.keywordInput .linkNotice img {width:23rem;}
+
+.optionSetting .addBtn {padding:1.5rem 1rem 3rem;}
+
+.setList {}
+.optionUnit {}
+.optionUnit input {font-size:1.4rem; color:#333;}
+.optionUnit dt {position:relative; margin-bottom:0.5rem; padding:1.5rem 1rem 1.3rem;  background-color:#fff;}
+.optionUnit dt input {height:4rem; padding:0 1rem; font-size:1.6rem; font-weight:500; border-bottom:2px solid #a6d216;}
+.optionUnit dt .btnSetting {position:absolute; right:1rem; top:50%; margin-top:-1.3rem;}
+.optionUnit dd {margin-top:1rem; padding:0.5rem 1rem 1.5rem; background-color:#fff;}
+.optionUnit dd ul {overflow:hidden;}
+.optionUnit dd li {float:left; width:50%; padding:0 0.25rem; font-size:1.4rem; color:#666;}
+.optionUnit dd li input {height:4rem; padding-right:0.5rem; font-weight:500;}
+.optionUnit dd li input[type=number] {text-align:right;}
+.optionUnit dd li input[type=number]::-webkit-input-placeholder {text-align:left;}
+.optionUnit dd li:first-child, .optionUnit dd li:first-child div {width:100%;}
+.optionUnit dd li:first-child {padding:0;}
+.optionUnit dd li:nth-child(4) {padding:0 0 0 0.25rem;}
+.optionUnit dd li div {display:table; width:100%; padding:0 1rem; border-bottom:1px solid #eee;}
+.optionUnit dd li div span {display:table-cell;}
+
+.btnSetting {text-align:right; vertical-align:middle;}
+.btnSetting label {visibility:hidden; width:0; height:0; overflow:hidden; position:absolute; top:-1000%; line-height:0;}
+.btnSetting button {overflow:hidden; width:4.4rem; height:2.6rem; background:url(http://image.thefingers.co.kr/apps/2016/btn_alarm.png) no-repeat 0 50%; background-size:auto 2.6rem; text-indent:-9999em;}
+.btnSetting button.settingOn {background:url(http://image.thefingers.co.kr/apps/2016/btn_alarm.png) no-repeat 100% 50%; background-size:auto 2.6rem;}
+
+.multiOption {padding:3.5rem 0 2rem; background-color:#fff; text-align:center;}
+.optionTab {position:relative; display:inline-block;}
+.optionTab li {position:relative; display:inline-block; width:8rem; height:8rem; margin:0 0.25rem;}
+.optionTab li div {position:relative; display:block; width:8rem; height:8rem; text-align:center; color:#fff; border-radius:4rem; line-height:8rem; font-size:1.4rem; background-color:#ddd; font-weight:600;}
+.optionTab li button {display:none; overflow:hidden; position:absolute; width:2rem; height:2rem; right:0.4rem; top:0.4rem; background:url(http://image.thefingers.co.kr/apps/2016/btn_delete.png) no-repeat 50% 50%; background-size:1.8rem 1.8rem; text-indent:-999em; z-index:10;}
+.optionTab li.current div {background-color:#a6d216;}
+.multiOption .btnPlus {display:inline-block; width:8rem; height:8rem; margin-left:0.25rem; background:#fff url(http://image.thefingers.co.kr/apps/2016/btn_plus.png) no-repeat 50% 50%; background-size:8rem 8rem; text-indent:-999em;}
+
+.safeCertify .list li:first-child {border-top:1px solid #eee;}
+
+.infoList li {padding:0 1rem; margin-top:1px; background-color:#fff;}
+.infoUnit {position:relative; display:table; width:100%;}
+.infoUnit dt {display:table-row;}
+.infoUnit dt strong {display:table-cell; height:5rem; padding-left:0.5rem; font-size:1.4rem; color:#333; font-weight:600; vertical-align:middle;}
+.infoUnit dd {padding:1rem 0.5rem; border-top:1px solid #eee; font-size:1.2rem; line-height:1.5rem; color:#999;}
+.infoUnit dd input, .infoUnit dd textarea {width:100%; font-size:1.4rem; font-weight:500;}
+.infoUnit dd.sltYN {position:absolute; right:0; top:0; width:10.5rem; height:3rem; padding:1rem 0; border-top:none;}
+.infoUnit dd.sltYN .btnM1 {height:3rem;}
+.infoUnit dd.addition {position:relative; padding:1rem 0.5rem 1rem 1.6rem;}
+.infoUnit dd.addition:before {position:absolute; left:0.5rem; top:0.9rem; content:'※'; font-size:1.2rem;}
+
+.artManage {position:relative;}
+.artListCont {padding-top:4.1rem;}
+.artList {padding-top:0.5rem;}
+.artList li {position:relative; background-color:#fff; padding:0 1rem; margin-top:1rem;}
+.artList li a {display:block;}
+.artStatus {display:table; width:100%; height:4rem; border-bottom:1px solid #eee; font-size:1.2rem; color:#999; background-color:#fff;}
+.artStatus p {display:table-cell; vertical-align:middle;}
+.artStatus p span {padding:0 0.5rem;}
+.artInfo {position:relative; min-height:11rem; padding:2rem 0.5rem 0 15.5rem;}
+.artInfo .artThumb {overflow:hidden; position:absolute; left:0.5rem; top:2rem; width:13.5rem; height:9rem;}
+.artInfo .artThumb:after {display:none; position:absolute; left:0; top:0; width:100%; height:100%; content:''; background-color:rgba(255,255,255,0.6);}
+.artInfo strong {display:block; overflow:hidden; width:100%; padding-top:0.5rem; font-size:1.4rem; line-height:1.1; color:#333; text-overflow:ellipsis; white-space:nowrap; font-weight:600;}
+.artInfo .artTxt {padding-top:0.6rem; font-size:1.3rem; color:#666;}
+.artInfo .artTxt p {padding-top:0.65rem;}
+.artInfo .artTxt dfn {font-size:1.2rem;}
+.artInfo .artTxt .tPad1r {padding-top:0.9rem !important;}
+.tag1 {display:inline-block; height:1.35rem; padding:0 0.5rem; color:#fff; font-size:1rem; text-align:center; line-height:1.49rem; border-radius:0.7rem 0.7rem; background-color:#999; vertical-align:middle; font-weight:600;}
+.tag2 {display:inline-block; height:1.35rem; padding:0 0.5rem; color:#fff; font-size:1rem; text-align:center; line-height:1.49rem; border-radius:0.7rem 0.7rem; background-color:#f96653; vertical-align:middle; font-weight:600;}
+.tag3 {display:inline-block; height:1.6rem; padding:0 0.8rem; color:#666; font-size:1rem; text-align:center; line-height:1.8rem; border-radius:0.8rem 0.8rem; background-color:#eee; vertical-align:middle; font-weight:500;}
+.tag4 {display:inline-block; height:2rem; padding:0 1rem; color:#333; font-size:1.1rem; text-align:center; line-height:1.8rem; border-radius:1rem 1rem; background-color:transparent; border:1px solid #333; vertical-align:middle; font-weight:500;}
+.tag4 .arwRt {display:inline-block; width:0.6rem; height:0.8rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_arw_rt3.png) 50% 50% no-repeat; background-size:0.4rem auto;}
+
+.arwRt {display:inline-block; width:0.5rem; height:0.7rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_arw_rt2.png) 50% 50% no-repeat; background-size:0.3rem auto;}
+.saleRate {padding-left:0.8rem; color:#f96653;}
+.salePrice {font-size:1.3rem; color:#f96653;}
+.artListWrap .artList li .artInfo {min-height:13rem; padding:2rem 0.5rem 2rem 15.5rem;}
+
+.artFlag1 .nowStatus {color:#a6d216; font-weight:600;} /* 판매중 */
+.artFlag2 .nowStatus {color:#666;} /* 일시품절 */
+.artFlag3 .nowStatus {color:#333;} /* 품절 */
+.artFlag3 .artThumb:after {display:block;}
+.artFlag4 .nowStatus {color:#999;} /* 사용안함 */
+.artFlag5 .nowStatus {color:#f96653;} /* 반려 */
+.artFlag5 .artThumb:after {display:block;}
+.artFlag6 .nowStatus {color:#f96653;} /* 보류 */
+.artFlag6 .artThumb:after {display:block;}
+.artFlag7 .nowStatus {color:#a6d216; font-weight:600;} /* 등록대기 */
+.artFlag8 .nowStatus {color:#999;} /* 임시저장 */
+.artFlag2 .artTxt *, .artFlag3 .artTxt *, .artFlag4 .artTxt *, .artFlag5 .artTxt *, .artFlag6 .artTxt * {color:#bbb !important;}
+
+.artSearchTop {display:table; width:100%; padding:1.5rem 1rem 0.5rem 1rem; background-color:#eee;}
+.artSearchTop div {display:table-cell;}
+.searchInput {position:relative; width:100%; height:3.5rem; padding:0.25rem 3.5rem 0.25rem 1.75rem; background-color:#fff; border-radius:1.75rem 1.75rem;}
+.searchInput span.schSlt {display:none; position:absolute; left:1.5rem; top:0.5rem; width:8.4rem; height:2.5rem; padding-right:2.5rem;}
+.searchInput span.schSlt:before {display:block; position:absolute; right:0.8rem; top:50%; width:1px; height:1.5rem; margin-top:-0.75rem; background-color:#ddd; content:'';}
+.searchInput span.schSlt:after {display:block; position:absolute; right:1.6rem; top:50%; width:0.8rem; height:0.5rem; margin-top:-0.25rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_select.png) no-repeat 100% 0; background-size:auto 1.2rem; content:'';}
+.searchInput select {height:2.5rem; background-color:transparent; color:#666; font-size:1.3rem;}
+.searchInput input {width:100%; font-size:1.4rem;}
+.searchInput button {display:none; overflow:hidden; position:absolute; right:0; top:0; width:4.5rem; height:3.5rem;}
+.searchInput button.btnSearch {background:transparent url(http://image.thefingers.co.kr/apps/2016/btn_search.png) no-repeat 50% 50%; background-size:1.65rem auto; text-indent:-999em;}
+.searchInput button.btnTextDel {display:none;}
+div.hasOpt span.schSlt {display:block;}
+div.hasOpt input {padding-left:8.5rem;}
+.btnFilter {width:4rem; text-align:right;}
+.btnFilter button {overflow:hidden; width:3.5rem; height:3.5rem; background:transparent url(http://image.thefingers.co.kr/apps/2016/btn_filter.png) no-repeat 50% 100%; background-size:3.5rem auto; text-indent:-999em;}
+.filterActive button {background:transparent url(http://image.thefingers.co.kr/apps/2016/btn_filter.png) no-repeat 50% 0; background-size:3.5rem auto;}
+.artNo .linkNotice {padding-top:27rem; background-position:50% 20rem;}
+
+.filterWrap {width:100%; padding:0 1rem 2rem 1rem; background-color:#fff;}
+.dfCompos {border-bottom:1px solid #eee; padding:0 0 2.5rem 0;}
+.dfCompos:last-child {border-bottom:none;}
+.dfCompos dt {position:relative; padding:2.5rem 0.5rem 1.5rem; font-size:1.5rem; color:#333; font-weight:600;}
+.dfCompos dt i {position:absolute; right:0; top:2.6rem;}
+.dfCompos dd {position:relative;}
+.dfCompos dd.selectBtn {padding:0;}
+.dfCompos dd.disabled:after {background-color:rgba(255,255,255,0.5);}
+.dfCompos .selectBtn li.grid3:nth-child(3) {padding-right:0;}
+.dfCompos .selectBtn li.grid3:nth-child(4) {padding-left:0; padding-top:1rem;}
+.dfCompos .selectBtn li.grid3:nth-child(5) {padding-right:0.25rem; padding-top:1rem;}
+.dfCompos .selectBtn li.grid3:nth-child(6) {padding-top:1rem;}
+.sort {display:inline-block; padding-right:1.1rem; background-repeat:no-repeat; background-position:100% 50%; background-size:0.7rem auto;}
+.srtDown {background-image:url(http://image.thefingers.co.kr/apps/2016/blt_sort_down.png);}
+.srtUp {background-image:url(http://image.thefingers.co.kr/apps/2016/blt_sort_up.png);}
+.selected .srtDown {background-image:url(http://image.thefingers.co.kr/apps/2016/blt_sort_selected_down.png);}
+.selected .srtUp {background-image:url(http://image.thefingers.co.kr/apps/2016/blt_sort_selected_up.png);}
+
+.dfCompos .list li {border-top:none; min-height:2.9rem; padding:0.75rem 0.5rem;}
+.dfCompos .list li:last-child {padding:0.75rem 0.5rem 0 0.5rem;}
+.dfCompos .list li dfn {width:31%;}
+.dfCompos .list li div {text-align:left; line-height:1.6rem;}
+.dfCompos .list li div s {color:#bbb;}
+.dfCompos .list li .optName {position:relative; overflow:hidden; width:48%;}
+.dfCompos .list li .optName div {position:absolute; left:0; right:0; top:0; display:block !important; overflow:hidden; width:100%; text-overflow:ellipsis; white-space:nowrap;}
+
+.artDetailWrap {width:100%; padding-top:4.5rem;}
+.artDetail {width:100%; padding:0 1rem; background-color:#fff;}
+.artDetail .artList {padding-top:0; border-bottom:1px solid #eee;}
+.artDetail .artList li {padding:0;}
+.artDetail .artInfo {min-height:13rem; padding:2rem 0.5rem 2rem 15.5rem;}
+.artDetail .artInfo strong {white-space:normal; line-height:1.7rem;}
+
+.priceChange .list li:first-child {border-top:none;}
+.priceChange .list li.critical dfn {color:#333; font-weight:600;}
+.priceChange .chgArw {overflow:hidden; width:10rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_arw_rt.png) no-repeat 50% 50%; background-size:2.05rem auto; text-indent:-999em;}
+.priceChange .list li .prePrice {color:#bbb; text-align:right; width:10rem;}
+.priceChange .list li .aftPrice {width:8.5rem;}
+.priceChange .list li .aftPrice input[type=number]::-webkit-input-placeholder  {color:#333;}
+.priceChange .linkInsert {margin-top:2rem;}
+.priceChange .linkInsert textarea {font-size:1.4rem;}
+
+.sepLine {color:#bbb; font-size:1.2rem; padding:0 1rem;}
+
+.boxUnit {padding:1.5rem; background-color:#f5f5f5; color:#666;}
+.boxHead {display:table; width:100%; font-size:1.4rem; vertical-align:middle;}
+.boxHead b {display:table-cell; padding:0.5rem 0.5rem 1rem 0.5rem; font-weight:600;}
+.boxHead p {display:table-cell; padding:0.5rem 0.5rem 1rem 0; text-align:right;}
+.boxHead .chgArw {display:inline-block; overflow:hidden; width:1.7rem; height:1rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_arw_rt2.png) no-repeat 50% 50%; background-size:0.8rem auto; text-indent:-999em;}
+.boxCont {padding:1.5rem 0.5rem 0.5rem 0.5rem; border-top:1px solid #ddd; font-size:1.3rem; line-height:1.6rem;}
+.bdrTGry {border-top:2px solid #ccc;}
+.bdrTRtGry {border-top:2px solid #eee;}
+.bdrTOr {border-top:2px solid #f96653;}
+.bdrTOr .boxHead b {color:#f96653;}
+
+.noData {padding-top:20rem; font-size:1.5rem; text-align:center; color:#bbb;}
+.noData p {padding-top:6.2rem; background:url(http://image.thefingers.co.kr/apps/2016/bg_fingers_hand.png) no-repeat 50% 0; background-size:8rem 4.2rem;}
+
+
+/************************* ORDER *************************/
+.orderManage {position:relative;}
+
+.stateWrap {margin-bottom:1.5rem; text-align:center;}
+.stateWrap .stateView {padding:11.5rem 1.75rem 3rem; background-position:50% 4rem; background-repeat:no-repeat; color:#333;}
+.stateWrap .stateView strong {disply:block; font-size:2.5rem; font-weight:600;}
+.stateWrap .stateView p {padding-top:1.5rem; font-size:1.5rem; line-height:1.8rem;}
+.stateWrap .stateDate {display:table; width:100%; height:8rem;}
+.stateWrap .stateDate p {display:table-cell; width:100%; vertical-align:middle; font-size:1.2rem; line-height:1.5rem; color:#fff;}
+.stateWrap .stateDate p span {display:block;}
+.stateWrap .stateTotal {height:5rem; font-size:1.5rem; line-height:5rem; color:#fff; background-color:#333;}
+
+.standby .stateView {background-color:#ffae00; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_box.png); background-size:5rem auto;}
+.standby .stateDate {background-color:#ffbe33;}
+
+.releaseFin .stateView {background-color:#a6d216; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_delivery.png); background-size:5rem auto;}
+.releaseFin .stateDate {background-color:#b8db45;}
+
+.undeliver .stateView {color:#fff; background-color:#f96653; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_box.png); background-size:5rem auto;}
+.undeliver .stateDate {background-color:#fa8575;}
+
+.releaseIng .stateView {color:#fff; background-color:#f96653; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_box.png); background-size:5rem auto;}
+.releaseIng .stateDate {background-color:#fa8575;}
+
+.odrCancel .stateView {color:#fff; background-color:#999; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_box.png); background-size:5rem auto;}
+.odrCancel .stateDate {background-color:#adadad;}
+
+.orderInfoWrap {padding-bottom:5rem;}
+.orderInfoWrap h2 {height:5rem; padding:1.8rem 1.5rem; margin-bottom:0.25rem; background-color:#fff; color:#333; font-size:1.5rem; font-weight:600;}
+.orderInfoWrap .artList {padding-top:0; padding-bottom:1.5rem;}
+.orderInfoWrap .artList li {margin-top:0.15rem; padding:0 1rem 2rem;}
+.orderInfoWrap .addBtn {padding-bottom:1.5rem;}
+.orderInfoWrap div.artList {margin-bottom:1.5rem; background-color:#fff; padding:1.75rem 1.5rem 2.3rem; font-size:1.3rem; color:#999; line-height:1.6rem;}
+
+.releaseIng .nowStatus {color:#f96653;} /* 일부출고 */
+.standby .nowStatus {color:#ffbd2e;} /* 배송대기 */
+.undeliver .nowStatus {color:#f96653;} /* 미출고 */
+.releaseFin .nowStatus {color:#666;} /* 출고완료 */
+.chkWait .nowStatus {color:#a6d216;} /* 확인대기 */
+.odrCancel .nowStatus {color:#999;} /* 주문취소 */
+.undoit .nowStatus {color:#ffbd2e;} /* 미처리 */
+.complete .nowStatus {color:#666;} /* 처리완료 */
+
+.shortCont {padding:1rem 0; text-align:center; color:#333;}
+.invoiceNo {text-decoration:underline; cursor:pointer;}
+
+.dfCompos2 {}
+.dfCompos2 .list {padding-top:1.5rem;}
+.dfCompos2 .list li {min-height:auto; margin-top:0; padding:0.85rem 0.5rem 0.3rem; border-top:none;}
+.dfCompos2 .list li a {display:inline-block;}
+.dfCompos2 .list li dfn {width:31%; line-height:1.6rem;}
+.dfCompos2 .list li div {text-align:left; line-height:1.6rem;}
+
+.orderInfoWrap .dfCompos2 .list li dfn {vertical-align:top;}
+.orderInfoWrap .dfCompos2 .list li div {vertical-align:top;}
+.orderInfoWrap .dfCompos2 .list li div p {margin-top:0.4rem;}
+.orderInfoWrap .dfCompos2 .list li div p:first-child {margin-top:0;}
+
+.artList .boxUnit {margin:1.5rem 0.5rem 0; padding:1rem 1.5rem;}
+.artList .boxHead {font-size:1.2rem;}
+.artList .boxHead b {padding-left:0; font-size:1.2rem;}
+.artList .boxCont {padding:0 0 0.3rem 0; border-top:none; font-size:1.2rem; color:#999;}
+
+.invoiceWrite {padding-bottom:1rem;}
+.invoiceWrite .artList {padding-top:0; padding-bottom:1rem;}
+.invoiceWrite .artList li {margin-top:1px; padding:0 1rem 2rem;}
+.invoiceWrite .artList li:first-child {margin-top:0;}
+.invoiceWrite .artList li.selectBtn {padding:1.5rem;}
+.invoiceWrite .artList li.list {padding:1.5rem;}
+.invoiceWrite .artList li .orderNo {padding-top:0.25rem; font-size:1.1rem; color:#333;}
+
+.unDeliverReason .artList {padding-top:0; margin-bottom:1.5rem;}
+.unDeliverReason .artList li:first-child {margin-top:0;}
+.unDeliverReason .artList li {padding:0 1rem 2rem;}
+
+.unDeliverReason .registUnit {margin-bottom:1.5rem;}
+
+.list div.datePickWrap {display:block; position:relative; height:4rem; padding:0.9rem 0.9rem 0.9rem 4.1rem; border:1px solid #ddd; border-radius:0.4rem; -webkit-border-radius:0.4rem; text-align:left; vertical-align:middle;}
+.list div.datePickWrap .ui-datepicker-trigger {position:absolute; left:1rem; top:50%; width:1.9rem; height:1.8rem; margin-top:-0.9rem;}
+.list div.datePickWrap .hasDatepicker,
+.list div.datePickWrap .hasDatepicker::-webkit-input-placeholder {text-align:left !important;}
+
+.orderListWrap .artList li .artInfo {min-height:13rem; padding:2rem 0.5rem 2rem 15.5rem;}
+.orderListWrap .artInfo strong {display:-webkit-box; max-height:3.5rem; _height:3.5rem; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word; line-height:1.2; white-space:normal;}
+
+.csListWrap .artList li .artInfo {min-height:auto; padding:1.5rem 0.5rem 3rem 0.5rem;}
+.csListWrap .artInfo strong {padding-top:1.35rem; line-height:1.3; white-space:normal;}
+
+.invoiceGrp {margin-top:1rem; border-top:2px solid #c9e56d;}
+.invoiceGrp .artList {padding-bottom:0.5rem;}
+.invoiceGrp .artStatus {padding:0 1rem; color:#333;}
+.invoiceAddr {padding:1.5rem; background-color:#fff; font-size:1.2rem; line-height:1.6rem; color:#999;}
+
+.finished .stateView {padding:11.5rem 6.5rem 3rem; color:#333; background-color:#a6d216; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_dotted.png); background-size:5rem auto;}
+.finished .stateDate {background-color:#b8db45;}
+.finished .stateDate dfn {display:block; padding-bottom:0.7rem; font-size:1.3rem; font-weight:600;}
+
+.unDoit .stateView {color:#fff; background-color:#f96653; background-image:url(http://image.thefingers.co.kr/apps/2016/ico_dotted.png); background-size:5rem auto;}
+.unDoit .stateDate {background-color:#fa8575;}
+.unDoit .stateDate dfn {display:block; padding-bottom:0.7rem; font-size:1.3rem; font-weight:600;}
+.unDoit .tag4 {display:inline-block; height:2rem; padding:0 1rem; color:#fff; font-size:1.1rem; text-align:center; line-height:1.8rem; border-radius:1rem 1rem; background-color:transparent; border:1px solid #fff; vertical-align:middle; font-weight:500;}
+.unDoit .tag4 .arwRt {display:inline-block; width:0.6rem; height:0.8rem; background:url(http://image.thefingers.co.kr/apps/2016/blt_arw_rt4.png) 50% 50% no-repeat; background-size:0.4rem auto;}
+
+.csHelp {padding:1.5rem; background-color:#fff;}
+.csHelp .boxUnit {font-size:1.2rem; color:#666; line-height:1.5rem;}
+
+.csResult .artList li:first-child {padding-top:2rem;}
+.csResult textarea {width:100%; padding:0.5rem 1rem; font-size:1.3rem; color:#333; line-height:2.1rem;}
+.csResultTxt {padding:1.55rem 0.5rem 0; font-size:1.3rem; color:#666; line-height:2.1rem;}
+
+.timelineWrap {padding:4.1rem 1.5rem; background-color:#fff;}
+.orderInfoBox {display:table; width:100%; height:5rem; padding:0 2.6rem 0 2.5rem; margin:1.5rem auto 0 auto; border-radius:2.5rem; background-color:#f5f5f5;}
+.orderInfoBox span {display:table-cell; vertical-align:middle; font-size:1.3rem; color:#666; overflow:hidden;}
+.orderInfoBox span.odrNo {width:10.3rem; padding-right:2.3rem; font-weight:500; color:#999; text-align:left;}
+.orderInfoBox span.odrName {position:relative;}
+.orderInfoBox span.odrName dfn {position:absolute; display:block; width:100%; height:100%; left:0; top:0; right:0; bottom:0; line-height:5rem; font-weight:600; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.orderInfoBox span.etc {width:4.3rem; text-align:right;}
+
+.timeline {width:100%; padding:2rem 2rem; margin-top:1.5rem;}
+.timeline ul {position:relative;}
+.timeline li {position:relative; overflow:hidden; width:100%; min-height:6.5rem; padding-left:11rem;}
+.timeline li:after {display:block; position:absolute; left:8rem; bottom:0; width:1px; height:4rem; content:''; background-color:#eee;}
+.timeline li:last-child {min-height:4.5rem;}
+.timeline li:last-child:after {display:none;}
+.timeline li time {position:absolute; left:0; top:0.6rem; text-align:right; font-size:1.1rem; color:#aaa;}
+.timeline li time p {padding-bottom:0.6rem;}
+.timeline li .timeCont {position:relative; padding-top:0.3rem; font-size:1.5rem; color:#333; font-weight:500;}
+.timeline li .timeCont:after {position:absolute; left:-3.5rem; top:0.5rem; width:1rem; height:1rem; border-radius:0.5rem; background-color:#ddd; content:''; z-index:10;}
+
+.timeline li:before {display:none; position:absolute; left:7rem; top:0; width:2rem; height:2rem; border-radius:1rem; opacity:0.2; -moz-opacity:0.2; -khtml-opacity:0.2; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; filter:alpha(opacity=20); content:''; z-index:5;}
+.timeline li.current:before {display:block;}
+
+.timeline li.payFin .timeCont:after, .timeline li.payFin:before {background-color:#a6d216;} /* 결제완료 */
+.timeline li.odrReceive .timeCont:after, .timeline li.odrReceive:before {background-color:#ffae00;} /* 주문접수 */
+.timeline li.odrCancel .timeCont {color:#999;} /* 주문취소 */
+.timeline li.odrCancel .timeCont:after, .timeline li.odrCancel:before {background-color:#ddd;}
+.timeline li.releaseFin .timeCont:after, .timeline li.releaseFin:before {background-color:#a6d216;} /* 출고완료 */
+.timeline li.releaseIng .timeCont:after, .timeline li.releaseIng:before {background-color:#f96653;} /* 일부출고 */
+.timeline li.undeliver .timeCont:after, .timeline li.undeliver:before {background-color:#666;} /* 미출고 처리 */
+.timeline li.qnaRegist .timeCont {color:#999;} /* 문의글 등록 */
+.timeline li.qnaRegist .timeCont:after, .timeline li.qnaRegist:before {background-color:#ddd;}
+.timeline li.qnaReply .timeCont {color:#999;} /* 문의글 답변 */
+.timeline li.qnaReply .timeCont:after, .timeline li.qnaReply:before {background-color:#ddd;} 
+.timeline li.saleFin .timeCont:after, .timeline li.saleFin:before {background-color:#666;} /* 판매완료 */
+.timeline li.refund .timeCont:after, .timeline li.refund:before {background-color:#666;} /* 반품/환불 */
+
+.etcMain h2 {padding:1.5rem; background-color:#333; color:#fff; font-size:1.3rem; font-weight:600;}
+.btnNav {display:table; width:100%;}
+.btnNav li {display:table-cell; width:33.333%; padding:1px 1px 1px 0; vertical-align:middle;}
+.btnNav li:last-child {padding-right:0;}
+.btnNav li div {position:relative; padding:6.4rem 1.5rem 1.5rem; text-align:center; background-color:#fff; background-position:50% 2.2rem; background-repeat:no-repeat; background-size:auto 2.8rem; font-size:1.2rem; color:#333; font-weight:500;}
+.btnNav li.boardTalk div {background-image:url(http://image.thefingers.co.kr/apps/2016/btn_talk.png);}
+.btnNav li.boardReview div {background-image:url(http://image.thefingers.co.kr/apps/2016/btn_review.png);}
+.btnNav li.boardQna div {background-image:url(http://image.thefingers.co.kr/apps/2016/btn_qna.png);}
+.btnNav li div span {display:block; position:absolute; left:50%; top:50%; margin:-2.9rem 0 0 1rem; padding:0.2rem 0.55rem; color:#fff; background-color:#fe3b30; font-size:1.2rem; border-radius:0.8rem; font-weight:500; vertical-align:top;}
+.btnNav li div span i {display:inline-block; width:0.7rem; height:0.9rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_plus.png) no-repeat 100% 50%; background-size:0.5rem;}
+
+.boardList {margin-bottom:1.5rem;}
+.boardList .artList {padding-top:0;}
+.boardList .artList li {padding:2.3rem 1.5rem 2.5rem;}
+.boardList .artList li p {padding-left:0.5rem; padding-right:0.5rem;}
+.boardList .txt {color:#666; font-size:1.3rem; line-height:1.8rem;}
+.boardList .txtInfo {padding-top:2.2rem;}
+.boardList .btnGroup {margin-top:-1.75rem;}
+.btnGroup {padding-right:0.5rem; text-align:right;}
+.btnGroup .btn {height:2.4rem; padding:0 1.05rem; margin-left:0.2rem; font-size:1.1rem; border-radius:0.2rem;}
+.txtInfo {font-size:1.2rem; color:#999;}
+.txtInfo span {display:inline-block; padding:0 1rem; color:#ddd;}
+
+.cmtListWrap .writer {position:relative; font-weight:600; font-size:1.4rem;}
+.cmtListWrap .txt {padding-top:1.15rem;}
+.cmtListWrap .artList {margin-top:1rem;}
+.cmtListWrap .artList li:first-child {margin-top:0;}
+.cmtListWrap .artList li.reply {margin-top:0; padding:0 1.5rem 2.5rem;}
+.cmtListWrap .artList li.reply:after {content:''; display:inline-block; position:absolute; left:2rem; top:2.2rem; width:1.2rem; height:1.5rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_arw_reply.png) 0 0 no-repeat; background-size:1.2rem auto;}
+.cmtListWrap .artList li.reply p {padding-left:2.5rem;}
+.cmtListWrap .artList li.reply .writer {padding:2.3rem 0 0 2.5rem; border-top:1px solid #eee;}
+.cmtListWrap .artList li.reply .writer:after {content:''; display:none; position:absolute; left:2.6rem; top:2.65rem; width:1.7rem; height:0.9rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_fingers_hand.png) 0 0 no-repeat; background-size:100%;}
+.cmtListWrap .artList li.reply:first-child .writer {border-top:none;}
+.cmtListWrap .artList li.master p.writer {padding:2.3rem 0 0 4.8rem}
+.cmtListWrap .artList li.master p.writer:after {display:inline-block;}
+
+.reviewListWrap .artList li .title {overflow:hidden; padding:0.15rem 0.5rem 1.55rem 0.5rem; font-size:1.3rem; color:#333; font-weight:600; border-bottom:0.1rem solid #eee; text-overflow:ellipsis; white-space:nowrap;}
+.reviewListWrap .star {width:8rem; height:1.6rem; margin:1.4rem 0 0 0.5rem; background:url(http://image.thefingers.co.kr/m/2016/common/ico_star_gry.png) 0 0 repeat-x; background-size:1.6rem 1.6rem;}
+.reviewListWrap .star span {display:inline-block; height:1.6rem; text-align:left; background: url(http://image.thefingers.co.kr/m/2016/common/ico_star_grn.png) 0 0 repeat-x; background-size:1.6rem 1.6rem;}
+.reviewListWrap .star.score00 span {width:0;}
+.reviewListWrap .star.score01 span {width:1.6rem;}
+.reviewListWrap .star.score02 span {width:3.2rem;}
+.reviewListWrap .star.score03 span {width:4.8rem;}
+.reviewListWrap .star.score04 span {width:6.4rem;}
+.reviewListWrap .star.score05 span {width:8rem;}
+.reviewListWrap .artList li .txt {padding-top:0.6rem;}
+.reviewListWrap .reviewImg {padding:1rem 0.5rem 0.1rem 0.5rem; color:#999;}
+.reviewListWrap .reviewImg img {display:inline-block; margin:0.25rem 0; vertical-align:top;}
+
+.qnaListWrap .pushList {padding:0 0 1.5rem 0;}
+.qnaListWrap .pushList li {margin-top:1rem;}
+.qnaListWrap .pushList li a {padding:1.5rem 2rem 2rem;}
+.qnaListWrap .pushList li div {padding:0.8rem 0 0.75rem 0; font-size:1.4rem; line-height:1.8rem; color:#333;}
+
+.qnaViewWrap {background-color:#fff;}
+.qnaViewWrap .artInfo {min-height:13rem; padding:2.5rem 1.5rem 2rem 16.5rem; color:#999; border-bottom:1px solid #eee;}
+.qnaViewWrap .artInfo .artThumb {left:1.5rem;}
+.qnaViewWrap .artInfo strong {padding:0.45rem 0 1.2rem; white-space:normal; line-height:1.8rem; color:#999; font-weight:500;}
+.qnaViewWrap .titleCont {padding:1.75rem 2rem 2rem; border-bottom:1px solid #eee;}
+.qnaViewWrap .titleCont .title {font-size:1.4rem; line-height:1.4; font-weight:600;}
+.qnaViewWrap .txtInfo {padding-top:0.55rem;}
+.qnaViewWrap .viewCont {padding:0.5rem 1.5rem;}
+.qnaViewWrap .viewCont > div {position:relative; margin-left:3rem; padding:1.65rem 0 0 4rem; border-top:1px solid #eee;}
+.qnaViewWrap .viewCont .ico {display:inline-block; position:absolute; left:0; top:2rem; width:3rem; height:3rem; color:#fff; font-size:1.8rem; line-height:2.8rem; text-align:center; border-radius:50%;}
+.qnaViewWrap .viewCont .ico:after {content:''; display:inline-block; position:absolute; left:-2.2rem; top:0.5rem; width:1.2rem; height:1.5rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_arw_reply.png) 0 0 no-repeat; background-size:1.2rem auto;}
+.qnaViewWrap .viewCont .btnGroup {margin-top:0; padding-bottom:1rem;}
+.qnaViewWrap .viewCont .txt {padding:0 0.5rem 1.75rem 0; color:#333;}
+.qnaViewWrap .viewCont .question .ico {background-color:#ccc;}
+.qnaViewWrap .viewCont .question:first-child {margin-left:0; border-top:0;}
+.qnaViewWrap .viewCont .question:first-child .ico:after {display:none;}
+.qnaViewWrap .viewCont .question:after {display:none;}
+.qnaViewWrap .viewCont .answer .ico {background-color:#a6d216;}
+
+.askView > .btnGroup {padding:0 0.5rem 1.5rem 0.8rem;}
+.askView .reply {position:relative; padding:2.3rem 0 2.5rem 3rem; border-top:1px solid #eee;}
+.askView .reply:after {content:''; display:inline-block; position:absolute; left:1rem; top:2.2rem; width:1.2rem; height:1.5rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_arw_reply.png) 0 0 no-repeat; background-size:1.2rem auto;}
+.askView .reply .writer {position:relative; font-weight:600; font-size:1.4rem; padding:0 0 0 2.2rem;}
+.askView .reply .writer:after {content:''; display:inline-block; position:absolute; left:0; top:0.3rem; width:1.7rem; height:0.9rem; background:url(http://image.thefingers.co.kr/apps/2016/ico_fingers_hand.png) 0 0 no-repeat; background-size:100%;}
+.askView .reply .txt {padding:1.15rem 1rem 1.95rem 0; font-size:1.3rem; line-height:1.9rem; color:#666; word-break:break-all;}
+.askView .reply .btnGroup {margin-top:-1.5rem;}
+
+.askWrite {padding-bottom:1rem;}
+.askWrite .artList {padding-top:0; padding-bottom:1rem;}
+.askWrite .artList li {margin-top:1px; padding:1rem 1.5rem;}
+.askWrite .artList li:first-child {margin-top:0;}
+.askWrite .artList li.selectBtn {padding:1rem 1.5rem;}
+.askWrite .artList li.linkInsert {padding:1.5rem 1.3rem;}
+.askWrite .artList li.linkInsert textarea {padding:0; margin:0; text-align:left;}
+.askWrite .artList li.linkInsert textarea, .askWrite .artList li input {font-size:1.4rem; font-weight:normal; width:100%;}
+.askWrite .artList li .selectBtn {padding:0;}
+.askWrite .artList li .selectBtn .btn {width:4.6rem; height:2.7rem; font-size:1.3rem; font-weight:500;}

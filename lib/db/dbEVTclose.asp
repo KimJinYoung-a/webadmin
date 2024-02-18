@@ -1,0 +1,3 @@
+<%
+dbEVTget.Close
+%>

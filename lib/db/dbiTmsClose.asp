@@ -1,0 +1,5 @@
+<%
+
+dbiTms_dbget.Close
+
+%>
