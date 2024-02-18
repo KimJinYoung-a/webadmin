@@ -1,0 +1,233 @@
+     
+<html>
+<head>
+    <title>LG데이콤 전자결제 신용카드결제 샘플 페이지</title>
+<!-- 수정 불가  시작-->
+	<script language="javascript" src="http://www.vpay.co.kr/KVPplugin.js" type="text/javascript"></script>
+	<script language="javascript" src="http://mpi.dacom.net/XPayMPI/XPayMPIOCX.js" type="text/javascript"></script>
+	<script language="javascript">
+	    //StartSmartUpdate(); // KVP ISP
+		function XPayMPIProcessResult(Step1ControlResult, Step1ServerResult, Step1Msg, Step2ControlResult, Step2ServerResult, Step2Msg,  Cavv, MD, ECI, CAVVALG ) { }
+	</script>
+<!-- //수정 불가  끝 -->
+	<script language="javascript">
+		/*
+		* 인증요청 처리 
+		*/
+		function doPay_ActiveX(){
+			ret = xpay_card(document.getElementById('LGD_PAYINFO'));
+			if( "0000" == ret ) { //인증성공
+				/*
+				* 인증성공 화면 처리
+				*/
+				alert("결제요청 합니다...")
+				document.getElementById("LGD_PAYINFO").submit();        
+			} else { //인증실패
+				/*
+				* 인증실패 화면 처리
+				*/        
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="LGD_ACTIVEX_DIV"></div><!-- ActiveX설치 실패시 안내 Layer -->
+	<script language="javascript" src="http://xpay.lgdacom.net/xpay/js/xpay_card.js" type="text/javascript"></script><!-- ActiveX설치 및 공통함수 -->
+	
+    <form method="post" id="LGD_PAYINFO" action="CardApp.asp">
+        <table>	
+<!-- 수정가능정보 시작 -->		
+            <tr>
+                <td>상점아이디(t를 제외한 아이디) </td>
+                <td><input type="text" name="CST_MID" id="CST_MID" value="lgdacomxpay"/></td>
+            </tr>
+            <tr>
+                <td>서비스,테스트 </td>
+                <td><input type="text" name="CST_PLATFORM" id = "CST_PLATFORM" value="test"/></td>
+            </tr>
+            <tr>
+                <td>주문번호(유니크) </td>
+                <td><input type="text" name="LGD_OID" id="LGD_OID" value=""/></td>
+            </tr>
+			<tr>
+                <td>결제금액 </td>
+                <td><input type="text" name="LGD_AMOUNT" id="LGD_AMOUNT" value="1000"/></td>
+            </tr>
+			<tr>
+                <td>구매자명</td>
+                <td><input type="text" name="LGD_BUYER" id="LGD_BUYER" value="테스트구매자"/></td>
+            </tr>
+            <tr>
+                <td>상품명</td>
+                <td><input type="text" name="LGD_PRODUCTINFO" id="LGD_PRODUCTINFO" value="테스트상품"/></td>
+            </tr>
+			<tr>
+                <td>상점명</td>
+                <td><input type="text" name="LGD_MERTNAME" id="LGD_MERTNAME" value="테스트상점"/></td>
+            </tr>
+            <tr>
+                <td>이메일주소</td>
+                <td><input type="text" name="LGD_BUYEREMAIL" id="LGD_BUYEREMAIL" value=""/></td>
+            </tr>
+			<tr>
+                <td>카드선택</td>
+                <td>
+                	<select name="LGD_CARDTYPE" id="LGD_CARDTYPE" onchange="setLGD_NOINT()">
+                		<option value="XX">선택</option>
+                		<option value="11">국민</option>
+						<option value="21">외환</option>
+						<option value="31">비씨</option>
+						<option value="41">신한</option>
+						<option value="51">삼성</option>
+						<option value="61">현대</option>
+						<option value="71">롯데</option>
+						<option value="36">씨티</option>
+						<option value="32">하나</option>
+						<option value="33">우리</option>
+						<option value="42">제주</option>
+						<option value="34">수협</option>
+						<option value="35">전북</option>
+						<option value="46">광주</option>
+						<option value="29">산은캐피탈</option>
+						<option value="4V">해외VISA</option>
+						<option value="4M">해외MASTER</option>
+						<option value="4J">해외JCB</option>
+						<option value="6D">해외DINERS CLUB</option>
+						
+                	</select>
+                </td>
+            </tr>
+			<tr>
+                <td>ISP무이자정보(KVP_NOINT_INF)</td>
+                <td><input type="text" name="KVP_NOINT_INF" id="KVP_NOINT_INF" value=""/>예)국민/비씨/우리 2,3개월 무이자 시 --> 0100-2:3,0204-2:3,0700-2:3</td>
+            </tr>
+			<tr>
+                <td>ISP표시할부개월수(KVP_QUOTA_INF)</td>
+                <td><input type="text" name="KVP_QUOTA_INF" id="KVP_QUOTA_INF" value="0:2:3:4:5:6:7:8:9:10:11:12"/></td>
+            </tr>
+			<tr>
+                <td>안심클릭 무이자정보(LGD_NOINTINF)</td>
+                <td><input type="text" name="LGD_NOINTINF" id="LGD_NOINTINF" value=""/>예)신한/삼성 2,3개월 무이자 시 --> 41-2:3,51-2:3</td>
+            </tr>
+			<tr>
+                <td>안심클릭 할부개월(LGD_INSTALL)</td>
+                <td>
+                	<select name="LGD_INSTALL" onchange="setLGD_NOINT()">
+                		<option value="0">일시불</option>
+						<option value="2">2개월</option>
+						<option value="3">3개월</option>
+						<option value="4">4개월</option>
+						<option value="5">5개월</option>
+						<option value="6">6개월</option>
+						<option value="7">7개월</option>
+						<option value="8">8개월</option>
+						<option value="9">9개월</option>
+						<option value="10">10개월</option>
+						<option value="11">11개월</option>
+						<option value="12">12개월</option>
+                	</select>
+				</td>
+            </tr>
+
+<!--//수정가능정보 끝  -->
+<!-- 수정 불가  시작-->		
+            <tr>
+                <td>인증유형 </td>
+                <td><input type="text" name="LGD_AUTHTYPE" id="LGD_AUTHTYPE"/></td>
+            </tr>
+			<tr>
+                <td>KVP_CURRENCY</td>
+                <td><input type="text" name="KVP_CURRENCY" id="KVP_CURRENCY"/></td>
+            </tr>
+			<tr>
+                <td>KVP_OACERT_INF</td>
+                <td><input type="text" name="KVP_OACERT_INF" id="KVP_OACERT_INF"/></td>
+            </tr>	
+			<tr>
+                <td>KVP_RESERVED1</td>
+                <td><input type="text" name="KVP_RESERVED1" id="KVP_RESERVED1"/></td>
+            </tr>						
+			<tr>
+                <td>KVP_RESERVED2</td>
+                <td><input type="text" name="KVP_RESERVED2" id="KVP_RESERVED2"/></td>
+            </tr>						
+			<tr>
+                <td>KVP_RESERVED3</td>
+                <td><input type="text" name="KVP_RESERVED3" id="KVP_RESERVED3"/></td>
+            </tr>	
+			<tr>
+                <td>KVP_GOODNAME</td>
+                <td><input type="text" name="KVP_GOODNAME" id="KVP_GOODNAME"/></td>
+            </tr>				
+			<tr>
+                <td>KVP_CARDCOMPANY</td>
+                <td><input type="text" name="KVP_CARDCOMPANY" id="KVP_CARDCOMPANY"/></td>
+            </tr>			
+			<tr>
+                <td>KVP_PRICE</td>
+                <td><input type="text" name="KVP_PRICE" id="KVP_PRICE"/></td>
+            </tr>			
+			<tr>
+                <td>KVP_PGID</td>
+                <td><input type="text" name="KVP_PGID" id="KVP_PGID"/></td>
+            </tr>			    
+			<tr>
+                <td>KVP_QUOTA</td>
+                <td><input type="text" name="KVP_QUOTA" id="KVP_QUOTA" /></td>
+            </tr>
+            <tr>
+                <td>KVP_NOINT </td>
+                <td><input type="text" name="KVP_NOINT" id="KVP_NOINT"/></td> 
+			<tr>
+            <tr>
+                <td>KVP_SESSIONKEY </td>
+                <td><input type="hidden" name="KVP_SESSIONKEY" id="KVP_SESSIONKEY" /></td> 
+			<tr>
+			<tr>
+                <td>KVP_ENCDATA</td>
+                <td><input type="hidden" name="KVP_ENCDATA" id="KVP_ENCDATA"/></td> 
+			<tr>
+			<tr>
+                <td>KVP_CARDCODE</td>
+                <td><input type="text" name="KVP_CARDCODE" id="KVP_CARDCODE"/></td> 
+			<tr>
+			<tr>
+                <td>KVP_CONAME</td>
+                <td><input type="text" name="KVP_CONAME" id="KVP_CONAME"/></td> 
+			<tr>
+            <tr>
+                <td>LGD_PAN </td>
+                <td><input type="text" name="LGD_PAN" /></td>
+            </tr>
+            <tr>
+                <td>LGD_NOINT</td>
+                <td><input type="text" name="LGD_NOINT" id="LGD_NOINT" /></td>
+            </tr>
+            <tr>
+                <td>VBV_ECI</td>
+                <td><input type="text" name="VBV_ECI" id="VBV_ECI"/></td>
+            </tr>
+            <tr>
+                <td>VBV_CAVV</td>
+                <td><input type="text" name="VBV_CAVV" id="VBV_CAVV" /></td>
+            </tr>
+            <tr>
+                <td>VBV_XID</td>
+                <td><input type="text" name="VBV_XID" id="VBV_XID" /></td>
+            </tr>
+            <tr>
+                <td>LGD_EXPYEAR</td>
+                <td><input type="text" name="LGD_EXPYEAR" id="LGD_EXPYEAR" /></td>
+            </tr>
+            <tr>
+                <td>LGD_EXPMON</td>
+                <td><input type="text" name="LGD_EXPMON" id="LGD_EXPMON" /></td>
+            </tr>
+<!-- //수정 불가  끝 -->
+      </table>
+		<input type="button" value="결제하기" onclick="doPay_ActiveX()"/><br/>
+    </form>
+
+</body>
+</html>
+

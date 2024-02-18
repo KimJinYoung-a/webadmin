@@ -1,0 +1,1 @@
+FCKLang.Title='ko.js';

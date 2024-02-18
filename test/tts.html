@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="https://rawgithub.com/hiddentao/google-tts/master/google-tts.min.js"></script>
+	</head>
+	<body>
+
+		<script>
+		/*
+		var text = '안녕하세요.';
+		var language = 'ko';
+		var tts = new GoogleTTS(language);
+		tts.play(text, language, function() {})
+		*/
+
+		var str = '안녕하세요.';
+		var msg = new SpeechSynthesisUtterance(str);
+		msg.pitch = 1;
+		msg.rate = .8;
+		msg.lang = 'ko-KR';
+		window.speechSynthesis.speak(msg);
+
+		function say() {
+			var str = '안녕하세요.';
+			var msg = new SpeechSynthesisUtterance(str);
+			msg.pitch = 1;
+			msg.rate = .8;
+			msg.lang = 'ko-KR';
+			window.speechSynthesis.speak(msg);
+		}
+		</script>
+
+		<input type="button" onClick="say()" value="play">
+	</body>
+</html>

@@ -1,0 +1,37 @@
+﻿input 
+{
+    border: 1px solid #000000; 
+}  
+.inform 
+{
+    font-size: 11px;
+    font-family: Verdana, Tahoman, Arial;  
+}  
+fieldset 
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dee5f8; 
+}
+.content 
+{
+    list-style: none;
+}
+.content li
+{
+	padding: 3px;
+}
+.item 
+{
+	width: 60px;	
+}
+.extitem
+{
+	
+}
+.extitem a,
+.extitem a:link
+{
+	color: #000000;
+	text-decoration: none;
+}

@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>LG텔레콤 가상계좌 발급/변경 샘플 페이지</title>
+</head>
+<body>
+    <form method="post" id="LGD_PAYINFO" action="CyberAccount.asp">
+    <div>
+        <table>	
+            <tr>
+                <td>상점아이디(t를 제외한 아이디) </td>
+                <td><input type="text" name="CST_MID" value="tenbyten01"/></td>
+            </tr>
+            <tr>
+                <td>서비스(service),테스트(test) </td>
+                <td><input type="text" name="CST_PLATFORM" value="test"/></td>
+            </tr>
+            <tr>
+                <td>주문번호(유니크) </td>
+                <td><input type="text" name="LGD_OID" value="1234567890"/></td>
+            </tr>
+		    <tr>
+                <td>결제금액 </td>
+                <td><input type="text" name="LGD_AMOUNT" value="5000"/></td>
+            </tr>
+            <tr>
+                <td>현금영수증발급번호</td>
+                <td><input type="text" name="LGD_CASHCARDNUM" value=""/></td>
+            </tr>
+            <tr>
+                <td>요청기능</td>
+                <td>
+				<select name="LGD_METHOD" style="width:153px;">
+					<option value="ASSIGN">할당</option>
+					<option value="CHANGE">변경</option>
+				</select>
+				</td>
+            </tr>
+            <tr>
+                <td>구매자명 </td>
+                <td><input type="text" name="LGD_BUYER" value="구매자"/></td>
+            </tr>			
+            <tr>
+                <td>입금자명 </td>
+                <td><input type="text" name="LGD_ACCOUNTOWNER" value="입금자"/></td>
+            </tr>
+            <tr>
+                <td>입금자주민번호(옵션)</td>
+                <td><input type="text" name="LGD_ACCOUNTPID" value="kobula"/></td>
+            </tr>
+            <tr>
+                <td>구매자휴대폰번호 </td>
+                <td><input type="text" name="LGD_BUYERPHONE" value="01063249110"/></td>
+            </tr>
+            <tr>
+                <td>구매자이메일(옵션)</td>
+                <td><input type="text" name="LGD_BUYEREMAIL" value="kobula@10x10.co.kr"/></td>
+            </tr>									
+            <tr>
+                <td>상품명 </td>
+                <td><input type="text" name="LGD_PRODUCTINFO" value="테스트 상품입니다"/></td>
+            </tr>
+            <tr>
+                <td>입금계좌 선택 </td>
+                <td>
+				<select name="LGD_BANKCODE" style="width:153px;">
+					<option>원하시는 은행 선택</option>													
+					<option value="03">기업</option>												
+					<option value="05">외환</option>													
+					<option value="06">국민</option>												
+					<option value="11">농협</option>													
+					<option value="81">하나</option>												
+					<option value="20">우리</option>												
+					<option value="26">신한</option>
+					<option value="39">경남</option>
+					<option value="71">우체국</option>
+					<option value="32">부산</option>
+				</select>									
+				</td>
+            </tr>
+            <tr>
+                <td>현금영수증 사용여부 </td>
+                <td>				
+				<select name="LGD_CASHRECEIPTUSE" style="width:153px;">
+					<option value="1">소득공제</option>
+					<option value="2">지출증빙</option>
+				</select>
+				</td>
+            </tr>
+            <tr>
+                <td>입금기한 </td>
+                <td><input type="text" name="LGD_CLOSEDATE" value="20100331000000"/></td>
+            </tr>			
+            <tr>
+                <td>면세금액 </td>
+                <td><input type="text" name="LGD_TAXFREEAMOUNT" value="0"/></td>
+            </tr>			
+			
+            <tr>
+                <td>
+                <input type="submit" value="가상계좌 발급/변경"/><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {box-sizing: border-box;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, .result table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline;}
+body {padding: 5px;}
+body.noscroll {position: fixed;overflow: hidden;width: 100%;height: 100%;}
+li {list-style: none;display: inline-block;}
+a:hover {cursor: pointer;text-decoration: none;}
+
+.container {padding: 15px;font-size: 12px;font-family: "malgun Gothic","굴림";}
+.container button.btn {font-size: 11px;color: #fff;background-color: #343a40;border: none;border-radius: 2px;cursor: pointer;width: 80px;padding: 6px 0;}
+
+h3.title {height: 45px;line-height: 45px;font-size: 19px;margin-left: 8px;padding: 0 15px;}
+.content {background-color: #fff;min-height: 750px;margin: 10px;padding: 17px;border-radius: 4px;box-shadow: 2px 2px 2px 2px #eee;}
+
+.search {padding: 17px 13px;border-top: 1px solid #d1d1d1;border-bottom: 1px solid #e1e1e1;display: flex;justify-content: left;}
+.search .search-group {display: inline-block;margin-right: 30px;}
+.search .search-group label {font-size: 12px;font-weight: bold;line-height: 25px;margin-right: 5px;}
+.search .search-group input.date {width: 100px;}
+.search .search-group input[type=text] {line-height: 25px;height: 25px;font-size: 12px;border: 1px solid #777;}
+.search .search-group textarea {font-size: 12px;border: 1px solid #777;}
+.search .search-btn {margin-left: 15px;}
+
+.container .result {margin-top: 30px;}
+.container .result .result-btn-area {height: 25px;margin-bottom: 10px;text-align: right;}
+.container .result table {width: 100%;border-collapse: collapse;margin-top: 10px;}
+.container .result table th, td {vertical-align: middle;text-align: center;}
+.container .result table th {background-color: #34568B;height: 32px;color: #fff;}
+.container .result table td {border-bottom: 1px solid #ddd;padding: 10px 0;}
+.container .result table td.tl {text-align: left;padding-left: 15px;}
+.container .result table td button {width: 60px;background-color: #777;}
+.container .result table input[type=checkbox] {vertical-align: middle;}
+
+.modal {height: 100%;position: relative;z-index: 150;}
+.modal .modal-overlay {position: fixed;top: -1px;bottom: -1px;left: 0;width: 100vw;background: #000;opacity: 0.5;}
+.modal .modal-wrap {position: fixed;min-height: 150px;min-width: 600px;left: 50%;top: 50%;transform: translate(-50%,-50%);background: #fff;border-radius: 10px;padding: 15px 20px 50px 20px;}
+.modal-close-btn {position: absolute;right: -28px;top: -24px;border: none;background: url(//fiximage.10x10.co.kr/web2021/anniv2021/icon_pop_close.png) 0 0 no-repeat;background-size: 100%;width: 24px;height: 24px;cursor: pointer;}
+.modal-title {margin-bottom: 30px;}
+.modal-title h3 {font-size: 17px;}
+.modal-container {max-height: 610px;overflow: scroll;}
+.modal .result {margin-top: 0;}
+.modal .result .result-btn-area {display: flex;justify-content: space-between;margin-bottom: 0;}
+.modal .result .scroll-area {max-height: 350px;overflow: scroll;}
+.modal .result .result-state-check {line-height: 35px;}
+.modal .result .result-state-check label {display: inline-block;vertical-align: middle;margin-right: 5px;font-weight: bold;}
+.modal .result .result-state-check input[type=checkbox] {vertical-align: middle;}
+.modal .result .blue {color: #008ae6;}
+.modal .result .green {color: #008000;}
+.modal .result .red {color: #e62e00;}
+.modal .result p.state { color: #fff;display: inline-block;padding: 2px 0;border-radius: 5px;font-size: 11px;width: 65px;}
+.modal .result p.state.staging { background-color: #4F84C4; }
+.modal .result p.state.save { background-color: #00A170; }
+.modal .result p.state.fail { background-color: #e62e00; }
+.modal .search {margin-bottom: 25px;}
+.modal .search .search-group label {display: inline-block;vertical-align: top;}
+.modal .search button.btn {height: 30px;}
+
+.modal-write-tbl {width: 100%;border-collapse: collapse;}
+.modal-write-tbl th {background-color: #34568B;color: #fff;padding: 8px 10px;vertical-align: top;font-size: 12px;}
+.modal-write-tbl td {text-align: left;padding: 10px 15px;vertical-align: middle;font-size: 12px;}
+.modal-write-tbl input[type=text] {padding: 7px 7px;width: 100%;border: 1px solid #c1c1c1;border-radius: 2px;}
+.modal-write-tbl input[type=text]::placeholder {color: #c1c1c1;font-size: 11px;}
+.modal-write-tbl input[type=radio] {vertical-align: middle;display: inline-block;}
+.modal-write-tbl input[type=radio]:not(:first-child) {margin-left: 10px;}
+.modal-write-tbl label{display: inline-block;vertical-align: middle;}
+.modal-write-tbl .datepicker {display: block;line-height: 25px;margin-top: 10px;}
+.modal-write-tbl .datepicker input[type=text] {width: 95px;margin-right: 10px;padding: 7px 7px;}
+.modal-write-tbl .datepicker input[type=time] {margin-right: 10px;padding: 5px 7px;width: 125px;border: 1px solid #c1c1c1;border-radius: 2px;font-size: 12px;}
+.modal-write-tbl .datepicker label strong {font-size: 11px;font-weight: bold;}
+
+.modal-btn-area {text-align: center;}
+.modal-btn-area {text-align: center;margin-top: 30px;}
+.modal-btn-area button {width: 130px;height: 35px;background-color: #34568B;font-weight: bold;}
+
+.modal-alert {position: relative;padding: 11px 18px;border: 1px solid #f5c6cd;border-radius: 3px;width: 100%;color: #721c24;background-color: #f8d7da;margin-top: 10px;max-height: 120px;overflow: scroll;}
+.modal-alert strong {font-size: 13px;margin-bottom: 5px;display: block;}
+.modal-alert strong:not(:first-child) {margin-top: 10px;}
+.modal-alert .close {position: absolute;top: 0;right: 0;padding: 1px 8px;color: inherit;font-weight: bold;}
+
+.pagination {margin-top: 20px;display: flex;justify-content: center;}
+.pagination li a {position: relative;display: block;border: 1px solid #dee2e6;padding: 4px 10px;line-height: 20px;margin-right: -1px;}
+.pagination li.on a {background-color: #34568B;color: #fff;font-weight: bold;}
+.pagination li.disabled a {color: #ccc;}
+.pagination li.disabled a:hover {cursor: default;text-decoration: none;}
+.pagination li a:hover {text-decoration: underline;}
+.pagination li:first-child a {border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.pagination li:last-child a {border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
+
+.ui-datepicker {font-size: 12px!important;line-height: 100%;}
+.mdi {display: inline-block;text-align: center;vertical-align: top;font-size: 15px;}
+.mdi::before {display: inline-block;font-size: inherit;text-rendering: auto;line-height: inherit;-webkit-font-smoothing: antialiased;}
+.mdi-calendar-month:before {content: "\FDFA";position: relative;top: 2px;}
